@@ -511,6 +511,15 @@
   "tags": [],
   "ts": "2026-10-24"
  },
+ "fdroid@com.github.cvzi.darkmodewallpaper": {
+  "descricao_repo": "Live wallpaper that respects dark theme mode",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
  "fdroid@com.kunzisoft.keepass.libre": {
   "descricao_repo": "Manage Passkey / Password in a local and open-source vault",
   "homepage": null,
@@ -637,8 +646,16 @@
   "tags": [],
   "ts": "2026-10-24"
  },
+ "loja@https://anytracker.org/": {
+  "descricao_repo": "Track any number from any website. Get notified when the price drops on websites like Amazon, Flipkart and eBay.",
+  "ts": "2026-10-25"
+ },
  "loja@https://app.tangoapp.dev": {
   "descricao_repo": "A brand new way for managing Android devices. Use file browser, app manager, screen mirror and more right in your browser.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://appdash.app/": {
+  "descricao_repo": "Organize, analyze, and take action on every app on your device — with deep app details, smart insights, backups, powerful tools, and optional Play Store intelligence.",
   "ts": "2026-10-25"
  },
  "loja@https://cloud.google.com/shell": {
@@ -649,12 +666,24 @@
   "descricao_repo": "O Android Studio oferece aos builders de apps um ambiente de desenvolvimento integrado (IDE, na sigla em inglês) otimizado para apps Android. Faça o download do Android Studio.",
   "ts": "2026-10-25"
  },
+ "loja@https://feedly.com/": {
+  "descricao_repo": "Feedly Threat Intelligence is the leading solution to collect, analyze, and share actionable cyber threat intel like vulnerabilities, cyberattacks, threat actors, and IoCs.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://huftis.gitlab.io/fdroid-website/en/packages/com.smartpack.smartflasher/": {
+  "descricao_repo": "© 2010-2021 F-Droid Limited and Contributors",
+  "ts": "2026-10-25"
+ },
  "loja@https://play.google.com/store/apps/details?id=app.ijp.dskmode": {
   "descricao_repo": "Desktop taskbar on Android - Truly open apps, instant switching, pinned favs",
   "ts": "2026-10-25"
  },
  "loja@https://play.google.com/store/apps/details?id=app.maslanka.volumee": {
   "descricao_repo": "Skip tracks with volume buttons without taking your phone out of your pocket!",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=apps.ijp.mediabar": {
+  "descricao_repo": "Media playback controls and progress indicator for your Status Bar!",
   "ts": "2026-10-25"
  },
  "loja@https://play.google.com/store/apps/details?id=com.airbeat.device.inspector&hl=pt_BR": {
@@ -701,6 +730,10 @@
   "descricao_repo": "Fast, private photo gallery with built-in editor. No cloud, no ads, no tracking.",
   "ts": "2026-10-25"
  },
+ "loja@https://play.google.com/store/apps/details?id=com.gombosdev.ampere": {
+  "descricao_repo": "Measure the charging and discharging current of your battery.",
+  "ts": "2026-10-25"
+ },
  "loja@https://play.google.com/store/apps/details?id=com.google.android.apps.cloudconsole&hl=pt_BR&gl=US": {
   "descricao_repo": "Gerencie a solução do Google Cloud.",
   "ts": "2026-10-25"
@@ -719,6 +752,10 @@
  },
  "loja@https://play.google.com/store/apps/details?id=com.marc.files": {
   "descricao_repo": "This app is a shortcut to the file manager of the settings app.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.maxmpz.equalizer": {
+  "descricao_repo": "Enhance your sound with a powerful equalizer, deep bass boost, and AutoEQ",
   "ts": "2026-10-25"
  },
  "loja@https://play.google.com/store/apps/details?id=com.niksoftware.snapseed": {
@@ -741,8 +778,16 @@
   "descricao_repo": "Um aplicativo simples e elegante de notas de código aberto",
   "ts": "2026-10-25"
  },
+ "loja@https://play.google.com/store/apps/details?id=com.otp.scrollingiconslwp": {
+  "descricao_repo": "A different way to use icon packs and emojis - on your wallpaper!",
+  "ts": "2026-10-25"
+ },
  "loja@https://play.google.com/store/apps/details?id=com.pavelrekun.skit": {
   "descricao_repo": "Simplest and most intuitive app manager!",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.pavelrekun.tilla": {
+  "descricao_repo": "Keep track of your subscriptions with no limitations",
   "ts": "2026-10-25"
  },
  "loja@https://play.google.com/store/apps/details?id=com.perfectapps.muviz": {
@@ -825,6 +870,10 @@
   "descricao_repo": "Private by default. Less tracking. Peace of mind built in.",
   "ts": "2026-10-25"
  },
+ "loja@https://play.google.com/store/apps/details?id=org.swiftapps.swiftbackup": {
+  "descricao_repo": "Back up and restore apps, messages, call logs and files locally or in cloud.",
+  "ts": "2026-10-25"
+ },
  "loja@https://play.google.com/store/apps/details?id=own.moderpach.extinguish": {
   "descricao_repo": "Helps you run any android apps as if the screen is on while it is off.",
   "ts": "2026-10-25"
@@ -849,9 +898,80 @@
   "descricao_repo": "Find anything on your phone easily with Pixel Search - the all-in-one search app",
   "ts": "2026-10-25"
  },
+ "loja@https://play.google.com/store/apps/details?id=you.in.spark.access.dots": {
+  "descricao_repo": "Get cam, mic & GPS usage by any App notified through Access Dots on screen!",
+  "ts": "2026-10-25"
+ },
+ "loja@https://softwarebakery.com/projects/drivedroid": {
+  "descricao_repo": null,
+  "erro": "sem descrição na página",
+  "ts": "2026-10-25"
+ },
+ "loja@https://www.amazon.com/appstore": {
+  "descricao_repo": "Online shopping from a great selection at Apps & Games Store.",
+  "ts": "2026-10-25"
+ },
  "loja@https://www.apkmirror.com/apk/lin-jin-bin/mt-manager/": {
   "descricao_repo": "Download MT Manager APKs for Android - APKMirror Free and safe Android APK downloads",
   "ts": "2026-10-25"
+ },
+ "loja@https://www.mixplorer.com/": {
+  "descricao_repo": "Android file manager",
+  "ts": "2026-10-25"
+ },
+ "manual@accessdots": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://play.google.com/store/apps/details?id=you.in.spark.access.dots"
+  ]
+ },
+ "manual@amappmanager": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://github.com/MuntashirAkon/AppManager"
+  ]
+ },
+ "manual@amazonappstore": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://www.amazon.com/appstore"
+  ]
+ },
+ "manual@ampere": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://play.google.com/store/apps/details?id=com.gombosdev.ampere"
+  ]
+ },
+ "manual@anytracker": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://anytracker.org/"
+  ]
+ },
+ "manual@appdash": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://appdash.app/"
+  ]
+ },
+ "manual@darkmodelivewallpaper": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://f-droid.org/en/packages/com.github.cvzi.darkmodewallpaper/"
+  ]
+ },
+ "manual@drivedroid": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://softwarebakery.com/projects/drivedroid"
+  ]
+ },
+ "manual@feedly": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://feedly.com/"
+  ]
  },
  "manual@kiwibrowser": {
   "ts": "2026-10-25",
@@ -859,10 +979,94 @@
    "https://github.com/kiwibrowser/src"
   ]
  },
+ "manual@limbopc": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://github.com/limboemu/limbo"
+  ]
+ },
+ "manual@mediabar": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://play.google.com/store/apps/details?id=apps.ijp.mediabar"
+  ]
+ },
+ "manual@mixplorer": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://www.mixplorer.com/"
+  ]
+ },
  "manual@naptime": {
   "ts": "2026-10-25",
   "urls": [
    "https://github.com/test/test-repo"
+  ]
+ },
+ "manual@powerampequalizer": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://play.google.com/store/apps/details?id=com.maxmpz.equalizer"
+  ]
+ },
+ "manual@privacydashboard": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://github.com/RushikeshKhaidem/PrivacyDashboard"
+  ]
+ },
+ "manual@quickpicmod": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://github.com/WSTxda/QP-Gallery-Releases"
+  ]
+ },
+ "manual@sa2ration": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://github.com/zacharee/Sa2ration"
+  ]
+ },
+ "manual@scrollingiconslivewallpaper": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://play.google.com/store/apps/details?id=com.otp.scrollingiconslwp"
+  ]
+ },
+ "manual@smartflasher": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://huftis.gitlab.io/fdroid-website/en/packages/com.smartpack.smartflasher/"
+  ]
+ },
+ "manual@smartpackkernelmanager": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://github.com/SmartPack/SmartPack-Kernel-Manager"
+  ]
+ },
+ "manual@swiftbackup": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://play.google.com/store/apps/details?id=org.swiftapps.swiftbackup"
+  ]
+ },
+ "manual@tilla": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://play.google.com/store/apps/details?id=com.pavelrekun.tilla"
+  ]
+ },
+ "manual@vpnhotspot": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://github.com/Mygod/VPNHotspot"
+  ]
+ },
+ "manual@xdalabs": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://github.com/xda/XDA-Labs-Store-UI"
   ]
  },
  "repo@https://codeberg.org/Loowiz/PhotoSwooper": {
@@ -2296,6 +2500,22 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/Mygod/VPNHotspot": {
+  "descricao_repo": "Share your VPN connection over hotspot or repeater! (root required)",
+  "git_atualizado": "2026-09-04",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 6619,
+  "tags": [
+   "android",
+   "hotspot",
+   "tethering",
+   "vpn",
+   "wifi-direct"
+  ],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/Mystery00/PixelMeter": {
   "descricao_repo": "Pixel Meter is a network speed monitor application designed specifically for Google Pixel and native Android devices.",
   "git_atualizado": "2026-10-08",
@@ -2880,6 +3100,19 @@
   "tags": [],
   "ts": "2026-10-24"
  },
+ "repo@https://github.com/SmartPack/SmartPack-Kernel-Manager": {
+  "descricao_repo": "Source code of SmartPack-Kernel Manager, the Ultimate Tool to Manage your Kernel",
+  "git_atualizado": "2023-03-27",
+  "homepage": "https://play.google.com/store/apps/details?id=com.smartpack.kernelmanager.pro",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 776,
+  "tags": [
+   "kernel-manager",
+   "smartpack-kernel-manager"
+  ],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/T8RIN/ImageResizer": {
   "descricao_repo": "🖼️ Image Toolbox is a powerful app for advanced image manipulation. It offers dozens of features, from basic tools like crop and draw to filters, OCR, and a wide range of image processing options",
   "git_atualizado": "2026-10-23",
@@ -3245,6 +3478,28 @@
    "weather",
    "material3",
    "gemini"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/WSTxda/QP-Gallery-Releases": {
+  "descricao_repo": "A modern, lightweight QuickPic Gallery with a fast, offline-first experience.",
+  "git_atualizado": "2026-08-30",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 2690,
+  "tags": [
+   "android",
+   "android-application",
+   "gallery-app",
+   "gallery-images",
+   "image-viewer",
+   "material-3",
+   "material-design",
+   "material-design-3",
+   "material-ui",
+   "mod",
+   "reverse-engineering"
   ],
   "ts": "2026-10-25"
  },
@@ -6674,6 +6929,20 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/xda/XDA-Labs-Store-UI": {
+  "descricao_repo": "XDA Labs Store interface",
+  "git_atualizado": "2017-09-30",
+  "homepage": "https://labs.xda-developers.com/",
+  "idioma": "JavaScript",
+  "licenca": null,
+  "stars": 67,
+  "tags": [
+   "django",
+   "xda",
+   "xda-developers"
+  ],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/xigua222/photoo": {
   "descricao_repo": "photoo 是一款 Android 原生的极简照片整理工具。滑动卡片就能快速整理相册——左滑删除，右滑收藏，上滑保留。还有一系列\"该有的全都有\"的功能：相册分析生成专属摄影画像、沉浸式回顾喜爱照片、智能识别相似照片和低质量图片、视频和图片压缩......  但 photoo 不只是一个\"清理\"软件，它更是\"回忆\"。",
   "git_atualizado": "2026-08-13",
@@ -6766,6 +7035,16 @@
   "idioma": "Kotlin",
   "licenca": "MIT",
   "stars": 585,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/zacharee/Sa2ration": {
+  "descricao_repo": null,
+  "git_atualizado": "2017-12-10",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": null,
+  "stars": 32,
   "tags": [],
   "ts": "2026-10-25"
  },

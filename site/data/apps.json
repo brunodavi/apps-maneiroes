@@ -14583,7 +14583,7 @@
   {
    "nome": "Tilla",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Keep track of your subscriptions with no limitations",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -14591,7 +14591,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja:play",
+     "url": "https://play.google.com/store/apps/details?id=com.pavelrekun.tilla"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "ssP04Cl1bmo",
@@ -14602,13 +14607,12 @@
     }
    ],
    "data_ultima": "2021-10-07",
-   "thumbnail": "https://i.ytimg.com/vi/ssP04Cl1bmo/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/ssP04Cl1bmo/hqdefault.jpg"
   },
   {
    "nome": "Scrolling icons live wallpaper",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "A different way to use icon packs and emojis - on your wallpaper!",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -14616,7 +14620,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja:play",
+     "url": "https://play.google.com/store/apps/details?id=com.otp.scrollingiconslwp"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "ssP04Cl1bmo",
@@ -14627,13 +14636,12 @@
     }
    ],
    "data_ultima": "2021-10-07",
-   "thumbnail": "https://i.ytimg.com/vi/ssP04Cl1bmo/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/ssP04Cl1bmo/hqdefault.jpg"
   },
   {
    "nome": "MediaBar",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Media playback controls and progress indicator for your Status Bar!",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -14641,7 +14649,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja:play",
+     "url": "https://play.google.com/store/apps/details?id=apps.ijp.mediabar"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "ssP04Cl1bmo",
@@ -14652,13 +14665,12 @@
     }
    ],
    "data_ultima": "2021-10-07",
-   "thumbnail": "https://i.ytimg.com/vi/ssP04Cl1bmo/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/ssP04Cl1bmo/hqdefault.jpg"
   },
   {
    "nome": "AnyTracker",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Track any number from any website. Get notified when the price drops on websites like Amazon, Flipkart and eBay.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -14666,7 +14678,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja",
+     "url": "https://anytracker.org/"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "ssP04Cl1bmo",
@@ -14677,13 +14694,12 @@
     }
    ],
    "data_ultima": "2021-10-07",
-   "thumbnail": "https://i.ytimg.com/vi/ssP04Cl1bmo/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/ssP04Cl1bmo/hqdefault.jpg"
   },
   {
    "nome": "Ampere",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Measure the charging and discharging current of your battery.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -14691,7 +14707,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja:play",
+     "url": "https://play.google.com/store/apps/details?id=com.gombosdev.ampere"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "ssP04Cl1bmo",
@@ -14702,8 +14723,7 @@
     }
    ],
    "data_ultima": "2021-10-07",
-   "thumbnail": "https://i.ytimg.com/vi/ssP04Cl1bmo/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/ssP04Cl1bmo/hqdefault.jpg"
   },
   {
    "nome": "Privacy Dashboard",
@@ -14715,7 +14735,7 @@
    "idioma": null,
    "licenca": null,
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/RushikeshKhaidem/PrivacyDashboard",
    "lojas": [],
    "aparicoes": [
     {
@@ -14728,12 +14748,12 @@
    ],
    "data_ultima": "2021-08-20",
    "thumbnail": "https://i.ytimg.com/vi/6ktX3pHljuM/hqdefault.jpg",
-   "sem_info": true
+   "origem_repo": "manual"
   },
   {
    "nome": "Dark Mode Live Wallpaper",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Live wallpaper that respects dark theme mode",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -14741,7 +14761,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja:fdroid",
+     "url": "https://f-droid.org/en/packages/com.github.cvzi.darkmodewallpaper/"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "6ktX3pHljuM",
@@ -14752,13 +14777,12 @@
     }
    ],
    "data_ultima": "2021-08-20",
-   "thumbnail": "https://i.ytimg.com/vi/6ktX3pHljuM/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/6ktX3pHljuM/hqdefault.jpg"
   },
   {
    "nome": "AppDash",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Organize, analyze, and take action on every app on your device — with deep app details, smart insights, backups, powerful tools, and optional Play Store intelligence.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -14766,7 +14790,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja",
+     "url": "https://appdash.app/"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "6ktX3pHljuM",
@@ -14777,8 +14806,7 @@
     }
    ],
    "data_ultima": "2021-08-20",
-   "thumbnail": "https://i.ytimg.com/vi/6ktX3pHljuM/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/6ktX3pHljuM/hqdefault.jpg"
   },
   {
    "nome": "Activity Launcher",
@@ -14909,7 +14937,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja",
+     "url": "https://softwarebakery.com/projects/drivedroid"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "gVOpNIgFQuU",
@@ -15235,14 +15268,20 @@
   {
    "nome": "VPN Hotspot",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
+   "descricao_repo": "Share your VPN connection over hotspot or repeater! (root required)",
+   "tags": [
+    "android",
+    "hotspot",
+    "tethering",
+    "vpn",
+    "wifi-direct"
+   ],
+   "stars": 6619,
+   "git_atualizado": "2026-09-04",
+   "idioma": "Kotlin",
+   "licenca": "Apache-2.0",
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/Mygod/VPNHotspot",
    "lojas": [],
    "aparicoes": [
     {
@@ -15255,19 +15294,22 @@
    ],
    "data_ultima": "2021-05-28",
    "thumbnail": "https://i.ytimg.com/vi/gOxsQ4ge4hA/hqdefault.jpg",
-   "sem_info": true
+   "origem_repo": "manual"
   },
   {
    "nome": "SmartPack Kernel Manager",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
+   "descricao_repo": "Source code of SmartPack-Kernel Manager, the Ultimate Tool to Manage your Kernel",
+   "tags": [
+    "kernel-manager",
+    "smartpack-kernel-manager"
+   ],
+   "stars": 776,
+   "git_atualizado": "2023-03-27",
+   "idioma": "Java",
+   "licenca": "GPL-3.0",
+   "homepage": "https://play.google.com/store/apps/details?id=com.smartpack.kernelmanager.pro",
+   "repo": "https://github.com/SmartPack/SmartPack-Kernel-Manager",
    "lojas": [],
    "aparicoes": [
     {
@@ -15280,7 +15322,7 @@
    ],
    "data_ultima": "2021-05-28",
    "thumbnail": "https://i.ytimg.com/vi/gOxsQ4ge4hA/hqdefault.jpg",
-   "sem_info": true
+   "origem_repo": "manual"
   },
   {
    "nome": "De-bloater",
@@ -15373,7 +15415,7 @@
   {
    "nome": "Poweramp Equalizer",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Enhance your sound with a powerful equalizer, deep bass boost, and AutoEQ",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15381,7 +15423,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja:play",
+     "url": "https://play.google.com/store/apps/details?id=com.maxmpz.equalizer"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "Ct-kMqfeGco",
@@ -15392,13 +15439,12 @@
     }
    ],
    "data_ultima": "2021-05-06",
-   "thumbnail": "https://i.ytimg.com/vi/Ct-kMqfeGco/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Ct-kMqfeGco/hqdefault.jpg"
   },
   {
    "nome": "Access Dots",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Get cam, mic & GPS usage by any App notified through Access Dots on screen!",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15406,7 +15452,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja:play",
+     "url": "https://play.google.com/store/apps/details?id=you.in.spark.access.dots"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "Ct-kMqfeGco",
@@ -15417,8 +15468,7 @@
     }
    ],
    "data_ultima": "2021-05-06",
-   "thumbnail": "https://i.ytimg.com/vi/Ct-kMqfeGco/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Ct-kMqfeGco/hqdefault.jpg"
   },
   {
    "nome": "Substratum",
@@ -15596,7 +15646,7 @@
   {
    "nome": "Swift Backup",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Back up and restore apps, messages, call logs and files locally or in cloud.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15604,7 +15654,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja:play",
+     "url": "https://play.google.com/store/apps/details?id=org.swiftapps.swiftbackup"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "Dd5lQU9tcMA",
@@ -15615,13 +15670,12 @@
     }
    ],
    "data_ultima": "2021-03-31",
-   "thumbnail": "https://i.ytimg.com/vi/Dd5lQU9tcMA/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Dd5lQU9tcMA/hqdefault.jpg"
   },
   {
    "nome": "Smart Flasher",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "© 2010-2021 F-Droid Limited and Contributors",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15629,7 +15683,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja",
+     "url": "https://huftis.gitlab.io/fdroid-website/en/packages/com.smartpack.smartflasher/"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "Dd5lQU9tcMA",
@@ -15640,20 +15699,19 @@
     }
    ],
    "data_ultima": "2021-03-31",
-   "thumbnail": "https://i.ytimg.com/vi/Dd5lQU9tcMA/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Dd5lQU9tcMA/hqdefault.jpg"
   },
   {
    "nome": "Sa2ration",
    "descricao_curta": null,
    "descricao_repo": null,
    "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
+   "stars": 32,
+   "git_atualizado": "2017-12-10",
+   "idioma": "Java",
    "licenca": null,
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/zacharee/Sa2ration",
    "lojas": [],
    "aparicoes": [
     {
@@ -15666,7 +15724,7 @@
    ],
    "data_ultima": "2021-03-31",
    "thumbnail": "https://i.ytimg.com/vi/Dd5lQU9tcMA/hqdefault.jpg",
-   "sem_info": true
+   "origem_repo": "manual"
   },
   {
    "nome": "Wall plz",
@@ -15837,14 +15895,14 @@
   {
    "nome": "Limbo PC",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Limbo is a QEMU-based emulator for Android. It currently supports x86, ARM, PowerPC, and Sparc emulation  for Intel x86 and ARM android devices. See wiki https://virtualmachinery.weebly.com for APK download and Instructions.",
    "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
+   "stars": 3475,
+   "git_atualizado": "2024-08-18",
+   "idioma": "Java",
+   "licenca": "GPL-2.0",
+   "homepage": "https://virtualmachinery.weebly.com",
+   "repo": "https://github.com/limboemu/limbo",
    "lojas": [],
    "aparicoes": [
     {
@@ -15857,12 +15915,12 @@
    ],
    "data_ultima": "2020-11-20",
    "thumbnail": "https://i.ytimg.com/vi/6rTkieRnhH8/hqdefault.jpg",
-   "sem_info": true
+   "origem_repo": "manual"
   },
   {
    "nome": "Feedly",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Feedly Threat Intelligence is the leading solution to collect, analyze, and share actionable cyber threat intel like vulnerabilities, cyberattacks, threat actors, and IoCs.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15870,7 +15928,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja",
+     "url": "https://feedly.com/"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "6rTkieRnhH8",
@@ -15881,20 +15944,23 @@
     }
    ],
    "data_ultima": "2020-11-20",
-   "thumbnail": "https://i.ytimg.com/vi/6rTkieRnhH8/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/6rTkieRnhH8/hqdefault.jpg"
   },
   {
    "nome": "XDA Labs",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
+   "descricao_repo": "XDA Labs Store interface",
+   "tags": [
+    "django",
+    "xda",
+    "xda-developers"
+   ],
+   "stars": 67,
+   "git_atualizado": "2017-09-30",
+   "idioma": "JavaScript",
    "licenca": null,
-   "homepage": null,
-   "repo": null,
+   "homepage": "https://labs.xda-developers.com/",
+   "repo": "https://github.com/xda/XDA-Labs-Store-UI",
    "lojas": [],
    "aparicoes": [
     {
@@ -15907,12 +15973,12 @@
    ],
    "data_ultima": "2020-11-11",
    "thumbnail": "https://i.ytimg.com/vi/jwNtL6mveT0/hqdefault.jpg",
-   "sem_info": true
+   "origem_repo": "manual"
   },
   {
    "nome": "Amazon Appstore",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Online shopping from a great selection at Apps & Games Store.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15920,7 +15986,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja",
+     "url": "https://www.amazon.com/appstore"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "jwNtL6mveT0",
@@ -15931,8 +16002,7 @@
     }
    ],
    "data_ultima": "2020-11-11",
-   "thumbnail": "https://i.ytimg.com/vi/jwNtL6mveT0/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/jwNtL6mveT0/hqdefault.jpg"
   },
   {
    "nome": "SD Maid",
@@ -15969,14 +16039,26 @@
   {
    "nome": "QuickPicMod",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
+   "descricao_repo": "A modern, lightweight QuickPic Gallery with a fast, offline-first experience.",
+   "tags": [
+    "android",
+    "android-application",
+    "gallery-app",
+    "gallery-images",
+    "image-viewer",
+    "material-3",
+    "material-design",
+    "material-design-3",
+    "material-ui",
+    "mod",
+    "reverse-engineering"
+   ],
+   "stars": 2690,
+   "git_atualizado": "2026-08-30",
    "idioma": null,
    "licenca": null,
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/WSTxda/QP-Gallery-Releases",
    "lojas": [],
    "aparicoes": [
     {
@@ -15989,7 +16071,7 @@
    ],
    "data_ultima": "2020-10-29",
    "thumbnail": "https://i.ytimg.com/vi/BfOeDIUwH8I/hqdefault.jpg",
-   "sem_info": true
+   "origem_repo": "manual"
   },
   {
    "nome": "Muzei",
@@ -16019,7 +16101,7 @@
   {
    "nome": "MiXplorer",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Android file manager",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -16027,7 +16109,12 @@
    "licenca": null,
    "homepage": null,
    "repo": null,
-   "lojas": [],
+   "lojas": [
+    {
+     "tipo": "loja",
+     "url": "https://www.mixplorer.com/"
+    }
+   ],
    "aparicoes": [
     {
      "videoId": "BfOeDIUwH8I",
@@ -16038,20 +16125,25 @@
     }
    ],
    "data_ultima": "2020-10-29",
-   "thumbnail": "https://i.ytimg.com/vi/BfOeDIUwH8I/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/BfOeDIUwH8I/hqdefault.jpg"
   },
   {
    "nome": "AM (App Manager)",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
+   "descricao_repo": "A full-featured package manager and viewer for Android",
+   "tags": [
+    "material-design",
+    "package-manager",
+    "android",
+    "apks",
+    "adb"
+   ],
+   "stars": 9328,
+   "git_atualizado": "2026-10-19",
+   "idioma": "Java",
+   "licenca": "NOASSERTION",
+   "homepage": "http://muntashir.dev/AppManager/",
+   "repo": "https://github.com/MuntashirAkon/AppManager",
    "lojas": [],
    "aparicoes": [
     {
@@ -16064,7 +16156,7 @@
    ],
    "data_ultima": "2020-10-29",
    "thumbnail": "https://i.ytimg.com/vi/BfOeDIUwH8I/hqdefault.jpg",
-   "sem_info": true
+   "origem_repo": "manual"
   }
  ]
 }
