@@ -56,3 +56,28 @@ mark{background:var(--mark);color:var(--txt);border-radius:3px}
 .erro{color:var(--acc)}
 footer{max-width:1000px;margin:0 auto;padding:20px 16px 40px;color:var(--muted);font-size:.8rem}
 footer a{color:var(--muted)}
+
+/* ---------- celular (≤640px) ---------- */
+@media (max-width:640px){
+  header{padding:22px 12px 6px}
+  main{padding:12px 12px 50px}
+  footer{padding:20px 12px 30px}
+
+  /* busca empilha: campo ocupa uma linha, ordenação a linha de baixo */
+  .busca{flex-wrap:wrap;row-gap:8px}
+  input[type=search]{min-width:100%;font-size:1rem;padding:11px 14px}
+  .ord{width:100%}
+  .ord select{flex:1;min-width:0;padding:11px 10px;font-size:.95rem}
+  .orddir{min-width:48px;padding:11px 0;font-size:1.05rem}
+
+  /* cards em coluna única, textos sem estourar */
+  .grid{grid-template-columns:1fr;gap:10px}
+  .card{padding:12px}
+  .card h3{overflow-wrap:anywhere}
+  .titulo-linha{flex-wrap:wrap;row-gap:2px}
+  .repo-link{white-space:normal}
+  .vid-btn .vt{font-size:.72rem}
+
+  /* chips com alvo de toque maior */
+  .chip{padding:6px 12px;font-size:.75rem}
+}
