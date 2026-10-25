@@ -69,7 +69,8 @@ seguintes e permitem retomar de onde parou após um erro):
 |---|---|
 | `site/data/excludes.json`     | vídeos comprovadamente fora da série (id + motivo + data) — rodadas seguintes nem consultam |
 | `site/data/video-cache.json` | título/descrição/duração/data dos vídeos **da série** (regenera o parse sem rede) |
-| `site/data/repo-cache.json`  | descrição/tags/stars de cada repo/f-droid |
+| `site/data/repo-cache.json`  | descrição/tags/stars de cada repo/f-droid (+ resultado da busca de repos por nome, válido 30 dias) |
+| `site/data/apps-fixes.json`  | curadoria manual: preenche repo/descrição/tags de apps que ninguém achou sozinho |
 
 A memória negativa (`excludes.json`) é preenchida automaticamente: vídeos fora
 do padrão de título (skip definitivo) e vídeos com título de série mas sem apps
@@ -82,6 +83,36 @@ manualmente — exceto se o ID pertencer a uma playlist, que sempre vence.
 Open Source (antiga), Recomendações de apps (antiga) e Aplicativos para quem
 tem acesso root. Fora delas, o gerador varre os uploads do canal inteiro
 (750+ vídeos, pré-filtro por título) + buscas textuais.
+
+## Apps sem fonte (aviso + resgate + forma manual)
+
+Todo fim de rodada o gerador lista apps que ficaram **só com o nome** (sem repo
+GitHub/GitLab/Codeberg, sem F-Droid e sem descrição — capítulos antigos sem
+links e apps fechados citados na Play Store, ex.: Snapseed):
+
+```
+   aviso: 38 app(s) sem fonte nem descrição — complete manualmente em site/data/apps-fixes.json: Snapseed, LocalDream, …
+```
+
+Antes do aviso ele tenta se corrigir sozinho: **resgate pela busca do GitHub**
+(nome do app + `android`, com filtro de similaridade — match fraco não é
+apontado para não indicar repo errado). O resultado, positivo ou negativo,
+fica 30 dias no `repo-cache.json` (`busca@nome`) para não reconsultar.
+
+Quando o resgate não acha (app fechado, repo não listado), complete à mão no
+**`site/data/apps-fixes.json`** (commitado):
+
+```json
+{
+  "Snapseed": {"descricao_curta": "Editor de fotos do Google (código fechado)"},
+  "LocalDream": {"repo": "https://github.com/dev/LocalDream", "tags": ["IA"]}
+}
+```
+
+Regras: casa pelo nome (ignorando acento/maiúsculas), **só preenche campo
+vazio** (nunca sobrescreve dado automático) e `"repo": ""` remove um repo
+resgatado da busca que saiu errado. A UI marca cards sem informação com a
+nota "sem fonte nem descrição".
 
 ## Publicar no GitHub Pages
 

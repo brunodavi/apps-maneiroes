@@ -1,0 +1,3 @@
+{
+ "_como_usar": "mapear pelo nome do app (ex.: \"Snapseed\") para um objeto com \"repo\" (URL), \"descricao_curta\", \"descricao_repo\", \"tags\" [...] e \"lojas\" [...] — o gerador só preenche campos vazios; \"repo\": \"\" remove um repo da busca automática que saiu errado"
+}

@@ -83,6 +83,7 @@ function cardHtml(a, termos) {
   if (a.idioma) meta.push(esc(a.idioma));
   if (a.licenca && a.licenca !== "NOASSERTION") meta.push(esc(a.licenca));
   if (a.open_source !== false && /open source/i.test((a.descricao_curta || ""))) meta.push("open source");
+  if (a.sem_info) meta.push('sem fonte nem descrição');
 
   var aps = (a.aparicoes || []).map(function (ap) {
     var v = videos[ap.videoId] || ap;

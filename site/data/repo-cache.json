@@ -1,4 +1,145 @@
 {
+ "busca@betamaniac": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@diskinfo": {
+  "repo_url": "https://github.com/AcE77505/DiskInfo-old",
+  "ts": "2026-10-25"
+ },
+ "busca@doodle": {
+  "repo_url": "https://github.com/1993hzw/Doodle",
+  "ts": "2026-10-25"
+ },
+ "busca@dskmode": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@echoeq": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@ffmpegmediaencoder": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@files": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@finddevice": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@firefox": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@focusgo": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@folderwidget": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@kiwibrowser": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@lawnchair": {
+  "repo_url": "https://github.com/LawnchairLauncher/lawnchair",
+  "ts": "2026-10-25"
+ },
+ "busca@mdm": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@mtmanager": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@notinotes": {
+  "repo_url": "https://github.com/Yanndroid/NotiNotes",
+  "ts": "2026-10-25"
+ },
+ "busca@opennotescanner": {
+  "repo_url": "https://github.com/allgood/OpenNoteScanner",
+  "ts": "2026-10-25"
+ },
+ "busca@pixelsearch": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@ruppo": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@simplednd": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@skit": {
+  "repo_url": "https://github.com/mkotyk/Skitter",
+  "ts": "2026-10-25"
+ },
+ "busca@smartlauncher": {
+  "repo_url": "https://github.com/nayash/smarter-launcher",
+  "ts": "2026-10-25"
+ },
+ "busca@spatialtouch": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@sponge": {
+  "repo_url": "https://github.com/XiaogegeChen/Sponge",
+  "ts": "2026-10-25"
+ },
+ "busca@tidypanel": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@touchthenotch": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@urlcheck": {
+  "repo_url": "https://github.com/TrianguloY/URLCheck",
+  "ts": "2026-10-25"
+ },
+ "busca@usblockit": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@volumee": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@warp": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
  "fdroid@com.aurora.adroid": {
   "descricao_repo": "An alternative to the default F-Droid app",
   "homepage": null,
@@ -218,6 +359,25 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/1993hzw/Doodle": {
+  "descricao_repo": "Image doodle for Android, with functions such as undo, zoom, move, text, image, etc. Also a powerful, customizable and extensible doodle framework & multi-function drawing board. Android图片涂鸦，具有撤消，缩放，移动，添加文字，贴图等功能。还是一个功能强大，可自定义和可扩展的涂鸦框架、多功能画板。",
+  "git_atualizado": "2022-05-16",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": null,
+  "stars": 1161,
+  "tags": [
+   "doodle",
+   "draw",
+   "edit",
+   "graffit",
+   "handwrite",
+   "paint",
+   "painter",
+   "picture"
+  ],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/1fexd/LinkSheet": {
   "descricao_repo": "Link handling for modern Android",
   "git_atualizado": "2026-10-20",
@@ -297,6 +457,23 @@
    "jetpack-compose",
    "kotlin",
    "kotlin-android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/AcE77505/DiskInfo-old": {
+  "descricao_repo": "分区信息查看器",
+  "git_atualizado": "2025-11-27",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 4,
+  "tags": [
+   "android",
+   "android-application",
+   "disk",
+   "kotlin",
+   "partition",
+   "storage"
   ],
   "ts": "2026-10-25"
  },
@@ -1308,6 +1485,24 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/LawnchairLauncher/lawnchair": {
+  "descricao_repo": "No clever tagline needed.",
+  "git_atualizado": "2026-10-25",
+  "homepage": "https://lawnchair.app",
+  "idioma": "Java",
+  "licenca": "NOASSERTION",
+  "stars": 13776,
+  "tags": [
+   "android",
+   "app",
+   "hacktoberfest",
+   "java",
+   "kotlin",
+   "launcher",
+   "launcher3"
+  ],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/Leonidius20/RecordingStudio": {
   "descricao_repo": "Audio recorder app for Android",
   "git_atualizado": "2026-10-02",
@@ -2122,6 +2317,22 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/TrianguloY/URLCheck": {
+  "descricao_repo": "Android app by TrianguloY: URLCheck",
+  "git_atualizado": "2026-10-18",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "NOASSERTION",
+  "stars": 2124,
+  "tags": [
+   "android-application",
+   "fdroid",
+   "open-source",
+   "play-store",
+   "url-check"
+  ],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/Trixarian/NetherSX2-classic": {
   "descricao_repo": "Continuation of NetherSX2 based on AetherSX2 3668",
   "git_atualizado": "2026-06-29",
@@ -2386,6 +2597,16 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/XiaogegeChen/Sponge": {
+  "descricao_repo": "Android端的图文混排方案",
+  "git_atualizado": "2019-07-15",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "Apache-2.0",
+  "stars": 5,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/Xitee1/sleep-timer": {
   "descricao_repo": "A fancy Android app that pauses / fades out music, disables things like WiFi and Bluetooth when the timer ends",
   "git_atualizado": "2026-10-02",
@@ -2422,6 +2643,20 @@
    "plaintext",
    "richtext",
    "university"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Yanndroid/NotiNotes": {
+  "descricao_repo": "A Notes app living in your notification panel",
+  "git_atualizado": "2023-12-22",
+  "homepage": "https://play.google.com/store/apps/details?id=de.dlyt.yanndroid.notinotes",
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 79,
+  "tags": [
+   "android",
+   "notes",
+   "notifications"
   ],
   "ts": "2026-10-25"
  },
@@ -2591,6 +2826,16 @@
   "idioma": "Java",
   "licenca": "NOASSERTION",
   "stars": 282,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/allgood/OpenNoteScanner": {
+  "descricao_repo": "Android application for scanning and manipulating handwritten notes and documents.",
+  "git_atualizado": "2025-04-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "NOASSERTION",
+  "stars": 1544,
   "tags": [],
   "ts": "2026-10-25"
  },
@@ -4161,6 +4406,16 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/mkotyk/Skitter": {
+  "descricao_repo": "Skitter Android App",
+  "git_atualizado": "2016-01-19",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": null,
+  "stars": 0,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/mobeil1/GuessIron": {
   "descricao_repo": null,
   "git_atualizado": "2024-07-13",
@@ -4283,6 +4538,22 @@
    "android",
    "kotlin",
    "hacktoberfest"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/nayash/smarter-launcher": {
+  "descricao_repo": "An Android launcher which understands your usage patterns and updates the Home screen with a list of apps which are most likely to be used by you next.",
+  "git_atualizado": "2021-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 6,
+  "tags": [
+   "android",
+   "knn-algorithm",
+   "kotlin-android",
+   "launcher-application",
+   "machine-learning"
   ],
   "ts": "2026-10-25"
  },
@@ -4444,6 +4715,9 @@
    "scan-open-ports"
   ],
   "ts": "2026-10-25"
+ },
+ "repo@https://github.com/oxplot/bradybound": {
+  "erro": 404
  },
  "repo@https://github.com/picguard/picguard": {
   "descricao_repo": "Your pictures, your signature",

@@ -813,6 +813,139 @@ def fdroid_pkgid(url):
     return m.group(1) if m else None
 
 
+# ---------------------------------------------------------------- apps sem fonte (validação + resgate)
+
+FIXES_PATH = os.path.join(DATA_DIR, "apps-fixes.json")
+"""Curadoria manual (commitada): {"Nome do app": {"repo": ..., "descricao_curta": ..., "tags": ...}}.
+Regras: só preenche campo vazio; "repo": "" remove um resgate errado da busca."""
+
+
+def tem_fonte(e):
+    """Fonte complementável = repo citado no vídeo ou F-Droid (dão descrição/tags automático)."""
+    if e.get("repo"):
+        return True
+    return any((l or {}).get("tipo") == "loja:fdroid" for l in e.get("lojas", []))
+
+
+def sem_info(e):
+    """App sem NENHUM dado além do nome: sem repo/f-droid e sem descrição/tags.
+    Link de Play Store sozinho não conta (a Play não expõe descrição via API)."""
+    if tem_fonte(e):
+        return False
+    return not (e.get("descricao_curta") or e.get("descricao_repo") or e.get("tags"))
+
+
+def escolher_repo(nome, resultados):
+    """Escolhe, entre os achados da busca, o repo cujo nome casa com o app
+    (norm igual ou razão ≥ 0.9). Empate: mais estrelas. Match fraco → None
+    (melhor avisar 'sem fonte' do que apontar repo errado)."""
+    n = norm(nome)
+    if not n:
+        return None
+    cands = []
+    for r in resultados:
+        full = str(r.get("nome") or "")
+        cand = norm(full.rsplit("/", 1)[-1])
+        if not cand:
+            continue
+        if _repo_casa(n, cand):
+            cands.append(r)
+    if not cands:
+        return None
+    return max(cands, key=lambda r: (r.get("stars") or 0))
+
+
+def _repo_casa(n, cand):
+    """norm do app vs norm do nome do repo: igual, similar (razão ≥ .9) ou
+    prefixo do outro com ≤ 6 chars extras ('LocalDream' ~ 'LocalDreamApp')."""
+    if cand == n:
+        return True
+    if difflib.SequenceMatcher(None, n, cand).ratio() >= 0.9:
+        return True
+    return (cand.startswith(n) or n.startswith(cand)) and abs(len(cand) - len(n)) <= 6
+
+
+def busca_servivel(ce):
+    """Entrada do repo-cache da busca (positiva OU negativa) vale por 30 dias."""
+    if not isinstance(ce, dict) or not ce.get("ts"):
+        return False
+    try:
+        entao = datetime.strptime(ce["ts"], "%Y-%m-%d").date()
+    except (TypeError, ValueError):
+        return False
+    return (datetime.now(timezone.utc).date() - entao).days < 30
+
+
+def lookup_busca_repo(nome, cache, rate):
+    """App sem fonte → tenta achar o repo pela busca do GitHub (nome + android).
+    Cacheia o resultado (positivo/negativo) em repo-cache.json (`busca@nome`)
+    para não repetir a consulta nas rodadas seguintes. Devolve a URL ou None."""
+    key = "busca@" + norm(nome)
+    ce = cache.get(key)
+    if busca_servivel(ce):
+        return ce.get("repo_url")
+    url = ("https://api.github.com/search/repositories?per_page=5&sort=stars&q="
+           + urllib.parse.quote(f'"{nome}" android'))
+    hoje = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    try:
+        body, hdr = http_get(url, headers=gh_headers())
+        if int(hdr.get("x-ratelimit-remaining", "999")) < 2:
+            rate["stop"] = True
+        res = (json.loads(body).get("items") or [])
+        melhor = escolher_repo(nome, [{"nome": it.get("full_name") or "",
+                                       "stars": it.get("stargazers_count") or 0} for it in res])
+        info = {"repo_url": f"https://github.com/{melhor['nome']}" if melhor else None,
+                "ts": hoje}
+        if melhor is None:
+            info["erro"] = "sem match"  # negativo definitivo: 30 dias sem refazer
+        cache[key] = info
+        return info["repo_url"]
+    except Exception:
+        # transitório (rede/rate limit): NÃO cacheia — próxima rodada tenta de novo
+        return None
+
+
+def aplicar_fixes(apps, fixes):
+    """Aplica a curadoria manual apps-fixes.json sobre o catálogo construído.
+    Regras:
+      - casa pelo nome (norm) — 'OpenBoard' casa 'OpenBoard no GitHub';
+      - só preenche campo VAZIO (nunca sobrescreve dado automático/vídeo);
+      - "repo": "" remove um resgate de busca que saiu errado (só origem 'busca').
+    Devolve a lista de nomes do fixes sem match no catálogo (para avisar)."""
+    if not fixes:
+        return []
+    usados, faltando = set(), []
+    for nome_fix, fix in fixes.items():
+        if not isinstance(fix, dict) or nome_fix.startswith("_"):
+            continue  # chave de documentação / valor inválido: ignora em silêncio
+        nf = norm(nome_fix)
+        e = next((x for x in apps.values() if norm(x["nome"]) == nf), None)
+        if e is None:
+            faltando.append(nome_fix)
+            continue
+        usados.add(nf)
+        fr = fix.get("repo")
+        if fr == "" and e.get("origem_repo") == "busca":
+            e["repo"], e["origem_repo"] = None, None
+        elif fr and not e["repo"]:
+            e["repo"] = fr
+        if fix.get("descricao_curta") and not e["descricao_curta"]:
+            e["descricao_curta"] = fix["descricao_curta"]
+        if fix.get("descricao_repo") and not e["descricao_repo"]:
+            e["descricao_repo"] = fix["descricao_repo"]
+        if fix.get("homepage") and not e["homepage"]:
+            e["homepage"] = fix["homepage"]
+        if fix.get("tags") and not e["tags"]:
+            e["tags"] = list(fix["tags"])
+        existentes = {(l["tipo"], l["url"]) for l in e["lojas"]}
+        for u in fix.get("lojas") or []:
+            tipo = classify_url(u) or "loja"
+            if tipo.startswith("loja") and (tipo, u) not in existentes:
+                e["lojas"].append({"tipo": tipo, "url": u})
+                existentes.add((tipo, u))
+    return faltando
+
+
 # ---------------------------------------------------------------- busca no canal (camada de descoberta)
 
 def innertube_search_channel(q):
@@ -1117,6 +1250,16 @@ def main():
                   f"Use --force para forçar.")
             sys.exit(1)
 
+    # 2.9) curadoria manual: site/data/apps-fixes.json --------------------
+    fixes = load_json(FIXES_PATH)
+    if fixes:
+        faltando_fix = aplicar_fixes(apps, fixes)
+        n_usados = sum(1 for k, v in fixes.items()
+                       if isinstance(v, dict) and not k.startswith("_")) - len(faltando_fix)
+        print(f"== apps-fixes.json: {n_usados} app(s) atualizado(s) pela curadoria manual")
+        for nome in faltando_fix:
+            print(f"   AVISO: fix no apps-fixes.json sem match no catálogo: {nome}")
+
     # 3) enriquecimento repos --------------------------------------------
     if not sem_repo:
         print("== Enriquecendo com APIs de repositórios (paralelo)...")
@@ -1124,6 +1267,7 @@ def main():
         # caminho rápido: GitHub em LOTE via GraphQL (1 chamada por 100 repos);
         # usa GITHUB_TOKEN/GH_TOKEN/GH_PAT (no Actions: injetado de graça)
         tok = gh_token()
+        rate_stop = {"stop": False}
         if tok:
             try:
                 n = lookup_graphql_github(apps, cache, tok)
@@ -1131,6 +1275,28 @@ def main():
                 save_cache(cache)
             except Exception as ex:
                 print(f"   AVISO: GraphQL indisponível ({ex}); seguindo individual")
+
+        # resgate: app sem fonte nem descrição (capítulos antigos, Play sem desc)
+        # → tenta achar o repo pela busca do GitHub; negativo fica avisado lá embaixo
+        sem_fonte = [e for e in apps.values() if sem_info(e)]
+        if sem_fonte:
+            print(f"== {len(sem_fonte)} app(s) sem fonte nem descrição: resgate na busca do GitHub...")
+            resgat, falharam = [], []
+            for e in sem_fonte:
+                if rate_stop["stop"]:
+                    falharam.append(e["nome"])
+                    continue
+                url = lookup_busca_repo(e["nome"], cache, rate_stop)
+                if url:
+                    e["repo"], e["origem_repo"] = url, "busca"
+                    resgat.append(e["nome"])
+                else:
+                    falharam.append(e["nome"])
+            if resgat:
+                print(f"   resgatado(s) pela busca ({len(resgat)}): {', '.join(resgat[:8])}"
+                      f"{'…' if len(resgat) > 8 else ''}")
+            save_cache(cache)
+
         tasks = []
         for key, e in apps.items():
             if e["repo"]:
@@ -1157,7 +1323,6 @@ def main():
                     print(f"   {n_done[0]}/{len(tasks)} consultados...")
             return kind, e, r
 
-        rate_stop = {"stop": False}
         ok = 0
         try:
             with ThreadPoolExecutor(max_workers=8) as ex:
@@ -1184,6 +1349,9 @@ def main():
         e["aparicoes"] = es
         e["data_ultima"] = (es[0].get("data") if es else None)
         e["thumbnail"] = es[0]["thumbnail"] if es else None
+        # flag só quando vale flag: ausente = app com fonte/descrição normais
+        if sem_info(e):
+            e["sem_info"] = True
 
     videos_out.sort(key=lambda v: (v["data"] or "", v["videoId"]), reverse=True)
     apps_list = sorted(apps.values(),
@@ -1202,15 +1370,17 @@ def main():
         json.dump(out, f, ensure_ascii=False, indent=1)
 
     n_pl_sum = sum(len(e["aparicoes"]) for e in apps_list)
-    sem_desc = [e["nome"] for e in apps_list if not e.get("descricao_repo") and not e.get("descricao_curta")]
     print(f"\nOK: apps.json gerado — {len(videos_out)} vídeos, "
           f"{len(apps_list)} apps, {n_pl_sum} aparições app↔vídeo")
     if pulados_velhos:
         print(f"   ({pulados_velhos} vídeo(s) fora de playlist ignorados pela janela de {janela} mês(es))")
     if pulado_por_exclude:
         print(f"   ({pulado_por_exclude} vídeo(s) pulados via excludes.json)")
-    if sem_desc:
-        print(f"   aviso: {len(sem_desc)} app(s) sem descrição alguma: {', '.join(sem_desc[:8])}")
+    sem_fonte_list = [e["nome"] for e in apps_list if sem_info(e)]
+    if sem_fonte_list:
+        print(f"   aviso: {len(sem_fonte_list)} app(s) sem fonte nem descrição —"
+              f" complete manualmente em site/data/apps-fixes.json: "
+              f"{', '.join(sem_fonte_list[:8])}{'…' if len(sem_fonte_list) > 8 else ''}")
     if sem_repo:
         print("(enriquecimento de repos pulado: --sem-repo)")
 

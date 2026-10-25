@@ -13,17 +13,21 @@ Fixtures reais:
 Rodar: python3 test/gerar_test.py   (da raiz do repo)
 """
 
+import json
 import unittest
+import urllib.error
 from datetime import datetime, timezone
 from pathlib import Path
 
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from gerar import (FORA_SERIE_MOTIVO, PLAYLISTS, app_key, base_name, classify_url,
-                   cutoff_date, decidir_skip_excludes, iso8601_seconds,
-                   match_tempo, merge_excludes, normalize_repo_url, parse_desc,
-                   purgar_video_cache)
+import gerar
+from gerar import (FORA_SERIE_MOTIVO, PLAYLISTS, app_key, aplicar_fixes,
+                   base_name, busca_servivel, classify_url, cutoff_date,
+                   decidir_skip_excludes, escolher_repo, iso8601_seconds,
+                   lookup_busca_repo, match_tempo, merge_excludes,
+                   normalize_repo_url, parse_desc, purgar_video_cache, sem_info)
 
 DESC_COM_TEMPOS = """Eai pessoal, no vídeo de hoje vamos continuar a nossa série de aplicativos mensais, onde eu basicamente faço um compilado de diversos apps que eu acho interessantes, apps comuns, projetos de código aberto etc... e apresento eles pra vocês.
 
@@ -443,6 +447,188 @@ class TestSeriesAntigas(unittest.TestCase):
         self.assertIsNotNone(LEGACY_CAPITULOS_RE.search("#3 - Recomendações de Aplicativos para Android"))
         # outros formatos antigos NÃO podem gerar apps falsos (capítulo = dica, não app)
         self.assertIsNone(LEGACY_CAPITULOS_RE.search("Truques e Dicas no Android e em alguns Apps #2"))
+
+
+# ---------------------------------------------------------------- apps sem fonte
+
+def fake_app(nome, repo=None, desc_curta=None, desc_repo=None, tags=None, lojas=None):
+    return {"nome": nome, "descricao_curta": desc_curta, "descricao_repo": desc_repo,
+            "tags": tags or [], "stars": None, "git_atualizado": None,
+            "idioma": None, "licenca": None, "homepage": None, "repo": repo,
+            "lojas": lojas or [], "aparicoes": []}
+
+
+class TestAppsSemFonte(unittest.TestCase):
+    """Apps sem repo/f-droid E sem descrição = 'sem informação': Snapseed
+    (só Play Store), LocalDream (capítulo legacy, nada além do nome) etc."""
+
+    def test_capitulo_legacy_sem_nada_e_marcado(self):
+        # LocalDream: formato antigo sem links — só nome no apps.json
+        self.assertTrue(sem_info(fake_app("LocalDream")))
+
+    def test_somente_play_store_e_marcado_igual(self):
+        # Snapseed: link da Play Store não dá descrição — segue sem info
+        snap = fake_app("Snapseed", lojas=[{"tipo": "loja:play",
+                                            "url": "https://play.google.com/store/apps/details?id=com.niksoftware.snapseed"}])
+        self.assertTrue(sem_info(snap))
+
+    def test_com_descricao_curta_nao_e_marcado(self):
+        # VPhoneOS SAÍRIA do aviso se o vídeo tivesse "*" no bloco de links
+        self.assertFalse(sem_info(fake_app("VPhoneOS", desc_curta="clone de Android virtual")))
+
+    def test_com_repo_ou_fdroid_nao_e_marcado(self):
+        self.assertFalse(sem_info(fake_app("Termux", repo="https://github.com/termux/termux-app")))
+        fd = fake_app("AntennaPod", lojas=[{"tipo": "loja:fdroid", "url": "https://f-droid.org/packages/de.danoeh.antennapod/"}])
+        self.assertFalse(sem_info(fd))
+
+    def test_play_com_descricao_repo_tem_dado(self):
+        # repo fechado (Play) mas descrição veio de outra fonte → está servido
+        self.assertFalse(sem_info(fake_app("Snapseed", desc_repo="editor de fotos do Google")))
+
+    def test_tags_vazias_ainda_sem_dado(self):
+        # lista de tags vazia conta como nada
+        app = fake_app("LocalDream")
+        self.assertTrue(sem_info({**app, "tags": []}))
+        self.assertFalse(sem_info(fake_app("X", tags=["fotografia"])))
+
+
+class TestEscolherRepo(unittest.TestCase):
+    """Filtro de similaridade do resgate automático (busca do GitHub pelo nome)."""
+
+    def test_casa_nome_exato(self):
+        res = [{"nome": "fulano/LocalDream", "stars": 12}]
+        self.assertEqual(escolher_repo("LocalDream", res)["nome"], "fulano/LocalDream")
+
+    def test_casa_com_hifen_variacao(self):
+        res = [{"nome": "algumdev/LocalDream-app", "stars": 5}]
+        self.assertIsNotNone(escolher_repo("LocalDream", res))
+
+    def test_rejeita_match_fraco(self):
+        res = [{"nome": "outrafirmir/LocalDreamsWatcher", "stars": 500},
+               {"nome": "x/dream-local", "stars": 200}]
+        self.assertIsNone(escolher_repo("LocalDream", res))
+
+    def test_empate_mais_estrelas_vence(self):
+        res = [{"nome": "a/Snapseed", "stars": 10}, {"nome": "b/Snapseed", "stars": 900}]
+        self.assertEqual(escolher_repo("Snapseed", res)["nome"], "b/Snapseed")
+
+    def test_nada_a_escolher(self):
+        self.assertIsNone(escolher_repo("Snapseed", []))
+        self.assertIsNone(escolher_repo("Snapseed", [{"nome": "", "stars": 9}]))
+
+
+class TestAplicarFixes(unittest.TestCase):
+    """Curadoria manual: site/data/apps-fixes.json → {nome: {repo, descricao_curta, …}}."""
+
+    def test_preenche_campos_vazios(self):
+        apps = {"nome:snapseed": fake_app("Snapseed", lojas=[])}
+        fixes = {"Snapseed": {"repo": "https://github.com/espehon/snapseed-readable",
+                              "descricao_curta": "editor de fotos do Google"}}
+        nao = aplicar_fixes(apps, fixes)
+        e = apps["nome:snapseed"]
+        self.assertEqual(nao, [])
+        self.assertEqual(e["repo"], "https://github.com/espehon/snapseed-readable")
+        self.assertEqual(e["descricao_curta"], "editor de fotos do Google")
+        self.assertFalse(sem_info(e))
+
+    def test_nao_sobrescreve_dado_automatico(self):
+        apps = {"nome:x": fake_app("X", repo="https://github.com/a/b", desc_curta="original")}
+        aplicar_fixes(apps, {"X": {"repo": "https://github.com/outro/repo",
+                                   "descricao_curta": "manual"}})
+        self.assertEqual(apps["nome:x"]["repo"], "https://github.com/a/b")
+        self.assertEqual(apps["nome:x"]["descricao_curta"], "original")
+
+    def test_repo_vazio_limpa_so_resgate_de_busca(self):
+        apps = {"nome:x": fake_app("X")}
+        apps["nome:x"]["repo"] = "https://github.com/falso/match"
+        apps["nome:x"]["origem_repo"] = "busca"
+        aplicar_fixes(apps, {"X": {"repo": ""}})
+        self.assertIsNone(apps["nome:x"]["repo"])
+        # citado no vídeo (origem não é busca) NÃO pode ser removido
+        apps2 = {"nome:y": fake_app("Y", repo="https://github.com/c/d")}
+        aplicar_fixes(apps2, {"Y": {"repo": ""}})
+        self.assertEqual(apps2["nome:y"]["repo"], "https://github.com/c/d")
+
+    def test_tags_e_lojas(self):
+        apps = {"nome:x": fake_app("X")}
+        fix = {"X": {"tags": ["segurança"], "lojas": ["https://f-droid.org/packages/com.x/"]}}
+        aplicar_fixes(apps, fix)
+        e = apps["nome:x"]
+        self.assertEqual(e["tags"], ["segurança"])
+        self.assertEqual(e["lojas"][0]["tipo"], "loja:fdroid")
+
+    def test_nome_sem_match_volta_para_aviso(self):
+        nao = aplicar_fixes({"nome:x": fake_app("X")}, {"App Fantasma": {"repo": "https://github.com/a/b"}})
+        self.assertEqual(nao, ["App Fantasma"])
+
+    def test_fixes_vazio_e_chave_interna_ignoradas(self):
+        self.assertEqual(aplicar_fixes({}, {}), [])
+        self.assertEqual(aplicar_fixes({}, {"_comentario": {"nota": "x"}}), [])
+        self.assertEqual(aplicar_fixes({}, {"Quebra": "não-dict"}), [])
+
+
+class TestBuscaServivel(unittest.TestCase):
+    """Resultado da busca (positivo ou negativo) fica 30 dias no repo-cache."""
+
+    def test_cache_do_dia_e_servivel(self):
+        ce = {"repo_url": None, "erro": "sem match", "ts": datetime.now(timezone.utc).strftime("%Y-%m-%d")}
+        self.assertTrue(busca_servivel(ce))
+
+    def test_cache_velho_rejeta(self):
+        self.assertFalse(busca_servivel({"repo_url": "https://github.com/a/b", "ts": "2020-01-01"}))
+
+    def test_nada_no_cache_rejeta(self):
+        self.assertFalse(busca_servivel(None))
+        self.assertFalse(busca_servivel({}))
+
+    def test_ts_garbage_rejeta(self):
+        self.assertFalse(busca_servivel({"ts": "ontem"}))
+
+
+class TestLookupBuscaRepo(unittest.TestCase):
+    """Resgate pela API de busca: 'http_get' fake — sem rede."""
+
+    def setUp(self):
+        self._http = gerar.http_get
+        self._gh = gerar.gh_token
+
+    def tearDown(self):
+        gerar.http_get = self._http
+        gerar.gh_token = self._gh
+
+    def test_acha_e_cacheia(self):
+        gerar.gh_token = lambda: "tok"
+        corpo = json.dumps({"items": [{"full_name": "dev1/VPhoneOS-App", "stargazers_count": 7}]})
+        gerar.http_get = lambda *a, **k: (corpo, {"x-ratelimit-remaining": "30"})
+        cache, rate = {}, {"stop": False}
+        url = lookup_busca_repo("VPhoneOS", cache, rate)
+        self.assertEqual(url, "https://github.com/dev1/VPhoneOS-App")
+        self.assertTrue(busca_servivel(cache["busca@vphoneos"]))
+        # segunda chamada vai pro cache (http fake não deve rodar de novo)
+        gerar.http_get = lambda *a, **k: (_ for _ in ()).throw(AssertionError("não devia refetch"))
+        self.assertEqual(lookup_busca_repo("VPhoneOS", cache, rate),
+                         "https://github.com/dev1/VPhoneOS-App")
+
+    def test_sem_match_fica_negativo_no_cache(self):
+        gerar.gh_token = lambda: None
+        gerar.http_get = lambda *a, **k: ('{"items": []}', {"x-ratelimit-remaining": "30"})
+        cache, rate = {}, {"stop": False}
+        self.assertIsNone(lookup_busca_repo("LocalDream", cache, rate))
+        self.assertEqual(cache["busca@localdream"].get("erro"), "sem match")
+
+    def test_erro_transitorio_nao_cach_eia(self):
+        gerar.gh_token = lambda: None
+        gerar.http_get = lambda *a, **k: (_ for _ in ()).throw(urllib.error.URLError("rede"))
+        cache, rate = {}, {"stop": False}
+        self.assertIsNone(lookup_busca_repo("Snapseed", cache, rate))
+        self.assertNotIn("busca@snapseed", cache)
+
+    def test_rate_limit_para_o_loop(self):
+        gerar.gh_token = lambda: None
+        gerar.http_get = lambda *a, **k: ('{"items": []}', {"x-ratelimit-remaining": "1"})
+        cache, rate = {}, {"stop": False}
+        self.assertIsNone(lookup_busca_repo("WARP", cache, rate))
+        self.assertTrue(rate["stop"])
 
 
 if __name__ == "__main__":
