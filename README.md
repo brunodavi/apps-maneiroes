@@ -1,7 +1,7 @@
 # Apps Maneirões
 
 Página de busca dos apps citados nos vídeos de aplicativos do canal
-[VegaData](https://www.youtube.com/@VegaData_c) — sem chave de API, sem dependências.
+[VegaData](https://youtube.com/@vegadata) — sem chave de API, sem dependências.
 
 ## Como funciona
 
