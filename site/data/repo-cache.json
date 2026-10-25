@@ -1,0 +1,5669 @@
+{
+ "fdroid@com.aurora.adroid": {
+  "descricao_repo": "An alternative to the default F-Droid app",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@com.bearinmind.equalizer314": {
+  "descricao_repo": "System-wide EQ with multiband compression, limiter, and audio-visual feedback.",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@com.foxdebug.acode": {
+  "descricao_repo": "Code editor for Android with Linux terminal, Git, plugins and AI tools.",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@com.kunzisoft.keepass.libre": {
+  "descricao_repo": "Manage Passkey / Password in a local and open-source vault",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@com.tachibana.downloader": {
+  "descricao_repo": "Download Navi is a free and Open Source download manager for Android 4.4+",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@com.tananaev.calculator": {
+  "descricao_repo": "Move your Calculator into the notification drawer",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@com.termux": {
+  "descricao_repo": "Terminal emulator with packages",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@de.markusfisch.android.binaryeye": {
+  "descricao_repo": "QR code and barcode scanner with no ads",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@dev.marchello.sharik": {
+  "descricao_repo": "An open-source, cross-platform solution for sharing files within a local network",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@dev.patrickgold.florisboard": {
+  "descricao_repo": "An open-source keyboard which respects your privacy. Currently in beta.",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@io.github.muntashirakon.AppManager": {
+  "descricao_repo": "A fully-featured package manager for android.",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@is.xyz.mpv": {
+  "descricao_repo": "Listen to music and watch videos",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@net.sourceforge.opencamera": {
+  "descricao_repo": "Camera App",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@nya.kitsunyan.foxydroid": {
+  "descricao_repo": "Yet another F-Droid client",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@org.fdroid.fdroid": {
+  "descricao_repo": "The app store that respects freedom and privacy",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@org.proninyaroslav.libretorrent": {
+  "descricao_repo": "Copylefted libre software torrent client.",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "fdroid@org.videolan.vlc": {
+  "descricao_repo": "The best video and music player. Fast and “just works”, plays any file",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "repo@https://codeberg.org/Loowiz/PhotoSwooper": {
+  "descricao_repo": "A dating app for ur photos & videos! <3",
+  "git_atualizado": null,
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 43,
+  "tags": [
+   "android",
+   "android-app",
+   "android-application",
+   "file-cleanup",
+   "kotlin",
+   "photos"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://codeberg.org/fynngodau/usageDirect": {
+  "descricao_repo": "Android app to read out usage statistics from system",
+  "git_atualizado": null,
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 29,
+  "tags": [
+   "android",
+   "f-droid",
+   "app",
+   "statistics",
+   "chart"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://codeberg.org/gardockt/termux-terminal-widget": {
+  "descricao_repo": "Android widget that displays output of a shell command using Termux",
+  "git_atualizado": null,
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 14,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://codeberg.org/s1m/savertuner": {
+  "descricao_repo": "Extension to the built-in Android Battery Saver",
+  "git_atualizado": null,
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 58,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://codeberg.org/y20k/stayput": {
+  "descricao_repo": "Stay Put - Unplug Alert",
+  "git_atualizado": null,
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 28,
+  "tags": [
+   "android",
+   "security"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/1fexd/LinkSheet": {
+  "descricao_repo": "Link handling for modern Android",
+  "git_atualizado": "2026-10-20",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "NOASSERTION",
+  "stars": 2154,
+  "tags": [
+   "android",
+   "link",
+   "share",
+   "browser",
+   "material3"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/2bllw8/anemo": {
+  "descricao_repo": "Local private storage for Android",
+  "git_atualizado": "2026-06-01",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 326,
+  "tags": [
+   "java",
+   "android-app",
+   "storage"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/6eero/NewPass": {
+  "descricao_repo": "🔐 NewPass is a free and open source password manager which will allow you to generate and store your passwords securely, saving them locally and encrypting them on your phone's memory",
+  "git_atualizado": "2024-08-16",
+  "homepage": "http://www.newpass.solutions/",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 262,
+  "tags": [
+   "android",
+   "password",
+   "password-generator",
+   "password-manager",
+   "password-store",
+   "safety",
+   "java"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/AKS-Labs/CloudGallery": {
+  "descricao_repo": "CloudGallery is an Android app that lets you instantly back up all your images to Telegram using Bot API — simple, Secure, and infinite.",
+  "git_atualizado": "2026-06-13",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 474,
+  "tags": [
+   "android",
+   "cloud-storage",
+   "foss",
+   "jetpack-compose",
+   "material-design",
+   "telegram"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Abizer-R/QuickEdit-Photo-Editor": {
+  "descricao_repo": "Lightweight and simple photo editor to quickly edit your photos.",
+  "git_atualizado": "2025-10-29",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 80,
+  "tags": [
+   "android",
+   "android-application",
+   "compose-navigation",
+   "jetpack-compose",
+   "kotlin",
+   "kotlin-android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/AhmetCanArslan/CustomAnimator": {
+  "descricao_repo": "An Android Toolbox to tweak your phone easier!",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 139,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/AhmetCanArslan/ShizuWall": {
+  "descricao_repo": "Lightweight, no vpn firewall solution for Android 11+",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 2397,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Akilesh-T/ACC": {
+  "descricao_repo": "System accent colour creator for Android Oreo & above",
+  "git_atualizado": "2023-12-27",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 98,
+  "tags": [
+   "accent-color",
+   "android-oreo",
+   "android-pie",
+   "android10",
+   "customization",
+   "kotlin-android",
+   "magisk-module"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Akylas/com.akylas.documentscanner": {
+  "descricao_repo": "Document scanning app ",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://ossdocumentscanner.akylas.fr/",
+  "idioma": "C++",
+  "licenca": "MIT",
+  "stars": 2593,
+  "tags": [
+   "android",
+   "document",
+   "document-scanner",
+   "opencv",
+   "pdf",
+   "scanner",
+   "tesseract",
+   "zxingcpp",
+   "document-scanner-app",
+   "document-scan",
+   "document-scan-to-text",
+   "document-scanning"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/AndroidLabs-org/AppListBackup": {
+  "descricao_repo": "Create a backup list of your installed Android apps as HTML, CSV or Markdown. Works with Tasker and broadcast intents. No root needed.",
+  "git_atualizado": "2026-10-09",
+  "homepage": "https://f-droid.org/packages/org.androidlabs.applistbackup/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 189,
+  "tags": [
+   "android",
+   "app-list",
+   "backup",
+   "csv",
+   "f-droid",
+   "jetpack-compose",
+   "kotlin",
+   "markdown",
+   "open-source",
+   "tasker"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/AnsahMohammad/shots-studio": {
+  "descricao_repo": "An AI Powered Screenshot manager for Android",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://ansahmohammad.github.io/shots-studio/",
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 690,
+  "tags": [
+   "ai",
+   "flutter",
+   "screenshots"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Anthonyy232/Paperize": {
+  "descricao_repo": "Paperize is a modern fully offline dynamic wallpaper changer application built for Android using Kotlin, Jetpack Compose, and Material 3",
+  "git_atualizado": "2026-10-22",
+  "homepage": "https://anthonyy232.github.io/Paperize/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1252,
+  "tags": [
+   "android",
+   "androidapp",
+   "jetpack-compose",
+   "kotlin",
+   "material-design",
+   "material-ui",
+   "mvvm",
+   "wallpaper",
+   "wallpaper-app",
+   "wallpaper-changer",
+   "wallpapers",
+   "modern-ui"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Arian04/android-hid-client": {
+  "descricao_repo": "Android app that allows you to use your phone as a keyboard and mouse WITHOUT any software on the other end (Requires root)",
+  "git_atualizado": "2026-09-20",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 453,
+  "tags": [
+   "android",
+   "configfs",
+   "gadgetfs",
+   "hid",
+   "usb",
+   "usb-gadget",
+   "usb-hid"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/BLE-Research-Group/MetaRadar": {
+  "descricao_repo": "A tool for BLE environment monitoring. Find and track Bluetooth devices around, create custom filters, get notified when the BLE fingerprint you are looking for is around.",
+  "git_atualizado": "2026-01-22",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1578,
+  "tags": [
+   "android",
+   "android-ble",
+   "ble",
+   "bluetooth",
+   "scanner",
+   "security-scanner",
+   "security-tools",
+   "radar"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/BLumia/pineapple-lock-screen": {
+  "descricao_repo": "Turn the screen off without using the physical power button.",
+  "git_atualizado": "2026-10-17",
+  "homepage": "https://link.blumia.net/lockscreenplus-playstore",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 68,
+  "tags": [
+   "android",
+   "jetpack-compose"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/BURG3R5/NotiFilter": {
+  "descricao_repo": "Silence annoying notifications",
+  "git_atualizado": "2026-10-09",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 247,
+  "tags": [
+   "android",
+   "do-not-disturb",
+   "notifications",
+   "automation"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/BinTianqi/OwnDroid": {
+  "descricao_repo": "使用安卓Device owner特权管理你的设备。Use Android Device owner privilege to manage your device.",
+  "git_atualizado": "2026-10-17",
+  "homepage": "https://bintianqi.com/OwnDroid",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1443,
+  "tags": [
+   "android",
+   "device-owner",
+   "kotlin"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Binondi/Calculator-Hide-Files": {
+  "descricao_repo": "Open-source Android vault app to hide photos, videos, audio, notes & documents securely with AES encryption",
+  "git_atualizado": "2026-09-12",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 214,
+  "tags": [
+   "android",
+   "kotlin",
+   "encryption",
+   "aes-encryption",
+   "android-apps",
+   "file-vault",
+   "hide-files",
+   "hide-photos",
+   "material-you",
+   "notes-app",
+   "open-source",
+   "privacy"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/BioHazard786/Alternate": {
+  "descricao_repo": "📞 Privacy-focused caller ID React Native app. Identify unknown callers locally without cluttering your main contacts. Built with Expo, Material Design 3, and custom native modules.",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": "TypeScript",
+  "licenca": "MIT",
+  "stars": 198,
+  "tags": [
+   "caller-id",
+   "expo",
+   "material-design",
+   "material-design-3",
+   "native-module",
+   "privacy",
+   "react-native",
+   "room",
+   "room-database",
+   "sqlite",
+   "typescript"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/BitMavrick/Lumolight": {
+  "descricao_repo": "Simple, modern & easy-to-use flashlight app that comes with a ton of features.",
+  "git_atualizado": "2026-03-10",
+  "homepage": "https://play.google.com/store/apps/details?id=com.bitmavrick.lumolight",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 175,
+  "tags": [
+   "android",
+   "flashlight",
+   "jetpack-compose",
+   "kotlin",
+   "kotlin-android",
+   "native-apps",
+   "lumolight",
+   "android-flashlight",
+   "flashlight-app",
+   "open-source",
+   "mvvm",
+   "material3-expressive"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/BlackyHawky/Clock": {
+  "descricao_repo": "Customizable, privacy‑first, open-source clock app inspired by AOSP Clock",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 1163,
+  "tags": [
+   "alarm",
+   "aosp-clock",
+   "clock",
+   "screensaver",
+   "stopwatch",
+   "timer",
+   "clock-java",
+   "analog-clock",
+   "digital-clock",
+   "android",
+   "fdroid",
+   "foss"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Bnyro/TranslateYou": {
+  "descricao_repo": "Privacy focused translator app built with MD3",
+  "git_atualizado": "2026-07-04",
+  "homepage": "https://you-apps.net",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1561,
+  "tags": [
+   "android",
+   "kotlin",
+   "translate"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/BugeStudioTeam/Buge-Files": {
+  "descricao_repo": "Buge Files is a modern Android file manager built with Material Design 3 Expressive.",
+  "git_atualizado": "2026-10-21",
+  "homepage": "https://bugestudio.website/files/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 36,
+  "tags": [
+   "android",
+   "android-application",
+   "buge",
+   "file-manager",
+   "material-design",
+   "material3",
+   "tools"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/CasperVerswijvelt/Better-Internet-Tiles": {
+  "descricao_repo": "Bring back Wi-Fi and mobile data tiles on Android 12 or higher + a better unified internet tile",
+  "git_atualizado": "2025-05-12",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 261,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Chainfire/HoleyLight": {
+  "descricao_repo": "Notification LED for Samsung/Pixel phones with in-screen camera cut-out (punch-hole)",
+  "git_atualizado": "2023-10-24",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "NOASSERTION",
+  "stars": 198,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Chainfire/liveboot": {
+  "descricao_repo": "Sources for the LiveBoot app for rooted Android devices",
+  "git_atualizado": "2024-03-11",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "NOASSERTION",
+  "stars": 296,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/CookieJarApps/SmartCookieWeb": {
+  "descricao_repo": "A customisable, open source web browser for Android.",
+  "git_atualizado": "2026-07-05",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MPL-2.0",
+  "stars": 358,
+  "tags": [
+   "android",
+   "kotlin",
+   "browser",
+   "java"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/CookieJarApps/SmartCookieWeb-Preview": {
+  "descricao_repo": "SmartCookieWeb, redesigned using GeckoView",
+  "git_atualizado": "2026-07-05",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MPL-2.0",
+  "stars": 353,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/DP-Hridayan/aShellYou": {
+  "descricao_repo": "A material you designed app for your ADB needs",
+  "git_atualizado": "2026-10-25",
+  "homepage": "http://ashellyou.github.io",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 2516,
+  "tags": [
+   "adb",
+   "android",
+   "material-design",
+   "otg",
+   "shell",
+   "shizuku",
+   "hridayan",
+   "magisk",
+   "root",
+   "wireless-debugging",
+   "scrcpy"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/DarkMooNight/Rain": {
+  "descricao_repo": "🌦️ Weather application",
+  "git_atualizado": "2026-10-19",
+  "homepage": null,
+  "idioma": "Dart",
+  "licenca": "MIT",
+  "stars": 1090,
+  "tags": [
+   "android",
+   "dart",
+   "mobile",
+   "flutter",
+   "flutter-app",
+   "weather",
+   "weather-app",
+   "open-meteo",
+   "open-meteo-api",
+   "app",
+   "application",
+   "weatherapp"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/DennisBauer/RecurringExpenseTracker": {
+  "descricao_repo": "A Material You recurring expense tracker, allowing you to keep track of your monthly spending.",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 407,
+  "tags": [
+   "android-app",
+   "expense-manager",
+   "expense-tracker",
+   "expense-tracker-app",
+   "material-design",
+   "money-manager",
+   "money-tracker",
+   "material-ui",
+   "materialyou",
+   "kotlin",
+   "kotlin-android",
+   "expensetracker"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/DrMint/Litrato": {
+  "descricao_repo": "Android photo editing app with various filters and tools. Included advanced features like masking, histogram, color picker, EXIF viewer...",
+  "git_atualizado": "2024-12-30",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "MIT",
+  "stars": 112,
+  "tags": [
+   "android-studio",
+   "image-processing",
+   "image-editing",
+   "java",
+   "android-app",
+   "android-application",
+   "gaussian-blur",
+   "laplacian-filter",
+   "photo-editing",
+   "renderscript",
+   "histogram",
+   "exif-metadata"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Droid-Deck/DroidDeck": {
+  "descricao_repo": "DroidDeck brings the SteamOS experience to Android",
+  "git_atualizado": "2026-10-25",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 13934,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Droid-ify/client": {
+  "descricao_repo": "Clutterfree F-Droid client, [mirror] https://codeberg.org/droidify/client",
+  "git_atualizado": "2026-09-12",
+  "homepage": "https://droidify.app/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 7637,
+  "tags": [
+   "android",
+   "fdroid",
+   "android-application",
+   "kotlin",
+   "kotlin-android",
+   "kotlin-flow"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Dweep4269/sideraven": {
+  "descricao_repo": "Iceraven fork with a Zen Browser- inspired vertical tab sidebar for Android tablets (not affiliated with Zen Browser or Mozilla)",
+  "git_atualizado": "2026-10-14",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MPL-2.0",
+  "stars": 136,
+  "tags": [
+   "android",
+   "browser",
+   "firefox",
+   "iceraven",
+   "tablet",
+   "zen",
+   "zen-browser"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Earendel-lab/Tapbar": {
+  "descricao_repo": "Launch any app or trigger quick actions from the status bar or anywhere on your screen.",
+  "git_atualizado": "2026-10-22",
+  "homepage": "https://earendel-lab.github.io/Tapbar/",
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 184,
+  "tags": [
+   "android",
+   "app-launcher",
+   "customization",
+   "gesture",
+   "statusbar-app",
+   "productivity",
+   "quick-launcher",
+   "tasker",
+   "kotlin",
+   "fdroid",
+   "clock"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/EiSiMo/howmany": {
+  "descricao_repo": "Count Objects in Photos",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 8,
+  "tags": [
+   "ai",
+   "android",
+   "app",
+   "computer-vision",
+   "counting",
+   "image",
+   "photo"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/EtchDroid/EtchDroid": {
+  "descricao_repo": "An application to write OS images to USB drives, on Android, no root required.",
+  "git_atualizado": "2026-10-09",
+  "homepage": "https://etchdroid.app/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 3570,
+  "tags": [
+   "android",
+   "usb",
+   "iso",
+   "gnu-linux",
+   "linux",
+   "kotlin",
+   "mass-storage-device"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/EvanKoe/expressive-cutout": {
+  "descricao_repo": "This app aims to recreate Apple's dynamic island for Android, but this time, following Google's Material Expressive design. ",
+  "git_atualizado": "2026-10-20",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 218,
+  "tags": [
+   "andoid",
+   "andoid-app",
+   "andoird",
+   "dynamic-island",
+   "dynamic-island-android",
+   "dynamic-island-android-full-application",
+   "jetpack-android",
+   "jetpack-compose",
+   "jetpackcompose",
+   "kotlin",
+   "kotlin-android",
+   "material-design"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/ExTV/Podroid": {
+  "descricao_repo": "A rootless Android app that boots Alpine Linux: run containers (Podman/Docker/LXC) and GUI desktop apps.",
+  "git_atualizado": "2026-10-20",
+  "homepage": "https://extv.github.io/Podroid/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-2.0",
+  "stars": 3609,
+  "tags": [
+   "android-app",
+   "linux",
+   "shell",
+   "virtual-machine",
+   "android-virtualization-framework"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/F0x1d/LogFox": {
+  "descricao_repo": "Yet another LogCat reader for Android",
+  "git_atualizado": "2026-10-15",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1369,
+  "tags": [
+   "log",
+   "logcat",
+   "logcat-viewer",
+   "logcatviewer",
+   "logging",
+   "logs"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/FoedusProgramme/Omni": {
+  "descricao_repo": "A useful and handy Android minimalist toolbox.",
+  "git_atualizado": "2025-10-04",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 295,
+  "tags": [
+   "android",
+   "compass",
+   "flashlight",
+   "material-design",
+   "spirit-level",
+   "toolbox"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/FreezeYou/FreezeYou": {
+  "descricao_repo": "支持 ROOT、免 ROOT 与系统应用模式",
+  "git_atualizado": "2026-10-03",
+  "homepage": "https://www.zidon.net",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 274,
+  "tags": [
+   "android",
+   "freezeyou",
+   "freezeyou-api",
+   "java",
+   "java-android",
+   "kotlin",
+   "kotlin-android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/G-Ray/pikatorrent": {
+  "descricao_repo": "Pick a Torrent, stream and download on all your devices",
+  "git_atualizado": "2026-08-21",
+  "homepage": "https://www.pikatorrent.com",
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 1026,
+  "tags": [
+   "linux",
+   "p2p",
+   "windows",
+   "android",
+   "torrent",
+   "flutter",
+   "bittorrent",
+   "bittorrent-client",
+   "transmission"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/GPLaider/Ventoid": {
+  "descricao_repo": "Android OTG Ventoy-style USB writer - GPL-3.0-only, ad-free, available on F-Droid",
+  "git_atualizado": "2026-10-13",
+  "homepage": "https://f-droid.org/packages/com.ventoid.app/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 401,
+  "tags": [
+   "android",
+   "android-otg",
+   "bootable-usb",
+   "fdroid",
+   "foss",
+   "gplv3",
+   "kotlin",
+   "otg",
+   "usb",
+   "ventoy"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Galaxy-rio/GraceLauncher": {
+  "descricao_repo": "An open-source Android launcher inspired by the design of Niagara Launcher",
+  "git_atualizado": "2026-10-25",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 191,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Genymobile/gnirehtet": {
+  "descricao_repo": "Gnirehtet provides reverse tethering for Android",
+  "git_atualizado": "2024-08-11",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "Apache-2.0",
+  "stars": 8017,
+  "tags": [
+   "android",
+   "reverse-tethering",
+   "vpn",
+   "java-8",
+   "rust",
+   "genyteam-system"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Genymobile/scrcpy": {
+  "descricao_repo": "Display and control your Android device",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "C",
+  "licenca": "Apache-2.0",
+  "stars": 153063,
+  "tags": [
+   "android",
+   "c",
+   "sdl2",
+   "libav",
+   "ffmpeg",
+   "screen",
+   "mirroring",
+   "recording",
+   "genyteam-system"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Goodwy/Gallery": {
+  "descricao_repo": null,
+  "git_atualizado": "2026-05-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 197,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Helium314/HeliBoard": {
+  "descricao_repo": "Customizable and privacy-conscious open-source keyboard",
+  "git_atualizado": "2026-10-18",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 6410,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Horizontal-org/Tella-Android": {
+  "descricao_repo": "The Android version of our app Tella. Tella is a mobile app designed to protect human rights defenders, advocates, and journalists by encrypting and hiding their sensitive data and safely uploading it to their organization's server.",
+  "git_atualizado": "2026-10-20",
+  "homepage": "https://tella-app.org/",
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 115,
+  "tags": [
+   "hacktoberfest",
+   "humanitarian",
+   "human-rights",
+   "privacy",
+   "censorship-resistance"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/IacobIonut01/Gallery": {
+  "descricao_repo": "Media Gallery app for Android made with Jetpack Compose",
+  "git_atualizado": "2026-10-22",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 2940,
+  "tags": [
+   "android",
+   "android-gallery",
+   "gallery",
+   "jetpack-compose",
+   "kotlin"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/IacobIonut01/ReFra": {
+  "descricao_repo": "Media Gallery app for Android made with Jetpack Compose",
+  "git_atualizado": "2026-10-22",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 2940,
+  "tags": [
+   "android",
+   "android-gallery",
+   "gallery",
+   "jetpack-compose",
+   "kotlin"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/ImranR98/Obtainium": {
+  "descricao_repo": "Get Android app updates straight from the source.",
+  "git_atualizado": "2026-10-25",
+  "homepage": "https://obtainium.imranr.dev",
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 20824,
+  "tags": [
+   "android",
+   "apk",
+   "foss",
+   "github",
+   "gitlab",
+   "privacy",
+   "security",
+   "update-checker",
+   "updater",
+   "apk-update",
+   "github-apk-updater",
+   "obtainium"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Imtiaz-Official/Smart-Edge": {
+  "descricao_repo": null,
+  "git_atualizado": "2026-06-13",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 437,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Inefy-03/Melox": {
+  "descricao_repo": "觅律，一个基于 Miuix 的 Android 本地音乐播放器",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 78,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/JackEblan/Geto": {
+  "descricao_repo": "Apply device settings to your apps.",
+  "git_atualizado": "2026-09-02",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1306,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/JonasBernard/FakeStandby": {
+  "descricao_repo": "An Android app for turning the screen off while keeping apps running.",
+  "git_atualizado": "2026-07-11",
+  "homepage": "https://fakestandby.jonasbernard.de",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 561,
+  "tags": [
+   "android",
+   "smartphones",
+   "battery-life",
+   "android-app",
+   "f-droid"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/JoshAtticus/Compressor": {
+  "descricao_repo": "Lightning fast, ad free, super lightweight native video compressor for Android",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://compressor.joshattic.us/",
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 769,
+  "tags": [
+   "android",
+   "compression",
+   "kotlin",
+   "media3",
+   "video",
+   "jetpack-compose",
+   "compressor"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Julow/Unexpected-Keyboard": {
+  "descricao_repo": "A lightweight keyboard for Android",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 3319,
+  "tags": [
+   "android",
+   "keyboard",
+   "lightweight"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Kenneth-Cho-InfoSec/Solipsism": {
+  "descricao_repo": "Innovative Android browser. Built-in adblock, antivirus, servo & more.",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://kenneth-cho-infosec.github.io/Solipsism/",
+  "idioma": "Kotlin",
+  "licenca": "MPL-2.0",
+  "stars": 225,
+  "tags": [
+   "android-application",
+   "android-package",
+   "browser",
+   "material-ui",
+   "material3",
+   "privacy"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/KieronQuinn/AmbientMusicMod": {
+  "descricao_repo": "Port of Now Playing from Pixels to other Android devices",
+  "git_atualizado": "2024-09-07",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 2522,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/KieronQuinn/DarQ": {
+  "descricao_repo": "DarQ provides a per-app selectable force dark option for Android 10 and above",
+  "git_atualizado": "2023-09-01",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 1677,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/KieronQuinn/Smartspacer": {
+  "descricao_repo": "Smartspacer is a customisable widget for Android, but with a difference: It can upgrade the built in At a Glance on Pixels - without root!",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 3572,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Kin69/EasyNotes": {
+  "descricao_repo": "EasyNotes: Jetpack Compose MVVM for seamless note-taking. Effortless creation, editing, and organization.",
+  "git_atualizado": "2026-01-25",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1078,
+  "tags": [
+   "android",
+   "dynamic",
+   "foss",
+   "free",
+   "jetpack",
+   "kotlin",
+   "material",
+   "notes",
+   "opensource"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Koizeay/Toolbox": {
+  "descricao_repo": "Toolbox Flutter App by Koizeay",
+  "git_atualizado": "2026-09-13",
+  "homepage": "https://jtu.me/@toolbox",
+  "idioma": "Dart",
+  "licenca": "MPL-2.0",
+  "stars": 124,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/LSafer/edgeseek": {
+  "descricao_repo": "The Source Code of Edge Seek",
+  "git_atualizado": "2025-11-19",
+  "homepage": "https://lsafer.net/edgeseek",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 432,
+  "tags": [
+   "android",
+   "application"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Leonidius20/RecordingStudio": {
+  "descricao_repo": "Audio recorder app for Android",
+  "git_atualizado": "2026-10-02",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 174,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/LinerSRT/SensorsOff": {
+  "descricao_repo": "Return of the manufacturer-deleted SensorsOff tile. If your phone manufacturer absolutely wants to spy on you (Hi Xiaomi :)) and you can't do anything about it, just use this application. Requires Shizuku!",
+  "git_atualizado": "2023-09-17",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": null,
+  "stars": 108,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Lucchetto/SuperImage": {
+  "descricao_repo": "Sharpen your low-resolution pictures with the power of AI upscaling",
+  "git_atualizado": "2023-11-09",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1638,
+  "tags": [
+   "android",
+   "mnn",
+   "real-esrgan",
+   "super-resolution",
+   "upscaling",
+   "image-processing",
+   "compose"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/M66B/FairEmail": {
+  "descricao_repo": "Fully featured, open source, privacy friendly email app for Android",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://email.faircode.eu/",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 4722,
+  "tags": [
+   "email",
+   "privacy",
+   "security",
+   "android",
+   "app"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/M66B/NetGuard": {
+  "descricao_repo": "A simple way to block access to the internet per app",
+  "git_atualizado": "2026-08-01",
+  "homepage": "http://www.netguard.me/",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 3944,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/MM2-0/Kvaesitso": {
+  "descricao_repo": "A search-focused Android launcher",
+  "git_atualizado": "2026-10-22",
+  "homepage": "https://kvaesitso.mm20.de/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 5300,
+  "tags": [
+   "android",
+   "launcher",
+   "jetpack-compose",
+   "kotlin"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Mahmud0808/ColorBlendr": {
+  "descricao_repo": "An Android app for customizing Material You colors on devices with Android 12+. It lets you tweak accent colors, background saturation, and more for a personalized look.",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://mahmud0808.github.io/ColorBlendr/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 2549,
+  "tags": [
+   "accent-color",
+   "color-scheme",
+   "material",
+   "saturation",
+   "theme-ui"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Mahmud0808/TeleDrive": {
+  "descricao_repo": "Turn a private Telegram channel into your personal cloud drive. Android, Windows, Linux and macOS, auto backup, optional E2E encryption, built-in file manager and player.",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://mahmud0808.github.io/TeleDrive/",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 366,
+  "tags": [
+   "android",
+   "backup",
+   "cloud-storage",
+   "compose-multiplatform",
+   "encryption",
+   "file-manager",
+   "jetpack-compose",
+   "kotlin",
+   "kotlin-multiplatform",
+   "material-you",
+   "tdlib",
+   "telegram"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/MobileFirstLLC/irregular-expressions": {
+  "descricao_repo": "Android virtual keyboard for expressive typing",
+  "git_atualizado": "2026-10-20",
+  "homepage": "https://play.google.com/store/apps/details?id=mf.asciitext.lite",
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 169,
+  "tags": [
+   "ime",
+   "virtual-keyboard",
+   "android",
+   "typing",
+   "unicode"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/MuntashirAkon/AppManager": {
+  "descricao_repo": "A full-featured package manager and viewer for Android",
+  "git_atualizado": "2026-10-19",
+  "homepage": "http://muntashir.dev/AppManager/",
+  "idioma": "Java",
+  "licenca": "NOASSERTION",
+  "stars": 9328,
+  "tags": [
+   "material-design",
+   "package-manager",
+   "android",
+   "apks",
+   "adb"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/MuntashirAkon/BatteryChargeLimiter": {
+  "descricao_repo": "Limit battery charging on Android",
+  "git_atualizado": "2024-07-16",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 305,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/MuntashirAkon/SetEdit": {
+  "descricao_repo": "Open source version of the original Settings Database Editor",
+  "git_atualizado": "2025-07-21",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 591,
+  "tags": [
+   "android",
+   "material-design",
+   "settings",
+   "hacktoberfest"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Mystery00/PixelMeter": {
+  "descricao_repo": "Pixel Meter is a network speed monitor application designed specifically for Google Pixel and native Android devices.",
+  "git_atualizado": "2026-10-08",
+  "homepage": "https://pixel.mystery0.app",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 160,
+  "tags": [
+   "netspeed",
+   "pixel",
+   "tool"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Nandanrmenon/florid": {
+  "descricao_repo": "F-Droid Client",
+  "git_atualizado": "2026-09-07",
+  "homepage": "https://www.nandanmenon.dev/florid",
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 520,
+  "tags": [
+   "android",
+   "android-store",
+   "fdroid",
+   "flutter",
+   "flutter-apps"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/OpenHub-Store/GitHub-Store": {
+  "descricao_repo": "🩵 A free, open-source app store for developers' releases on GitHub, Codeberg & Forgejo — browse, discover, and install apps with one click. Formerly GitHub Store.",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://www.komistore.app",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 19831,
+  "tags": [
+   "android",
+   "kotlin",
+   "kotlin-multiplatform",
+   "linux",
+   "macos",
+   "windows",
+   "app-store",
+   "compose-multiplatform",
+   "jetpack-compose",
+   "privacy"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/PhilippC/keepass2android": {
+  "descricao_repo": "Password manager app for Android",
+  "git_atualizado": "2026-10-19",
+  "homepage": "https://play.google.com/store/apps/details?id=keepass2android.keepass2android",
+  "idioma": "C#",
+  "licenca": "GPL-3.0",
+  "stars": 6322,
+  "tags": [
+   "password-manager",
+   "android",
+   "keepass",
+   "keepass2",
+   "keepass2android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/PimpinPumpkin/Vela": {
+  "descricao_repo": "Maps and turn-by-turn navigation for Android without Google Play Services: the best of open map data, with Google lookups by choice. Runs on degoogled phones and can avoid Flock cameras",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://velamaps.org",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 2142,
+  "tags": [
+   "alpr",
+   "android",
+   "android-auto",
+   "degoogle",
+   "degoogled",
+   "flock",
+   "foss",
+   "google-maps",
+   "google-maps-alternative",
+   "grapheneos",
+   "jetpack-compose",
+   "maplibre"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/PotatoProject/Leaflet": {
+  "descricao_repo": "POSP official notes app, soon to be included",
+  "git_atualizado": "2022-11-07",
+  "homepage": "https://potatoproject.co",
+  "idioma": "Dart",
+  "licenca": "MIT",
+  "stars": 368,
+  "tags": [
+   "flutter",
+   "notes-app",
+   "material-design",
+   "posp",
+   "moor",
+   "cross-platform",
+   "android",
+   "windows",
+   "macos",
+   "linux"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/PranavPurwar/AppLock": {
+  "descricao_repo": "[NOTE: Moved to aload0/AppLock]",
+  "git_atualizado": "2026-02-19",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 26,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/PranavPurwar/Reef": {
+  "descricao_repo": "Reef helps you stay focused by blocking distracting apps, setting daily routines, and giving you insights into your screen time — all without ads, clutter, or tracking.",
+  "git_atualizado": "2026-10-11",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": null,
+  "stars": 361,
+  "tags": [
+   "digital-wellbeing",
+   "minimal",
+   "productivity",
+   "distraction-blocker",
+   "focus",
+   "focus-mode",
+   "productivity-tools",
+   "screentime",
+   "automation",
+   "blocking",
+   "digital-control",
+   "habit-tracking"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/PranshulGG/RecordMaster": {
+  "descricao_repo": "Material expressive Record app for android 🎤⏺️",
+  "git_atualizado": "2026-01-11",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 111,
+  "tags": [
+   "material-design",
+   "material-expressive",
+   "open-source",
+   "recording",
+   "voice"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/PranshulGG/WeatherMaster": {
+  "descricao_repo": "A Weather app for android with multiple sources 🌦🌞☔",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 3153,
+  "tags": [
+   "android",
+   "weather",
+   "javascript",
+   "api",
+   "java",
+   "ipgeolocation-api",
+   "leaflet",
+   "openweathermap-api",
+   "rain",
+   "visualcrossingwebservices",
+   "open-meteo",
+   "open-source"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/ProfessorQuantumUniverse/reReminder": {
+  "descricao_repo": "🔔 The ultimate recurring reminder app for Android. Set intervals, enable Text-to-Speech, customize vibration, and never lose track of time again. FOSS, lightweight, and privacy-first.",
+  "git_atualizado": "2026-10-12",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 34,
+  "tags": [
+   "status-active"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/RBN-Apps/Quick-Tile-Settings": {
+  "descricao_repo": "An Android app that supplies Quick Settings tiles for toggling system preferences. It currently offers Private DNS (Off/Auto/Different Hostnames) and USB Debugging (On/Off) with optional auto-revert.",
+  "git_atualizado": "2026-10-01",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 443,
+  "tags": [
+   "android",
+   "jetpack-compose",
+   "kotlin",
+   "meterial3",
+   "private-dns",
+   "quick-settings-tile",
+   "usb-debugging"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Raival-e/File-Explorer": {
+  "descricao_repo": "An Android file explorer",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "parcial": true,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "repo@https://github.com/Raival-e/File-Explorer-Compose": {
+  "descricao_repo": "A modern, feature-rich, and lightweight file manager for Android, built entirely with Kotlin and Jetpack Compose.",
+  "git_atualizado": "2026-05-28",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1383,
+  "tags": [
+   "android",
+   "fileexplorer",
+   "jetpack-compose",
+   "kotlin",
+   "material-ui"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Raival-e/Prism-File-Explorer": {
+  "descricao_repo": "A modern, feature-rich, and lightweight file manager for Android, built entirely with Kotlin and Jetpack Compose.",
+  "git_atualizado": "2026-05-28",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1383,
+  "tags": [
+   "android",
+   "fileexplorer",
+   "jetpack-compose",
+   "kotlin",
+   "material-ui"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/RetroMusicPlayer/RetroMusicPlayer": {
+  "descricao_repo": "Best Material You Design music player for Android",
+  "git_atualizado": "2026-10-04",
+  "homepage": "https://retromusic.app",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 5366,
+  "tags": [
+   "music-player",
+   "material-design",
+   "android-music-player",
+   "koin-android",
+   "mvvm-architecture",
+   "hacktoberfest",
+   "material-you",
+   "music",
+   "android",
+   "gssoc22"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/RikkaApps/Shizuku": {
+  "descricao_repo": "Using system APIs directly with adb/root privileges from normal apps through a Java process started with app_process.",
+  "git_atualizado": "2025-06-18",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 32105,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/RoBoT095/printnotes": {
+  "descricao_repo": "A cross-platform markdown notes app inspired by Google Keep and Obsidian, made with Flutter",
+  "git_atualizado": "2026-05-12",
+  "homepage": null,
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 164,
+  "tags": [
+   "android",
+   "dart",
+   "flutter",
+   "ios",
+   "linux",
+   "markdown",
+   "notes",
+   "notes-app",
+   "windows",
+   "crossplatform",
+   "macos"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/RohitKushvaha01/ReTerminal": {
+  "descricao_repo": "A Simple Android Terminal Emulator",
+  "git_atualizado": "2026-09-26",
+  "homepage": null,
+  "idioma": "C",
+  "licenca": "MIT",
+  "stars": 658,
+  "tags": [
+   "terminal",
+   "terminal-app",
+   "terminal-emulator",
+   "terminal-emulators",
+   "termux",
+   "adb",
+   "adb-shell",
+   "bash",
+   "shell"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/RohitKushvaha01/TaskManager": {
+  "descricao_repo": "A Task Manager for android",
+  "git_atualizado": "2026-10-01",
+  "homepage": null,
+  "idioma": "C++",
+  "licenca": "Apache-2.0",
+  "stars": 679,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/RohitKushvaha01/Xed-Editor": {
+  "descricao_repo": "Advanced Text Editor for Android ",
+  "git_atualizado": "2026-09-12",
+  "homepage": "https://xed-editor.app",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 2,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Rve27/RvKernel-Manager": {
+  "descricao_repo": "Android Kernel Manager with Material 3 Expressive Design",
+  "git_atualizado": "2026-05-11",
+  "homepage": "https://rvkernel-manager.my.id",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 258,
+  "tags": [
+   "kernel-manager",
+   "material-3-expressive",
+   "material-design",
+   "rvkernel-manager",
+   "android-application"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Rve27/RvSystem-Monitor": {
+  "descricao_repo": "Modern Android system monitoring app using Jetpack Compose and Rust",
+  "git_atualizado": "2026-10-20",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 170,
+  "tags": [
+   "android",
+   "jetpack-compose",
+   "kotlin",
+   "material-design",
+   "material3-expressive",
+   "rust",
+   "system-monitor"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Sanmeet007/logger": {
+  "descricao_repo": "Logger is a Flutter-based Android app that enables you to view and export call logs in CSV or JSON format and perform lightweight on-device analysis.",
+  "git_atualizado": "2026-07-02",
+  "homepage": "https://f-droid.org/packages/com.logger.app",
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 182,
+  "tags": [
+   "andriod",
+   "call-logs",
+   "flutter",
+   "call-data-record-analysis",
+   "csv-export",
+   "csv-import",
+   "json-export",
+   "open-source",
+   "data-analysis"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/SanmerApps/PI": {
+  "descricao_repo": "PackageInstaller",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 705,
+  "tags": [
+   "android",
+   "root",
+   "shizuku",
+   "dhizuku"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/SebaUbuntu/Athena": {
+  "descricao_repo": "Open source Material You Android device info app",
+  "git_atualizado": "2026-09-07",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": null,
+  "stars": 426,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Secure-File-Manager/Secure-File-Manager": {
+  "descricao_repo": "Secure File Manager is open source file manager for keeping your files in safe.",
+  "git_atualizado": "2022-08-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 182,
+  "tags": [
+   "android",
+   "kotlin",
+   "security",
+   "filemanager",
+   "encryption"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/ShiftHackZ/Stable-Diffusion-Android": {
+  "descricao_repo": "Stable Diffusion AI client app for Android and iOS",
+  "git_atualizado": "2026-10-19",
+  "homepage": "https://sdai.moroz.cc",
+  "idioma": "Kotlin",
+  "licenca": "AGPL-3.0",
+  "stars": 1282,
+  "tags": [
+   "android",
+   "automatic1111",
+   "clean-architecture",
+   "compose",
+   "compose-ui",
+   "kotlin",
+   "multimodule-android-app",
+   "mvi",
+   "stable-diffusion",
+   "stable-diffusion-webui",
+   "viewmodel",
+   "stable-diffusion-mobile"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/ShortDevelopment/Nearby-Sharing-Windows": {
+  "descricao_repo": "Share files between android and PC via the Windows 10 / 11 built-in nearby-sharing functionality (Project Rome)",
+  "git_atualizado": "2026-10-13",
+  "homepage": "https://nearshare.shortdev.de",
+  "idioma": "C#",
+  "licenca": "GPL-3.0",
+  "stars": 898,
+  "tags": [
+   "xamarin",
+   "android",
+   "project-rome",
+   "nearby-sharing",
+   "windows-10",
+   "windows-11",
+   "hacktoberfest",
+   "nearshare",
+   "bluetooth",
+   "wifi",
+   "nearby",
+   "share"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/SimonMarquis/SleepTimer": {
+  "descricao_repo": "💤 Simplest Sleep Timer",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "parcial": true,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "repo@https://github.com/T8RIN/ImageResizer": {
+  "descricao_repo": "🖼️ Image Toolbox is a powerful app for advanced image manipulation. It offers dozens of features, from basic tools like crop and draw to filters, OCR, and a wide range of image processing options",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 15173,
+  "tags": [
+   "jetpack-compose",
+   "kotlin",
+   "android",
+   "material-you",
+   "exif",
+   "crop",
+   "f-droid",
+   "filter-image",
+   "ocr-recognition",
+   "pdf",
+   "background-removal",
+   "image-manipulation"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/T8RIN/ImageToolbox": {
+  "descricao_repo": "🖼️ Image Toolbox is a powerful app for advanced image manipulation. It offers dozens of features, from basic tools like crop and draw to filters, OCR, and a wide range of image processing options",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 15173,
+  "tags": [
+   "jetpack-compose",
+   "kotlin",
+   "android",
+   "material-you",
+   "exif",
+   "crop",
+   "f-droid",
+   "filter-image",
+   "ocr-recognition",
+   "pdf",
+   "background-removal",
+   "image-manipulation"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/TacoTheDank/Scoop": {
+  "descricao_repo": "[ADB/Root] Catches a stack trace when an app crashes unexpectedly.",
+  "git_atualizado": "2024-02-21",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "Apache-2.0",
+  "stars": 337,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/TeamAmaze/AmazeFileManager": {
+  "descricao_repo": "Material design file manager for Android",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://teamamaze.xyz",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 6443,
+  "tags": [
+   "android",
+   "mobile",
+   "frontend",
+   "java",
+   "kotlin",
+   "rxjava",
+   "mvvm",
+   "material-design",
+   "playstore",
+   "fdroid",
+   "filemanager"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/TecCheck/FastLyrics": {
+  "descricao_repo": "An app that downloads lyrics for the song, you're listening to",
+  "git_atualizado": "2025-08-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 211,
+  "tags": [
+   "android",
+   "android-app",
+   "lyrics-finder"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/TheByteArray/Convertit": {
+  "erro": 404
+ },
+ "repo@https://github.com/TheLastProject/RaiseToAnswer": {
+  "descricao_repo": "Simply hold your phone to your ear to answer an incoming call",
+  "git_atualizado": "2026-09-26",
+  "homepage": "https://play.google.com/store/apps/details?id=me.hackerchick.raisetoanswer",
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 92,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/ThePBone/RootlessJamesDSP": {
+  "descricao_repo": "An implementation of the system-wide JamesDSP audio processing engine for non-rooted Android devices",
+  "git_atualizado": "2026-08-31",
+  "homepage": null,
+  "idioma": "C",
+  "licenca": "GPL-3.0",
+  "stars": 1712,
+  "tags": [
+   "android",
+   "audio",
+   "audio-processing",
+   "convolution",
+   "dsp",
+   "effects",
+   "equalizer",
+   "non-root",
+   "rootless"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Tommy-Geenexus/exif-eraser": {
+  "descricao_repo": "Permissionless image metadata erasing application for Android",
+  "git_atualizado": "2026-10-14",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 436,
+  "tags": [
+   "android",
+   "exif-remover",
+   "google-play-store",
+   "android-app"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Trixarian/NetherSX2-classic": {
+  "descricao_repo": "Continuation of NetherSX2 based on AetherSX2 3668",
+  "git_atualizado": "2026-06-29",
+  "homepage": "https://discord.gg/xRh3NnYyMa",
+  "idioma": "HTML",
+  "licenca": "Unlicense",
+  "stars": 1220,
+  "tags": [
+   "aethersx2",
+   "android",
+   "arm64",
+   "emulator",
+   "nethersx2",
+   "pcsx2",
+   "playstation-2",
+   "ps2"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation": {
+  "descricao_repo": "Cross-platform GUI written in Rust using ADB to debloat non-rooted Android devices. Improve your privacy, the security and battery life of your device.",
+  "git_atualizado": "2026-10-19",
+  "homepage": null,
+  "idioma": "Rust",
+  "licenca": "GPL-3.0",
+  "stars": 9554,
+  "tags": [
+   "adb",
+   "android",
+   "bloatware-removal",
+   "debloat",
+   "debloater",
+   "debloating",
+   "privacy",
+   "bloatware-list"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer": {
+  "descricao_repo": "Android application to analyze Wi-Fi signals.",
+  "git_atualizado": "2026-10-03",
+  "homepage": "https://vremsoftwaredevelopment.github.io/WiFiAnalyzer/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 5041,
+  "tags": [
+   "wifi-analyzer",
+   "wifi-network",
+   "gplv3",
+   "android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Vali-98/ChatterUI": {
+  "descricao_repo": "A frontend for running models on mobile or connecting to your preferred API providers.",
+  "git_atualizado": "2026-10-05",
+  "homepage": null,
+  "idioma": "TypeScript",
+  "licenca": "AGPL-3.0",
+  "stars": 2841,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/VegaBobo/DSU-Sideloader": {
+  "descricao_repo": "A simple app made to help users easily install GSIs via DSU's Android feature.",
+  "git_atualizado": "2024-03-13",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 2340,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/VegaBobo/Language-Selector": {
+  "descricao_repo": "Language Selector let users select individual app languages (Android 13+)",
+  "git_atualizado": "2024-12-29",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 784,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/VirtCode/SmartMouse": {
+  "descricao_repo": "use your smartphone as a normal computer mouse",
+  "git_atualizado": "2024-08-27",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 146,
+  "tags": [
+   "android",
+   "bluetooth-hid",
+   "mouse",
+   "smartmouse"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/VishnuSanal/RemindMe": {
+  "descricao_repo": "Set alarms for a specific date in the future (alarm, not a reminder!)",
+  "git_atualizado": "2026-07-04",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 83,
+  "tags": [
+   "android",
+   "f-droid",
+   "fdroid",
+   "jetpack-compose",
+   "kotlin"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/VishnuSanal/WhatsAppCleaner": {
+  "descricao_repo": "Cleaner for WhatsApp - Clean WhatsApp's Redundant Media Files from Storage",
+  "git_atualizado": "2026-08-30",
+  "homepage": "https://f-droid.org/packages/com.vishnu.whatsappcleaner",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 353,
+  "tags": [
+   "android",
+   "cleaner",
+   "jetpack-compose",
+   "mvvm",
+   "storage",
+   "whatsapp",
+   "f-droid",
+   "fdroid"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/WSTxda/Clippy": {
+  "descricao_repo": "Copy links from the sharing menu with automatic removal of shorteners and trackers.",
+  "git_atualizado": "2026-08-30",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 442,
+  "tags": [
+   "android",
+   "application",
+   "clipboard",
+   "copy",
+   "kotlin",
+   "mobile",
+   "security",
+   "share",
+   "shortener",
+   "trackers",
+   "android-application",
+   "android-development"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/WSTxda/Google-Shortcuts-Launcher": {
+  "descricao_repo": "Easily access essential Google apps features directly from your launcher app drawer.",
+  "git_atualizado": "2026-10-01",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 726,
+  "tags": [
+   "android",
+   "activity",
+   "application",
+   "google",
+   "launcher",
+   "manager",
+   "music",
+   "password",
+   "search",
+   "weather",
+   "material3",
+   "gemini"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/WSTxda/SwitchAI": {
+  "descricao_repo": "Easily select, start, and manage your preferred AI digital assistants on Android.",
+  "git_atualizado": "2026-10-17",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1456,
+  "tags": [
+   "ai",
+   "tools",
+   "android-application",
+   "assistant",
+   "chatbot",
+   "digital",
+   "kotlin",
+   "material3",
+   "shortcut",
+   "switch",
+   "voice-chat",
+   "voice-commands"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/WSTxda/Toolkit-Tiles": {
+  "descricao_repo": "A collection of lightweight tools available as Android Quick Settings tiles.",
+  "git_atualizado": "2026-08-30",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 759,
+  "tags": [
+   "android",
+   "compass",
+   "kotlin",
+   "navigation",
+   "shortcuts",
+   "tools",
+   "bubblelevel",
+   "level",
+   "material3",
+   "metrics",
+   "quicksettings",
+   "shortcut"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/XayahSuSuSu/Android-DataBackup": {
+  "descricao_repo": "DataBackup for Android 7.0+",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://DataBackupOfficial.github.io",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 7485,
+  "tags": [
+   "backup",
+   "root",
+   "android",
+   "zstd",
+   "compose"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Xed-Editor/Xed-Editor": {
+  "descricao_repo": "Advanced Text Editor for Android ",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://xed-editor.app",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 2399,
+  "tags": [
+   "android",
+   "android-app",
+   "android-application",
+   "codeeditor",
+   "mobile-ide",
+   "text-editor",
+   "fileviewer",
+   "text-editing",
+   "code",
+   "code-editor",
+   "code-editor-mobile",
+   "xed-editor"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Xitee1/sleep-timer": {
+  "descricao_repo": "A fancy Android app that pauses / fades out music, disables things like WiFi and Bluetooth when the timer ends",
+  "git_atualizado": "2026-10-02",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 66,
+  "tags": [
+   "android",
+   "auto-pause",
+   "music-player",
+   "screen-off",
+   "sleep-timer"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/YangDai2003/OpenNote-Compose": {
+  "descricao_repo": "Markdown Editor & Notebook for Android built with Jetpack Compose.",
+  "git_atualizado": "2025-09-17",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 775,
+  "tags": [
+   "android",
+   "compose",
+   "jetpack",
+   "notes-app",
+   "html",
+   "markdown",
+   "txt",
+   "editor",
+   "education",
+   "plaintext",
+   "richtext",
+   "university"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/a-ghorbani/pocketpal-ai": {
+  "descricao_repo": "An app that brings language models directly to your phone.",
+  "git_atualizado": "2026-10-25",
+  "homepage": null,
+  "idioma": "TypeScript",
+  "licenca": "MIT",
+  "stars": 8798,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/abdallahmehiz/mpvKt": {
+  "descricao_repo": "A media player for android, based on mpv-android and built with Jetpack Compose.",
+  "git_atualizado": "2026-02-14",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 1326,
+  "tags": [
+   "android",
+   "jetpack-compose",
+   "media-player",
+   "mpv",
+   "mpv-player",
+   "compose",
+   "kotlin",
+   "material3",
+   "mpv-android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/abhay-byte/finalbenchmark-platform": {
+  "descricao_repo": "A comprehensive Android benchmarking application with detailed scoring and visualization.",
+  "git_atualizado": "2026-06-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 90,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/adil192/saber": {
+  "descricao_repo": "The cross-platform open-source app built for handwriting",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://saber.adil.hanney.org",
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 4946,
+  "tags": [
+   "flutter",
+   "notes",
+   "notes-app",
+   "saber",
+   "android",
+   "cross-platform",
+   "dart",
+   "handwritten-notes",
+   "ios",
+   "linux",
+   "windows",
+   "f-droid"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/aeri/Atalaya": {
+  "descricao_repo": "Monitor and get information from nearby cell phone towers.",
+  "git_atualizado": "2026-09-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 64,
+  "tags": [
+   "3g",
+   "5g",
+   "cell-towers",
+   "cellular",
+   "gsm",
+   "lte",
+   "wcdma"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/agrahn/Android-Password-Store": {
+  "descricao_repo": "Password and passkey manager application for Android, compatible with ZX2C4's Pass command line application",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 477,
+  "tags": [
+   "android",
+   "openpgp",
+   "password-manager",
+   "password-store",
+   "passkey-manager",
+   "passkey",
+   "password",
+   "autofill",
+   "autofill-service",
+   "credential",
+   "credential-provider",
+   "credential-storage"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/aistra0528/Hail": {
+  "descricao_repo": "Disable / Hide / Suspend / Uninstall Android apps without root.",
+  "git_atualizado": "2026-10-18",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 6993,
+  "tags": [
+   "android",
+   "android-application",
+   "root",
+   "shizuku",
+   "debloat",
+   "non-root",
+   "privacy"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/aj3423/SpamBlocker": {
+  "descricao_repo": "Android Call/SMS blocker.",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 1935,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/albertvaka/bettercounter": {
+  "descricao_repo": "A daily counter to track habits",
+  "git_atualizado": "2026-10-08",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-2.0",
+  "stars": 198,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/albu-razvan/Stario": {
+  "descricao_repo": "Do more with Stario — the minimalist launcher for you.",
+  "git_atualizado": "2026-05-10",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 401,
+  "tags": [
+   "android",
+   "java",
+   "launcher",
+   "app",
+   "home-screen",
+   "personalization"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/alesimula/Murine-launcher": {
+  "descricao_repo": "This is fork from Launcher3 in AOSP.",
+  "git_atualizado": "2026-10-12",
+  "homepage": "https://github.com/yuchuangu85/Launcher-master",
+  "idioma": "Java",
+  "licenca": "NOASSERTION",
+  "stars": 282,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/alt236/USB-Device-Info---Android": {
+  "descricao_repo": "This application will provide information about almost all currently plugged-in USB devices.",
+  "git_atualizado": "2024-12-09",
+  "homepage": "http://aschillings.co.uk/html/usb_device_info.html",
+  "idioma": "Java",
+  "licenca": null,
+  "stars": 195,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/amir1376/ab-download-manager": {
+  "descricao_repo": "A Download Manager that speeds up your downloads",
+  "git_atualizado": "2026-10-15",
+  "homepage": "https://abdownloadmanager.com",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 18774,
+  "tags": [
+   "chrome",
+   "compose",
+   "compose-desktop",
+   "compose-multiplatform",
+   "desktop",
+   "desktop-app",
+   "download",
+   "download-manager",
+   "downloader",
+   "downloadmanager",
+   "firefox",
+   "kotlin"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/anilbeesetti/nextplayer": {
+  "descricao_repo": "An Android native video player",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 4604,
+  "tags": [
+   "kotlin",
+   "exoplayer",
+   "jetpack-compose",
+   "kotlin-android",
+   "kotlin-coroutines",
+   "media3",
+   "room-database",
+   "android",
+   "player",
+   "video-player",
+   "ffmpeg",
+   "ffmpeg-android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/appdevforall/CodeOnTheGo": {
+  "descricao_repo": "Code on the Go is an IDE that lets you build Android apps on Android phones, without a laptop computer and without Internet access. Code on the Go is a project of App Dev for All. ",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://www.appdevforall.org/",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 488,
+  "tags": [
+   "android",
+   "build-tools",
+   "developer-tools",
+   "ide",
+   "java",
+   "kotlin",
+   "mobile-development",
+   "offline-first"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/appsfolder/livebridge": {
+  "descricao_repo": "Level up your dynamic pill/island on Android",
+  "git_atualizado": "2026-10-07",
+  "homepage": "https://appsfolder.github.io/livebridge/",
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 1144,
+  "tags": [
+   "android",
+   "android-application",
+   "live-updates",
+   "utility",
+   "dynamic-island-android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/axel358/smartdock": {
+  "descricao_repo": "A user-friendly desktop mode launcher that offers a modern and customizable user interface",
+  "git_atualizado": "2026-05-21",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1451,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/biplobsd/running_services_monitor": {
+  "descricao_repo": "Monitor running services on your Android device. With a clean and intuitive interface, you can easily view system and user apps, check their status efficiently.",
+  "git_atualizado": "2026-07-12",
+  "homepage": "https://biplobsd.github.io/apps/rsm",
+  "idioma": "Dart",
+  "licenca": "MIT",
+  "stars": 457,
+  "tags": [
+   "android",
+   "flutter",
+   "process",
+   "root",
+   "running",
+   "service",
+   "shizuku",
+   "system",
+   "hacking",
+   "fdroid",
+   "foss",
+   "f-droid"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/bitwarden/mobile": {
+  "descricao_repo": "Retired Bitwarden mobile app for iOS and Android (MAUI/Xamarin).",
+  "git_atualizado": "2025-05-14",
+  "homepage": "https://bitwarden.com",
+  "idioma": "C#",
+  "licenca": "GPL-3.0",
+  "stars": 222,
+  "tags": [
+   "xamarin",
+   "android",
+   "xamarin-forms",
+   "bitwarden",
+   "dotnet",
+   "xaml",
+   "ios",
+   "csharp",
+   "maui"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/bjzhou/PhotonCamera": {
+  "descricao_repo": "Open-source Android camera application focused on static photography",
+  "git_atualizado": "2026-10-22",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 548,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/bmaroti9/Overmorrow": {
+  "descricao_repo": "modern material design weather app",
+  "git_atualizado": "2026-08-21",
+  "homepage": null,
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 816,
+  "tags": [
+   "dart",
+   "flutter",
+   "minimal",
+   "open-meteo",
+   "open-source",
+   "weather",
+   "open-meteo-api",
+   "rainviewer",
+   "weather-app",
+   "weather-flutter",
+   "weather-application",
+   "material-design"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/boredcodebyk/mintcalc": {
+  "descricao_repo": "A simple calculator and unit converter app with Material Design 3 inspired by Windows Calculator",
+  "git_atualizado": "2023-08-07",
+  "homepage": null,
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 63,
+  "tags": [
+   "calculator",
+   "fdroid",
+   "flutter",
+   "flutter-apps",
+   "unit-converter",
+   "utility"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/brunodev85/winlator": {
+  "descricao_repo": "Android application for running Windows applications with Wine and Box86/Box64",
+  "git_atualizado": "2026-10-17",
+  "homepage": "https://winlator.org",
+  "idioma": "C",
+  "licenca": "LGPL-2.1",
+  "stars": 19608,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/caydey/ffshare": {
+  "descricao_repo": "An android app to compress image, video and audio files through ffmpeg before sharing them",
+  "git_atualizado": "2026-08-14",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1131,
+  "tags": [
+   "android",
+   "kotlin",
+   "android-app",
+   "fdroid",
+   "ffmpeg",
+   "ffmpeg-kit"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/chenxiaolong/MSD": {
+  "descricao_repo": "Android app for emulating mass storage devices over USB",
+  "git_atualizado": "2026-09-27",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 309,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/chenxiaolong/RSAF": {
+  "descricao_repo": "An Android Storage Access Framework document provider for rclone",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1031,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/corphish/TextTools": {
+  "descricao_repo": "Text related functions accessible on text selection",
+  "git_atualizado": "2026-10-17",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 182,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/cromaguy/Rhythm": {
+  "descricao_repo": "Your Music, Your Rhythm. An open-source, privacy-first Android music player featuring a beautiful Material 3 Expressive UI. Built entirely in Kotlin.",
+  "git_atualizado": "2026-10-17",
+  "homepage": "https://rhythmweb.vercel.app/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1049,
+  "tags": [
+   "android",
+   "android-studio",
+   "exoplayer",
+   "izzyondroid",
+   "kotlin",
+   "material3-expressive",
+   "media3",
+   "media3-exoplayer",
+   "music-player",
+   "obtanium"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/cvzi/ScreenshotTile": {
+  "descricao_repo": "📲 Screenshot Tile for Android without Root",
+  "git_atualizado": "2026-10-21",
+  "homepage": "https://f-droid.org/packages/com.github.cvzi.screenshottile/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 398,
+  "tags": [
+   "android",
+   "screenshot-utility",
+   "android-app",
+   "android-application",
+   "screenshot",
+   "tile",
+   "quicksettings",
+   "quicksetting-tiles"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/cvzi/WallpaperExport": {
+  "descricao_repo": "Export the current and default wallpaper on Android",
+  "git_atualizado": "2026-10-20",
+  "homepage": "https://f-droid.org/packages/com.github.cvzi.wallpaperexport/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 177,
+  "tags": [
+   "android",
+   "backup",
+   "wallpaper"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/cweiske/headphoneindicator": {
+  "descricao_repo": "Android app that shows if the headset is plugged in",
+  "git_atualizado": "2025-01-06",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 19,
+  "tags": [
+   "android-application",
+   "headphone-jack"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/cyb3rko/flashdim": {
+  "descricao_repo": "Modern flashlight app with dim functionality on Android 13+",
+  "git_atualizado": "2026-10-19",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 1472,
+  "tags": [
+   "android",
+   "android-app",
+   "android-application",
+   "brightness",
+   "brightness-control",
+   "brightness-level",
+   "flashlight",
+   "kotlin",
+   "modern",
+   "material-design",
+   "material-you",
+   "material3"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/d4rken-org/bluemusic": {
+  "descricao_repo": "An Android app that automates Bluetooth device specific actions such as volume adjustments.",
+  "git_atualizado": "2026-10-14",
+  "homepage": "https://play.google.com/store/apps/details?id=eu.darken.bluemusic",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 239,
+  "tags": [
+   "android",
+   "bluetooth",
+   "volume-control",
+   "automation"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/d4rken-org/octi": {
+  "descricao_repo": "A multi-device manager for Android",
+  "git_atualizado": "2026-10-14",
+  "homepage": "https://play.google.com/store/apps/details?id=eu.darken.octi",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 613,
+  "tags": [
+   "android",
+   "android-app",
+   "sync"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/d4rken-org/permission-pilot": {
+  "descricao_repo": "Android permission explorer 🧑‍✈️",
+  "git_atualizado": "2026-10-14",
+  "homepage": "https://play.google.com/store/apps/details?id=eu.darken.myperm",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 693,
+  "tags": [
+   "android",
+   "permission"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/d4rken-org/sdmaid-se": {
+  "descricao_repo": "SD Maid 2/SE is Android's most thorough cleaning tool.",
+  "git_atualizado": "2026-10-22",
+  "homepage": "https://play.google.com/store/apps/details?id=eu.darken.sdmse",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 7851,
+  "tags": [
+   "android",
+   "cleaner",
+   "cleaner-app",
+   "filemanager",
+   "sdmaid",
+   "system-cleaner"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/d4rken/airplanes-live-app": {
+  "descricao_repo": "airplanes.live Android App",
+  "git_atualizado": "2026-10-22",
+  "homepage": "https://airplanes.live",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 310,
+  "tags": [
+   "adsb",
+   "airplanes",
+   "android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/daisukiKaffuChino/RebootNya": {
+  "descricao_repo": "RebootNya is a simple yet advanced reboot utility that supports both Root and Shizuku!",
+  "git_atualizado": "2026-08-20",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 289,
+  "tags": [
+   "android",
+   "root",
+   "shizuku",
+   "adb",
+   "shell"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/davidtakac/bura": {
+  "descricao_repo": "Modern weather app with graphs and thoughtful data visualization",
+  "git_atualizado": "2026-10-19",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 392,
+  "tags": [
+   "android",
+   "libre",
+   "material3",
+   "open-meteo",
+   "prognoza",
+   "weather",
+   "fdroid",
+   "compose"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/davidtakac/prognoza": {
+  "descricao_repo": "Libre weather app with widgets and offline support",
+  "git_atualizado": "2026-10-01",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 418,
+  "tags": [
+   "jetpack-compose",
+   "weather",
+   "clean-architecture",
+   "github-actions",
+   "use-cases",
+   "continuous-integration",
+   "android",
+   "kotlin",
+   "kotlin-multiplatform",
+   "tests"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/davidventura/firefox-translator": {
+  "descricao_repo": "Use Firefox Translation Models for on-device translation on Android",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1315,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/deckerst/aves": {
+  "descricao_repo": "Aves is a gallery and metadata explorer app, built for Android with Flutter.",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Dart",
+  "licenca": "BSD-3-Clause",
+  "stars": 5443,
+  "tags": [
+   "gallery",
+   "flutter",
+   "android",
+   "xmp",
+   "svg",
+   "tiff",
+   "exif",
+   "metadata",
+   "geotiff",
+   "metadata-explorer",
+   "topojson",
+   "motion-photos"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/deltazefiro/Amarok-Hider": {
+  "descricao_repo": "Hide your private files and apps with a single click.",
+  "git_atualizado": "2026-08-11",
+  "homepage": "https://deltazefiro.github.io/Amarok-doc/en-US/",
+  "idioma": "Java",
+  "licenca": "Apache-2.0",
+  "stars": 3305,
+  "tags": [
+   "android",
+   "android-application",
+   "privacy-protection",
+   "hider",
+   "file-hider"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/devhyper/open-video-editor": {
+  "descricao_repo": "Open source Android video editor, built with Media3 and Jetpack Compose.",
+  "git_atualizado": "2026-08-26",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 734,
+  "tags": [
+   "android",
+   "video-editing"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/dic1911/android_AutoDND": {
+  "descricao_repo": "Turn on/off DND(Do Not Disturb) automatically when using specified apps.",
+  "git_atualizado": "2026-08-18",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "AGPL-3.0",
+  "stars": 105,
+  "tags": [
+   "android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/dn0ne/lotus": {
+  "descricao_repo": "Music player for Android",
+  "git_atualizado": "2025-01-25",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 717,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/dorumrr/privacyFlip": {
+  "descricao_repo": "Stop leaking data and being tracked when your phone is locked. Automatic lock/unlock privacy control for rooted Android devices 🔐📱✨",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 317,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/dozingcat/VectorCamera": {
+  "descricao_repo": "Android app that applies real-time effects to the camera input",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 163,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/dslul/openboard": {
+  "descricao_repo": null,
+  "git_atualizado": "2024-05-16",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 2756,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/dubrowgn/wattz": {
+  "descricao_repo": "An Android battery power status bar indicator",
+  "git_atualizado": "2026-10-08",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 351,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/egdels/makeacopy": {
+  "descricao_repo": "MakeACopy is an open-source document scanner app for Android that allows you to digitize paper documents with OCR functionality. The app is designed to be privacy-friendly, working completely offline without any cloud connection or tracking.",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "NOASSERTION",
+  "stars": 579,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/emanuele-f/PCAPdroid": {
+  "descricao_repo": "No-root network monitor, firewall and PCAP dumper for Android",
+  "git_atualizado": "2026-10-22",
+  "homepage": "https://emanuele-f.github.io/PCAPdroid",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 4970,
+  "tags": [
+   "pcap",
+   "capture-traffic",
+   "android",
+   "no-root",
+   "traffic-monitor",
+   "pcap-files",
+   "sniffer",
+   "network-analysis",
+   "sniffing",
+   "decryption",
+   "firewall",
+   "wireshark"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/enricocid/Music-Player-GO": {
+  "descricao_repo": "🎶🎼 Very slim music player 👨‍🎤 100% made in Italy 🍕🌳🌞🍝🌄",
+  "git_atualizado": "2025-01-04",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1887,
+  "tags": [
+   "android",
+   "android-app",
+   "android-application",
+   "android-development",
+   "audio",
+   "audio-player",
+   "equalizer",
+   "kotlin",
+   "kotlin-android",
+   "material-design",
+   "music",
+   "music-player"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/eszdman/PhotonCamera": {
+  "descricao_repo": "Android Camera that uses Enhanced image processing",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "parcial": true,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "repo@https://github.com/fibelatti/photo-widget": {
+  "descricao_repo": "Material Photo Widget is as simple as it can be: an Android home screen widget to display your favorite photos. It is a free, no-ads, open source alternative for people who want to customize their home screen.",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://play.google.com/store/apps/details?id=com.fibelatti.photowidget",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 347,
+  "tags": [
+   "android",
+   "compose",
+   "coroutines",
+   "jetpack",
+   "jetpack-compose",
+   "kotlin",
+   "material",
+   "widget"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/florisboard/florisboard": {
+  "descricao_repo": "An open-source keyboard for Android which respects your privacy. Currently in beta.",
+  "git_atualizado": "2026-10-20",
+  "homepage": "https://florisboard.org",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 8720,
+  "tags": [
+   "keyboard",
+   "android",
+   "kotlin",
+   "kotlin-android",
+   "input-method"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/fm-sys/snapdrop-android": {
+  "descricao_repo": "Android client for local file sharing via https://pairdrop.net and self-hosted snapdrop ",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://play.google.com/store/apps/details?id=com.fmsys.snapdrop",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 1082,
+  "tags": [
+   "android",
+   "file-sharing",
+   "webrtc",
+   "snapdrop",
+   "pairdrop"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/fork-maintainers/iceraven-browser": {
+  "descricao_repo": "Iceraven Browser",
+  "git_atualizado": "2026-10-20",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": null,
+  "stars": 6547,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/gabeg805/NFC-Alarm-Clock": {
+  "descricao_repo": "An NFC Alarm Clock app for Android.",
+  "git_atualizado": "2026-10-11",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 70,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/google-ai-edge/gallery": {
+  "descricao_repo": "A gallery that showcases on-device ML/GenAI use cases and allows people to try and use models locally.",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 25102,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/gromif/AstraCrypt": {
+  "descricao_repo": "Hide and encrypt your files with modern security standards.",
+  "git_atualizado": "2025-09-29",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 157,
+  "tags": [
+   "android",
+   "app",
+   "jetpack-compose",
+   "kotlin",
+   "security"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/gujjwal00/avnc": {
+  "descricao_repo": "VNC Client for Android",
+  "git_atualizado": "2026-09-12",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1182,
+  "tags": [
+   "android",
+   "vnc",
+   "vnc-client",
+   "remote-desktop",
+   "android-application",
+   "kotlin"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/h4h13/RetroMusicPlayer": {
+  "descricao_repo": null,
+  "git_atualizado": "2021-05-23",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 43,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/hagaygo/OpenWRTManager": {
+  "descricao_repo": "Mobile app for interacting with your OpenWrt device.",
+  "git_atualizado": "2026-09-30",
+  "homepage": null,
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 333,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/hash-checker/hash-checker": {
+  "descricao_repo": "Fast and simple application that allows you to generate and compare hashes from files and text",
+  "git_atualizado": "2025-08-28",
+  "homepage": "https://hash-checker.github.io/hash-checker.io",
+  "idioma": "Java",
+  "licenca": "MIT",
+  "stars": 218,
+  "tags": [
+   "android",
+   "android-application",
+   "android-app",
+   "java",
+   "hash",
+   "hashing-algorithm",
+   "hashing",
+   "md5",
+   "sha1",
+   "sha224",
+   "sha256",
+   "sha384"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/hawatri/PinIt": {
+  "descricao_repo": "Organise, Optimize & Boost your life with PinIt",
+  "git_atualizado": "2026-09-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 91,
+  "tags": [
+   "android",
+   "app",
+   "pinit",
+   "productivity"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/herzhenr/simple-wake-on-lan": {
+  "descricao_repo": "A cross platform app for waking machines on the network with Wake On Lan",
+  "git_atualizado": "2024-07-26",
+  "homepage": null,
+  "idioma": "Dart",
+  "licenca": "MIT",
+  "stars": 216,
+  "tags": [
+   "android",
+   "flutter",
+   "ios",
+   "network",
+   "wakeonlan",
+   "dart",
+   "material3"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/hufrea/keysh": {
+  "descricao_repo": "Handle volume buttons on Android",
+  "git_atualizado": "2025-02-14",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "Apache-2.0",
+  "stars": 114,
+  "tags": [
+   "android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/hushenghao/AndroidEasterEggs": {
+  "descricao_repo": "Android Easter Egg Collections",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://hushenghao.github.io/AndroidEasterEggs/",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 1308,
+  "tags": [
+   "android",
+   "kotlin-android",
+   "jetpack-compose",
+   "jetpack",
+   "material-you",
+   "easter-egg",
+   "dynamic-color",
+   "hilt-android",
+   "room-database"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/iamr0s/InstallerX": {
+  "descricao_repo": "A modern and functional Android app installer. (You know some birds are not meant to be caged, their feathers are just too bright.)",
+  "git_atualizado": "2023-08-04",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1860,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/imjyotiraditya/dmt": {
+  "descricao_repo": "a tui-inspired local music player for android. dear music, thanks.",
+  "git_atualizado": "2026-10-23",
+  "homepage": "https://github.com/imjyotiraditya/dmt",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 180,
+  "tags": [
+   "android",
+   "jetpack-compose",
+   "kotlin",
+   "media3",
+   "music-player",
+   "tui"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/imknown/AndroidLowLevelDetector": {
+  "descricao_repo": "Detect Treble, GSI, Mainline, APEX, system-as-root(SAR), A/B, etc.",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://github.com/imknown/AndroidLowLevelDetector",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 474,
+  "tags": [
+   "treble",
+   "system-as-root",
+   "security-patch",
+   "vndk",
+   "toybox",
+   "mainline",
+   "gsi"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/iodn/android-ir-blaster": {
+  "descricao_repo": "Create custom infrared (IR) remotes using hex codes, raw signals, or import Flipper Zero, LIRC, and IRPLUS files",
+  "git_atualizado": "2026-10-15",
+  "homepage": "https://play.google.com/store/apps/details?id=org.nslabs.ir_blaster",
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 598,
+  "tags": [
+   "android",
+   "apk",
+   "infrared",
+   "ir-blaster",
+   "flipper-zero",
+   "flipperzero",
+   "f-droid",
+   "fdroid",
+   "irremote",
+   "remote-control",
+   "remote",
+   "irplus"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/iodn/tap-ducky": {
+  "descricao_repo": "Turns any rooted phone into the legendary USB Rubber Ducky. Android USB HID Keystroke Injector",
+  "git_atualizado": "2026-05-17",
+  "homepage": "https://f-droid.org/en/packages/org.kaijinlab.tap_ducky/",
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 178,
+  "tags": [
+   "android",
+   "apk",
+   "digispark",
+   "hid",
+   "rubber-ducky",
+   "rubberducky",
+   "usb",
+   "usb-hid",
+   "configfs",
+   "hak5",
+   "hid-keyboard",
+   "keystroke-injection"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/ismartcoding/plain-app": {
+  "descricao_repo": "🔥 PlainApp is an open-source app that lets you securely manage your phone from a web browser. Access files, media, contacts, SMS, calls, and more through a simple, easy-to-use interface on your desktop.",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://plainapp.app",
+  "idioma": "Kotlin",
+  "licenca": "AGPL-3.0",
+  "stars": 7030,
+  "tags": [
+   "android",
+   "filemanager",
+   "graphql",
+   "ktor",
+   "learning",
+   "privacy-protection",
+   "productivity",
+   "rss",
+   "web",
+   "android-app",
+   "f-droid",
+   "fdroid"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/itsdrnoob/DataMonitor": {
+  "descricao_repo": "Data usage monitoring app for android.",
+  "git_atualizado": "2025-08-04",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 757,
+  "tags": [
+   "android",
+   "android-application",
+   "data-monitor",
+   "datamonitor"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/jamie-mh/AuthenticatorPro": {
+  "descricao_repo": "📱 Two-Factor Authentication (2FA) client for Android + Wear OS",
+  "git_atualizado": "2026-10-11",
+  "homepage": "https://stratumauth.com",
+  "idioma": "C#",
+  "licenca": "GPL-3.0",
+  "stars": 4621,
+  "tags": [
+   "android",
+   "two-factor-authentication",
+   "xamarin-android",
+   "c-sharp",
+   "hotp",
+   "totp",
+   "tfa",
+   "material-design",
+   "wear-os",
+   "wearos",
+   "authenticator",
+   "2fa"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/jaxparrow07/launchpad-search": {
+  "descricao_repo": "A spotlight search alternative for android, but better ( extensible )",
+  "git_atualizado": "2026-10-09",
+  "homepage": "https://devrinth.web.app/",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 305,
+  "tags": [
+   "android",
+   "assistant",
+   "search-engine",
+   "spotlight",
+   "spotlight-plugin",
+   "spotlight-search"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/jd1378/otphelper": {
+  "descricao_repo": "open-source application that can copy OTP and codes from notifications automatically for you",
+  "git_atualizado": "2026-08-29",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "AGPL-3.0",
+  "stars": 932,
+  "tags": [
+   "android",
+   "autofill",
+   "detector",
+   "f-droid",
+   "fdroid",
+   "helper",
+   "jetpack-compose",
+   "kotlin",
+   "material",
+   "notification",
+   "open-source",
+   "otp"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/jjewuz/JustNotes": {
+  "descricao_repo": "JustNotes is a simple and functional note-taking application. Beautiful design, user-friendly interface, all the necessary functions - all this in JustNotes!",
+  "git_atualizado": "2025-06-22",
+  "homepage": "https://jjewuz.com/justnotes.html",
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 149,
+  "tags": [
+   "android",
+   "monet",
+   "tools",
+   "notes-app"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/john-athan/nonius": {
+  "descricao_repo": "Ten measuring instruments Android does not ship: level, compass, ruler, sound level meter, tuner, counter, altimeter, light meter, metronome, G-force meter. No network permission, no trackers, 1.5 MiB. GPL-3.0.",
+  "git_atualizado": "2026-10-18",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 18,
+  "tags": [
+   "android",
+   "compass",
+   "fdroid",
+   "foss",
+   "jetpack-compose",
+   "kotlin",
+   "measurement",
+   "offline",
+   "privacy",
+   "spirit-level"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/jonathanklee/VolumeLockr": {
+  "descricao_repo": "Android volume locker",
+  "git_atualizado": "2026-10-15",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 139,
+  "tags": [
+   "android",
+   "volume",
+   "lock",
+   "locker"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/jqssun/android-display-extend": {
+  "descricao_repo": "An all-purpose Android display manager for any connected physical or virtual display",
+  "git_atualizado": "2026-10-19",
+  "homepage": "https://f-droid.org/packages/io.github.jqssun.displayextend/",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 206,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/jqssun/android-display-mirror": {
+  "descricao_repo": "First screen mirroring hub with support for sharing screen content over AirPlay, Moonlight/Sunshine, and DisplayLink",
+  "git_atualizado": "2026-10-19",
+  "homepage": "https://f-droid.org/packages/io.github.jqssun.displaymirror/",
+  "idioma": "C++",
+  "licenca": "GPL-3.0",
+  "stars": 220,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/jroddev/android-oss-release-tracker": {
+  "descricao_repo": "Android Application to keep track of updates to Open Source Applications directly from the Repository",
+  "git_atualizado": "2026-01-13",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 106,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/jrs8205/Device-Watch": {
+  "descricao_repo": "Android device monitor with a home-screen widget, per-app usage insights and a charging screensaver. Fully offline - no internet permission. GPL-3.0-or-later.",
+  "git_atualizado": "2026-10-20",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 39,
+  "tags": [
+   "android",
+   "arkstore",
+   "battery",
+   "foss",
+   "hilt",
+   "jetpack-compose",
+   "jetpack-glance",
+   "kotlin",
+   "material3",
+   "screen-time",
+   "screensaver",
+   "system-monitor"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/kaii-lb/LavenderPhotos": {
+  "descricao_repo": "A sweet looking photo app for android!",
+  "git_atualizado": "2026-10-20",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 689,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/keymapperorg/KeyMapper": {
+  "descricao_repo": "An Android app to remap the buttons on your devices",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://keymapper.app",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 2768,
+  "tags": [
+   "keyboard",
+   "keymapping",
+   "keymapper",
+   "android",
+   "android-app",
+   "androidapplication",
+   "keyevent",
+   "android-development",
+   "kotlin",
+   "android-accessibility",
+   "accessibilityservice",
+   "bluetooth"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/kitsumed/ShizuCallRecorder": {
+  "descricao_repo": "ShizuCallRecorder empowers ADB through Shizuku to record phone calls on non-rooted device!",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1838,
+  "tags": [
+   "adb",
+   "android",
+   "call-recorder",
+   "call-recording",
+   "callrecorder",
+   "no-root",
+   "privacy",
+   "shizuku"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/kitswas/VirtualGamePad-Mobile": {
+  "descricao_repo": "Android App for Virtual Gamepad.",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://kitswas.github.io/VirtualGamePad/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 116,
+  "tags": [
+   "android",
+   "client",
+   "game-controller",
+   "gamepad",
+   "games",
+   "virtual-gamepad",
+   "fdroid"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/kiwibrowser/src.next": {
+  "descricao_repo": "Source-code for Kiwi Next, a Kiwi Browser auto-rebased with latest Chromium",
+  "git_atualizado": "2025-06-12",
+  "homepage": null,
+  "idioma": "C++",
+  "licenca": "BSD-3-Clause",
+  "stars": 4055,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/kolakek/pimi-widget": {
+  "descricao_repo": null,
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "LGPL-3.0",
+  "stars": 22,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/kra-mo/Sly": {
+  "descricao_repo": "Mirrored from https://codeberg.org/Sly/Sly",
+  "git_atualizado": "2026-10-18",
+  "homepage": "https://codeberg.org/Sly/Sly",
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 247,
+  "tags": [
+   "flutter",
+   "image-editing",
+   "image-editor"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/kys0ff/Backtalk": {
+  "descricao_repo": "Backtalk is a streamlined note-taking tool that transforms your internal monologue into a searchable, chronological dialogue by letting you message yourself through a familiar chat interface.",
+  "git_atualizado": "2026-09-17",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 101,
+  "tags": [
+   "android",
+   "chat-app",
+   "compose",
+   "kotlin",
+   "notes-app",
+   "open-source"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/leekleak/traffic-light": {
+  "descricao_repo": "Track your network and data usage with privacy",
+  "git_atualizado": "2026-10-22",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 901,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/limboemu/limbo": {
+  "descricao_repo": "Limbo is a QEMU-based emulator for Android. It currently supports x86, ARM, PowerPC, and Sparc emulation  for Intel x86 and ARM android devices. See wiki https://virtualmachinery.weebly.com for APK download and Instructions.",
+  "git_atualizado": "2024-08-18",
+  "homepage": "https://virtualmachinery.weebly.com",
+  "idioma": "Java",
+  "licenca": "GPL-2.0",
+  "stars": 3475,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/liriliri/aya": {
+  "descricao_repo": "Android ADB desktop app",
+  "git_atualizado": "2025-12-25",
+  "homepage": "https://aya.liriliri.io",
+  "idioma": "TypeScript",
+  "licenca": "AGPL-3.0",
+  "stars": 5537,
+  "tags": [
+   "adb",
+   "electron",
+   "electron-app",
+   "android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/localdesktop/localdesktop": {
+  "descricao_repo": "Local Desktop helps you run a desktop Linux environment on your Android device.",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://localdesktop.github.io",
+  "idioma": "Rust",
+  "licenca": "GPL-3.0",
+  "stars": 1708,
+  "tags": [
+   "android",
+   "linux",
+   "proot",
+   "wayland"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/localsend/localsend": {
+  "descricao_repo": "An open-source cross-platform alternative to AirDrop",
+  "git_atualizado": "2026-10-25",
+  "homepage": "https://localsend.org",
+  "idioma": "Dart",
+  "licenca": "Apache-2.0",
+  "stars": 95462,
+  "tags": [
+   "flutter",
+   "file-sharing",
+   "dart",
+   "flutter-apps"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/lollipopkit/flutter_server_box": {
+  "descricao_repo": "ServerBox - server status & toolbox",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://serverbox.lollipopkit.com",
+  "idioma": "Dart",
+  "licenca": "AGPL-3.0",
+  "stars": 8866,
+  "tags": [
+   "flutter",
+   "android",
+   "ios",
+   "vps",
+   "server",
+   "ssh",
+   "dart",
+   "status"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/louie-velarde/DevQS": {
+  "descricao_repo": "Quick Settings tiles for developers",
+  "git_atualizado": "2026-09-13",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "MIT",
+  "stars": 57,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/machiav3lli/oandbackupx": {
+  "descricao_repo": "backup manager for android",
+  "git_atualizado": "2026-10-17",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "AGPL-3.0",
+  "stars": 3877,
+  "tags": [
+   "android",
+   "backup-tool",
+   "hacktoberfest",
+   "kotlin",
+   "root"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/maforn/TimedShutdownAndroid": {
+  "descricao_repo": "An app for android that will automatically shutdown your phone after a timer without needing root access. This app uses the accessiblity permission to emulate the power off gestures.",
+  "git_atualizado": "2026-01-18",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 63,
+  "tags": [
+   "accessibility",
+   "android",
+   "android-application",
+   "shutdown",
+   "shutdown-timer",
+   "alarmmanager"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/maocide/UndeadWallpaper": {
+  "descricao_repo": "Turn any video on your phone into a seamless live wallpaper. 100% Free & FOSS. No bullshit",
+  "git_atualizado": "2026-10-16",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 145,
+  "tags": [
+   "android",
+   "android-app",
+   "customization",
+   "exoplayer",
+   "exoplayer2",
+   "foss",
+   "kotlin",
+   "kotlin-android",
+   "live-wallpaper",
+   "open-source",
+   "video-wallpaper"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/markusfisch/ScreenTime": {
+  "descricao_repo": "Displays your screen time in a permanent notification.",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "parcial": true,
+  "stars": null,
+  "tags": [],
+  "ts": "2026-10-24"
+ },
+ "repo@https://github.com/marlboro-advance/mpvEx": {
+  "descricao_repo": "A beautiful media player for android, based on mpv-android and built with Jetpack Compose. Forked from mpvKt",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://mpvex.vercel.app",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 2702,
+  "tags": [
+   "android",
+   "jetpack-compose",
+   "kotlin",
+   "material-design",
+   "mpv",
+   "ffmpeg",
+   "jni-android",
+   "mediainfo",
+   "videoplayer"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/matan-h/Transfer": {
+  "descricao_repo": "A local file server Android app. Upload and download files over Wi-Fi ",
+  "git_atualizado": "2026-01-30",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 735,
+  "tags": [
+   "android",
+   "android-app",
+   "file-sharing",
+   "file-sharing-server",
+   "local-network",
+   "local-server",
+   "no-cloud"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/mattgdot/Dockeep": {
+  "descricao_repo": "Keep what matters. Save what's yours",
+  "git_atualizado": "2025-09-27",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 28,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/maxim-saplin/CrossPlatformDiskTest": {
+  "descricao_repo": "Windows, macOS and Android storage (HDD, SSD, RAM) speed testing/performance benchmarking app",
+  "git_atualizado": "2024-09-12",
+  "homepage": "https://maxim-saplin.github.io/cpdt_results/",
+  "idioma": "C#",
+  "licenca": "MIT",
+  "stars": 878,
+  "tags": [
+   "disk",
+   "performance",
+   "performance-analysis",
+   "benchmark",
+   "android",
+   "xamarin",
+   "hdd",
+   "macos",
+   "ssd",
+   "desktop",
+   "ram",
+   "mono"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/meefik/linuxdeploy": {
+  "descricao_repo": "Install and run GNU/Linux on Android",
+  "git_atualizado": "2022-06-16",
+  "homepage": "https://meefik.dev/linuxdeploy/",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 5955,
+  "tags": [
+   "android",
+   "chroot",
+   "containers",
+   "deployment",
+   "linux"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/mkckr0/audio-share": {
+  "descricao_repo": "Audio Share can share Windows/Linux computer's audio to Android phone over network, so your phone becomes the speaker of computer. (You needn't buy a new speaker😄.)",
+  "git_atualizado": "2025-05-29",
+  "homepage": null,
+  "idioma": "C++",
+  "licenca": "Apache-2.0",
+  "stars": 2173,
+  "tags": [
+   "android",
+   "asio",
+   "cpp",
+   "kotlin",
+   "pipewire",
+   "audio",
+   "audio-capture",
+   "audio-playback",
+   "linux",
+   "windows",
+   "audio-stream"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/mobeil1/GuessIron": {
+  "descricao_repo": null,
+  "git_atualizado": "2024-07-13",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": null,
+  "stars": 85,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/moneytoo/Player": {
+  "descricao_repo": "▶ Simple and lightweight, yet polished and powerful Android video player based on ExoPlayer",
+  "git_atualizado": "2026-10-22",
+  "homepage": "https://play.google.com/store/apps/details?id=com.brouken.player",
+  "idioma": "Java",
+  "licenca": "Unlicense",
+  "stars": 2744,
+  "tags": [
+   "android",
+   "video-player",
+   "exoplayer",
+   "exoplayer2",
+   "android-video-player",
+   "androidx-media",
+   "media3",
+   "media",
+   "player",
+   "video"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/montafra/beam": {
+  "descricao_repo": "Beam is an Android app that displays real-time battery metrics as a persistent notification",
+  "git_atualizado": "2026-10-19",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 164,
+  "tags": [
+   "foss",
+   "jetpack-compose",
+   "kotlin",
+   "material-design",
+   "material-you",
+   "no-ads",
+   "open-source",
+   "power-management",
+   "privacy",
+   "android",
+   "notracking",
+   "material3"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/mrwm/QRshare": {
+  "descricao_repo": "Share QR code with android's share sheet",
+  "git_atualizado": "2026-06-07",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "Apache-2.0",
+  "stars": 101,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/msartore/Ares": {
+  "descricao_repo": "A tool to help you transfer files via a local network",
+  "git_atualizado": "2026-04-19",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 18,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/msasikanth/twine": {
+  "descricao_repo": "Twine: A multiplatform RSS reader built using Kotlin and Compose",
+  "git_atualizado": "2026-10-25",
+  "homepage": "https://twine.sasikanth.dev/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 2435,
+  "tags": [
+   "compose-multiplatform",
+   "kotlin-multiplatform",
+   "rss-reader"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/msbelaid/PlugBrain": {
+  "descricao_repo": "Break the doomscroll habit with a quick math challenge. The more you scroll, the harder it gets. Step away and it gets easier. Open source, no ads, no tracking, works offline.",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://plugbrain.app",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 93,
+  "tags": [
+   "android",
+   "app-usage",
+   "distraction-blocker",
+   "focus-app",
+   "jetpack-compose",
+   "kotlin",
+   "mental-calculation",
+   "mental-math",
+   "open-source",
+   "productivity",
+   "made-in-algeria",
+   "digitalwellbeing"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/mueller-ma/Coffee": {
+  "descricao_repo": "Android Quick Tile To Keep Screen On",
+  "git_atualizado": "2026-09-10",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 516,
+  "tags": [
+   "android",
+   "kotlin",
+   "hacktoberfest"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/newhinton/Round-Sync": {
+  "descricao_repo": "An android cloud file manager, powered by rclone. Visit https://roundsync.com for more information!",
+  "git_atualizado": "2025-11-16",
+  "homepage": "https://roundsync.com",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 2404,
+  "tags": [
+   "android",
+   "rclone",
+   "sync",
+   "cloud",
+   "app",
+   "backup",
+   "file-upload",
+   "remote",
+   "synchronization"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/newhinton/disky": {
+  "descricao_repo": "An android filesystem analyzer that can show you the usage of your storage! ",
+  "git_atualizado": "2026-05-31",
+  "homepage": "https://felixnuesse.de/disky",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 970,
+  "tags": [
+   "android",
+   "cleanup",
+   "disk-space",
+   "disk-usage",
+   "filesystem",
+   "usage"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/nhirokinet/bluelineconsole": {
+  "descricao_repo": "Blue Line Console, keyboard based launcher for Android",
+  "git_atualizado": "2026-06-10",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "Apache-2.0",
+  "stars": 286,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/niedev/RTranslator": {
+  "descricao_repo": "Open source real-time translation app for Android that runs locally",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "Apache-2.0",
+  "stars": 10539,
+  "tags": [
+   "translator",
+   "bluetooth-le",
+   "realtime-translator",
+   "android-app",
+   "onnx",
+   "onnxruntime",
+   "sentencepiece",
+   "transformers",
+   "translation",
+   "nllb",
+   "whisper",
+   "mobile-app"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/noel-digital-fan/volume_plus_plus": {
+  "descricao_repo": null,
+  "git_atualizado": "2026-10-21",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 139,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/octoshrimpy/quik": {
+  "descricao_repo": "The most beautiful SMS messenger for Android - Revived",
+  "git_atualizado": "2026-09-27",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 2874,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/openfoodfacts/smooth-app": {
+  "descricao_repo": "🤳🥫 The new Open Food Facts mobile application for Android and iOS, crafted with Flutter and Dart",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://world.openfoodfacts.org/open-food-facts-mobile-app?utm_source=off&utf_medium=web&utm_campaign=github-repo",
+  "idioma": "Dart",
+  "licenca": "Apache-2.0",
+  "stars": 1438,
+  "tags": [
+   "dart",
+   "dartlang",
+   "flutter",
+   "nutrition",
+   "openfoodfacts",
+   "food",
+   "android",
+   "ios",
+   "mobile-app",
+   "hacktoberfest",
+   "flutter-app",
+   "mobile"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/organicmaps/organicmaps": {
+  "descricao_repo": "🍃 Organic Maps is a free Android & iOS offline maps app for more than 6M travelers, tourists, hikers, and cyclists. It uses crowd-sourced OpenStreetMap data and is developed with love by the community. No ads, no tracking, no data collection, no crapware. Please donate to support the development!",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://organicmaps.app",
+  "idioma": "C++",
+  "licenca": "NOASSERTION",
+  "stars": 15762,
+  "tags": [
+   "ios",
+   "android",
+   "privacy",
+   "cpp",
+   "java",
+   "objective-c",
+   "maps",
+   "mobile-app",
+   "mobile",
+   "offline-maps",
+   "cyclists",
+   "hikers"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/osociety/vernet": {
+  "descricao_repo": "Cross platform network analysis and monitoring tool ",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://vernet-app.web.app",
+  "idioma": "Dart",
+  "licenca": "Apache-2.0",
+  "stars": 558,
+  "tags": [
+   "android",
+   "flutter",
+   "dart",
+   "network-tools",
+   "networking",
+   "network-monitoring",
+   "subnet-scanner",
+   "find-devices-on-network",
+   "ping-ip",
+   "ping-domain",
+   "find-open-ports",
+   "scan-open-ports"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/picguard/picguard": {
+  "descricao_repo": "Your pictures, your signature",
+  "git_atualizado": "2026-10-23",
+  "homepage": "https://web.picguard.org",
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 57,
+  "tags": [
+   "picguard",
+   "android",
+   "flutter",
+   "ios",
+   "linux",
+   "macos",
+   "watermark-assistant",
+   "watermarkassistant",
+   "web",
+   "windows"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/printn/human-benchmark": {
+  "erro": 404
+ },
+ "repo@https://github.com/pshycodr/phosphor-cam": {
+  "descricao_repo": "Real-time ASCII art camera that transforms your webcam feed into glowing terminal aesthetics. Built with React + Canvas API.",
+  "git_atualizado": "2026-10-11",
+  "homepage": "https://phosphor.aroy.site",
+  "idioma": "TypeScript",
+  "licenca": "MIT",
+  "stars": 125,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/psuzn/Play-Deals": {
+  "descricao_repo": "Paid app deals and discounts.",
+  "git_atualizado": "2024-04-25",
+  "homepage": "https://play.google.com/store/apps/details?id=me.sujanpoudel.playdeals",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 138,
+  "tags": [
+   "android",
+   "desktop",
+   "discount",
+   "free-apps",
+   "ios",
+   "kotlin",
+   "kotlin-multiplatform",
+   "kotlin-multiplatform-mobile",
+   "macos"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/pyamsoft/tetherfi": {
+  "descricao_repo": "TetherFuseNet - Internet sharing without Root",
+  "git_atualizado": "2026-10-22",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 912,
+  "tags": [
+   "android",
+   "hotspot",
+   "no-root",
+   "proxy",
+   "tethering",
+   "compose",
+   "kotlin"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/pynicolas/FairScan": {
+  "descricao_repo": "An Android app to scan your documents — simple and respectful",
+  "git_atualizado": "2026-10-10",
+  "homepage": "https://fairscan.org",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 978,
+  "tags": [
+   "android",
+   "pdf",
+   "android-app",
+   "document-scanner",
+   "image-processing",
+   "opencv",
+   "privacy",
+   "segmentation",
+   "tflite"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/qeiq/Savr": {
+  "descricao_repo": "Savr - A clean , modern  bookmark manager app made with Jetpack Compose on top of Material You",
+  "git_atualizado": "2026-09-13",
+  "homepage": "https://play.google.com/store/apps/details?id=com.zarnth.savr",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 183,
+  "tags": [
+   "android",
+   "jetpack-compose",
+   "kotlin",
+   "kotlin-android",
+   "kotlin-multiplatform"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/rickymohk/OpenDefault": {
+  "descricao_repo": "Help opening URLs with default App",
+  "git_atualizado": "2024-04-22",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 16,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/riveerxd/nightbell": {
+  "descricao_repo": "Android uptime monitoring with no server and no account. Checks run on your phone; an outage arrives as a full-screen page with a looping alarm instead of a notification you swipe away.",
+  "git_atualizado": "2026-10-23",
+  "homepage": "https://nightbell.app",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 64,
+  "tags": [
+   "alerting",
+   "android",
+   "android-app",
+   "devops",
+   "fdroid",
+   "foss",
+   "homelab",
+   "incident-response",
+   "jetpack-compose",
+   "kotlin",
+   "monitoring",
+   "notifications"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/robinsrk/flip_2_dnd": {
+  "descricao_repo": "Flip 2 DND is a modern Android application that intelligently manages your Do Not Disturb (DND) mode based on your phone's orientation. Just flip your phone face down to activate DND and face up to turn it off—it's that simple!",
+  "git_atualizado": "2026-06-03",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 101,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/ronaldloyko/linkbox": {
+  "erro": 404
+ },
+ "repo@https://github.com/rosuH/EasyWatermark": {
+  "descricao_repo": "🔒 🖼 Securely, easily add a watermark to your sensitive photos. 安全、简单地为你的敏感照片添加水印，防止被人泄露、利用",
+  "git_atualizado": "2026-10-18",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 1908,
+  "tags": [
+   "android",
+   "image",
+   "tools",
+   "watermwark",
+   "watermark",
+   "image-watermark"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/ruffle-rs/ruffle-android": {
+  "descricao_repo": "An Android application for ruffle.rs",
+  "git_atualizado": "2026-10-19",
+  "homepage": null,
+  "idioma": "Rust",
+  "licenca": "NOASSERTION",
+  "stars": 585,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/rumboalla/apkupdater": {
+  "descricao_repo": "APKUpdater is an open source tool that simplifies the process of finding updates for your installed apps.",
+  "git_atualizado": "2026-05-28",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 4049,
+  "tags": [
+   "android",
+   "open-source",
+   "apk",
+   "java",
+   "play-store",
+   "kotlin",
+   "updater",
+   "installer",
+   "aptoide",
+   "apkmirror",
+   "google",
+   "play"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/saad-khan-rind/NOSAtmosphereEffect": {
+  "descricao_repo": "Atmosphere Effect by Nothing for Android Devices on Android 13+",
+  "git_atualizado": "2026-10-21",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 331,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/sakethpathike/Linkora": {
+  "descricao_repo": "Local-first multiplatform link organizer with optional self-hosted sync.",
+  "git_atualizado": "2026-10-23",
+  "homepage": "https://linkora-app.netlify.app/",
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 941,
+  "tags": [
+   "android",
+   "android-application",
+   "jetpack-compose",
+   "kotlin-android",
+   "kmp",
+   "kotlin-multiplatform",
+   "material3",
+   "compose-multiplatform"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/salmundani/LuxAlarm": {
+  "descricao_repo": "Wake up with light",
+  "git_atualizado": "2026-10-16",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 38,
+  "tags": [
+   "alarm",
+   "android",
+   "jetpack",
+   "material3"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/sameerasw/essentials": {
+  "descricao_repo": "Essential tools and mods for Android nerds",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://sameerasw.com/essentials",
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 3401,
+  "tags": [
+   "android",
+   "google-pixel",
+   "jetpack-compose",
+   "kotlin",
+   "kotlin-android",
+   "pixel",
+   "material-expressive",
+   "shizuku"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/samolego/Canta": {
+  "descricao_repo": "Uninstall any Android app without root (with power of Shizuku). Debloat your device as you wish, with Android app or even from your browser!",
+  "git_atualizado": "2026-10-13",
+  "homepage": "https://samolego.github.io/Canta/",
+  "idioma": "Kotlin",
+  "licenca": "LGPL-3.0",
+  "stars": 6289,
+  "tags": [
+   "android",
+   "shizuku",
+   "app-manager",
+   "debloater",
+   "no-root"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/seht/volumenotification": {
+  "descricao_repo": "Android app to control audio volume from notification + quick settings",
+  "git_atualizado": "2026-08-15",
+  "homepage": "https://app.hyx.net/volumenotification",
+  "idioma": "Java",
+  "licenca": "Apache-2.0",
+  "stars": 44,
+  "tags": [
+   "android-application",
+   "tool",
+   "productivity"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/sfsakhawat999/mpvRex": {
+  "descricao_repo": "A modern Android video player powered by libmpv, built with Jetpack Compose.",
+  "git_atualizado": "2026-10-21",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 799,
+  "tags": [
+   "android",
+   "android-application",
+   "media-player",
+   "open-source",
+   "video-player"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/shapeshed/aerial": {
+  "descricao_repo": "An internet radio player for Android",
+  "git_atualizado": "2026-10-22",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 164,
+  "tags": [
+   "android",
+   "radio",
+   "streaming"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/shezik/DrawAnywhere": {
+  "descricao_repo": "DrawAnywhere is an Android application that lets you draw on top of other apps.",
+  "git_atualizado": "2026-06-09",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "AGPL-3.0",
+  "stars": 260,
+  "tags": [
+   "android-app",
+   "drawing-app",
+   "f-droid",
+   "fdroid",
+   "izzyondroid",
+   "jetpack-compose"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/shiyunjin/EasyControlNext": {
+  "descricao_repo": "Android to Android remote control using Scrcpy (Support Android 11+ Pair Code)",
+  "git_atualizado": "2026-03-30",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 91,
+  "tags": [
+   "scrcpy",
+   "scrcpy-android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/shrimqy/Sefirah-Android": {
+  "descricao_repo": "Phone link / KDE Connect alternative ",
+  "git_atualizado": "2026-10-15",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 991,
+  "tags": [
+   "kotlin-android",
+   "android",
+   "sync",
+   "windows",
+   "clipboard",
+   "clipboard-sync",
+   "file-transfer",
+   "file-transfer-android",
+   "media-controller",
+   "jetpack-compose",
+   "kotlin",
+   "clean-architecture"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/shubham0204/SmolChat-Android": {
+  "descricao_repo": "Running any GGUF SLMs/LLMs locally, on-device in Android",
+  "git_atualizado": "2026-10-18",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 897,
+  "tags": [
+   "android",
+   "cpp",
+   "ggml",
+   "kotlin",
+   "llamacpp",
+   "small-language-models"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/shynoiddev/FireWall-Blocks": {
+  "descricao_repo": "Android firewall app using Shizuku and VPN modes. and no root required. This app can block internet access of any other apps. ",
+  "git_atualizado": "2026-07-09",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "NOASSERTION",
+  "stars": 232,
+  "tags": [
+   "adblocking",
+   "android",
+   "android-firewall",
+   "firewall",
+   "internet",
+   "no-root",
+   "pricacy",
+   "shizuku",
+   "shizuku-api",
+   "vpn",
+   "internet-blocker",
+   "internet-blocking"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/sk2andy/candy-browser": {
+  "descricao_repo": "Gesture-first Android browser with Material 3 Expressive design and local privacy tools",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MPL-2.0",
+  "stars": 583,
+  "tags": [
+   "android",
+   "browser",
+   "jetpack-compose",
+   "kotlin",
+   "material3",
+   "privacy",
+   "webview"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/slavabarkov/tidy": {
+  "descricao_repo": "Offline semantic Text-to-Image and Image-to-Image search on Android powered by quantized state-of-the-art vision-language pretrained CLIP model and ONNX Runtime inference engine",
+  "git_atualizado": "2024-03-28",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 610,
+  "tags": [
+   "android",
+   "clip",
+   "computer-vision",
+   "deep-learning",
+   "image-retrieval",
+   "kotlin",
+   "nlp",
+   "onnx",
+   "quantization",
+   "image-text-retrieval",
+   "cross-modal-retrieval",
+   "image-text-matching"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/sosauce/Chocola": {
+  "descricao_repo": "🍫 Chocola is a cute and powerful offline music player for Android!",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1118,
+  "tags": [
+   "android-app",
+   "jetpack-compose",
+   "kotlin"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/supershadoe/delta": {
+  "descricao_repo": "Advanced hotspot settings for Pixel-like devices",
+  "git_atualizado": "2026-10-25",
+  "homepage": "https://delta.shadoe.dev",
+  "idioma": "Kotlin",
+  "licenca": "BSD-3-Clause",
+  "stars": 584,
+  "tags": [
+   "android",
+   "hotspot",
+   "shizuku"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/sweakpl/qralarm-android": {
+  "descricao_repo": "QRAlarm is an Android alarm clock application that lets the user turn off alarms by scanning the QR Code.",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 352,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/teamclouday/AndroidMic": {
+  "descricao_repo": "Use your Android phone as a microphone for your PC",
+  "git_atualizado": "2026-10-19",
+  "homepage": null,
+  "idioma": "Rust",
+  "licenca": "GPL-3.0",
+  "stars": 1732,
+  "tags": [
+   "android-application",
+   "microphone",
+   "audio-streaming",
+   "tcp-socket",
+   "udp-socket",
+   "usb-serial",
+   "rnnoise"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/teja2495/quick-search": {
+  "descricao_repo": "Universal search app for Android which can search apps, shortcuts, contacts, files, calendar events, notes, settings and the internet.",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 600,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/tharunbirla/LibreCuts": {
+  "descricao_repo": "LibreCuts is a free, open-source video editor for Android that prioritizes simplicity and efficiency.",
+  "git_atualizado": "2026-10-23",
+  "homepage": "https://tharunbirla.github.io/LibreCuts/",
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 1045,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/thedjchi/Shizuku": {
+  "descricao_repo": "Using system APIs directly with adb/root privileges from normal apps through a Java process started with app_process.",
+  "git_atualizado": "2026-07-15",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 6476,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/theovilardo/PixelPlayer": {
+  "descricao_repo": "privacy-first Android music player built with Material 3 Expressive. Play offline, sync lyrics, fine-tune with equalizer presets, and cast to your devices.",
+  "git_atualizado": "2026-09-21",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "NOASSERTION",
+  "stars": 6797,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/timschneeb/ShizuStore": {
+  "descricao_repo": "App store for Shizuku apps. Based on my awesome-shizuku list and installs APKs straight from their upstream sources",
+  "git_atualizado": "2026-10-24",
+  "homepage": "shizustore.com",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 432,
+  "tags": [
+   "android",
+   "app-store",
+   "shizuku",
+   "shizuku-app"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/tosinonikute/NotelyVoice": {
+  "descricao_repo": "A 100% private AI voice transcription app that converts speech to text in 100+ languages. Built with Compose Multiplatform for Android & iOS using Whisper AI - no cloud uploads, all processing happens on-device for complete privacy.",
+  "git_atualizado": "2026-08-21",
+  "homepage": "https://notelyvoice.com",
+  "idioma": "C++",
+  "licenca": "GPL-3.0",
+  "stars": 814,
+  "tags": [
+   "android",
+   "audio-player",
+   "compose-ios",
+   "compose-multiplatform",
+   "compose-multiplatform-sample",
+   "ios",
+   "jetpack-compose",
+   "kotlin-coroutines",
+   "kotlin-multiplatform",
+   "kotlin-multiplatform-sample",
+   "notes-app",
+   "speech-recognition"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/trinadhthatakula/Thor": {
+  "descricao_repo": "Thor - Android App Manager and App Installer utility",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://thor.trinadhthatakula.com",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 629,
+  "tags": [
+   "android-application",
+   "app-manager",
+   "jetpack-compose",
+   "kotlin-android",
+   "material3-android",
+   "androidappmanager",
+   "valhalla",
+   "shizuku"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/twentynine78/KeepOn": {
+  "descricao_repo": null,
+  "git_atualizado": "2026-10-18",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 111,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/twoyi/twoyi": {
+  "descricao_repo": "A lightweight Android container on Android",
+  "git_atualizado": "2023-04-20",
+  "homepage": "https://twoyi.io",
+  "idioma": "Java",
+  "licenca": "MPL-2.0",
+  "stars": 1917,
+  "tags": [
+   "twoyi",
+   "virtual",
+   "android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/tylerbwong/stack": {
+  "descricao_repo": "An Android app for browsing Stack Overflow and other Stack Exchange sites.",
+  "git_atualizado": "2025-04-04",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 578,
+  "tags": [
+   "android",
+   "kotlin",
+   "stackoverflow",
+   "stackexchange",
+   "jetpack-compose",
+   "kotlin-coroutines",
+   "dagger-hilt",
+   "room",
+   "markdown"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/tyron12233/CodeAssist": {
+  "descricao_repo": "An IDE for building Android applicatons on Android.",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 2057,
+  "tags": [
+   "android",
+   "android-ide",
+   "java",
+   "kotlin",
+   "mobile-development",
+   "mobile-ide"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/uazo/cromite": {
+  "descricao_repo": "Cromite a Bromite fork with ad blocking and privacy enhancements; take back your browser!",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://www.cromite.org/",
+  "idioma": "C++",
+  "licenca": "GPL-3.0",
+  "stars": 8427,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/uintdev/qrserv": {
+  "descricao_repo": "Transfer files with ease over a network.",
+  "git_atualizado": "2026-10-20",
+  "homepage": "https://play.google.com/store/apps/details?id=dev.uint.qrserv",
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 217,
+  "tags": [
+   "file-sharing",
+   "qrcode",
+   "http-server",
+   "android",
+   "file-transfer",
+   "local-network",
+   "jetpack-compose",
+   "kotlin"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/usamaiqb/network-scanner": {
+  "descricao_repo": "Fast, privacy-focused network scanner to discover devices on your local network",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://usamaiqb.github.io/network-scanner/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 236,
+  "tags": [
+   "android",
+   "fdroid",
+   "ip-scanner",
+   "jetpack-compose",
+   "network-discovery",
+   "network-scanner",
+   "port-scanner",
+   "privacy",
+   "wifi"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/usamaiqb/noty": {
+  "descricao_repo": "Pin your notes to notifications — always visible, never forgotten.",
+  "git_atualizado": "2026-10-23",
+  "homepage": "https://usamaiqb.github.io/noty/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 39,
+  "tags": [
+   "android",
+   "fdroid",
+   "jetpack-compose",
+   "note-taking",
+   "notes",
+   "notifications",
+   "persistent-notification",
+   "privacy",
+   "reminder"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/utkarshdalal/GameNative": {
+  "descricao_repo": "Native PC gaming with Steam, Epic, GOG and Amazon integrations on Android",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://gamenative.app",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 11527,
+  "tags": [
+   "gaming",
+   "mobile-gaming",
+   "pc-gaming",
+   "steam"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/uxazu/AEmulator": {
+  "descricao_repo": "Android emulator that emulates older Android firmware versions.",
+  "git_atualizado": "2026-10-18",
+  "homepage": null,
+  "idioma": "C",
+  "licenca": "GPL-3.0",
+  "stars": 433,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/vbresan/HealthyBatteryCharging": {
+  "descricao_repo": "Prolong the battery life of your android phone by keeping it charged between 40% and 80%",
+  "git_atualizado": "2026-10-02",
+  "homepage": "https://viktorbresan.blogspot.com/search/label/hbc",
+  "idioma": "Java",
+  "licenca": "MIT",
+  "stars": 157,
+  "tags": [
+   "android",
+   "android-app",
+   "android-application",
+   "battery",
+   "battery-charger",
+   "battery-info",
+   "battery-information",
+   "battery-level",
+   "battery-life",
+   "battery-monitor",
+   "battery-percentage",
+   "battery-status"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/vicolo-dev/chrono": {
+  "descricao_repo": "A modern and powerful clock, alarms, timer and stopwatch app for Android!",
+  "git_atualizado": "2025-01-13",
+  "homepage": null,
+  "idioma": "Dart",
+  "licenca": "GPL-3.0",
+  "stars": 1810,
+  "tags": [
+   "alarm",
+   "alarm-clock",
+   "android",
+   "clock",
+   "stopwatch",
+   "timer"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/vvb2060/PackageInstaller": {
+  "descricao_repo": "A lightweight yet powerful package installer for Android.",
+  "git_atualizado": "2025-08-12",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": null,
+  "stars": 716,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/w2sv/WiFi-Widget": {
+  "descricao_repo": "A sleek, customizable Android widget for monitoring your Wi-Fi connection.",
+  "git_atualizado": "2026-10-23",
+  "homepage": "https://play.google.com/store/apps/details?id=com.w2sv.wifiwidget",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 304,
+  "tags": [
+   "android",
+   "jetpack-compose",
+   "kotlin",
+   "widget",
+   "wifi",
+   "android-application",
+   "connectivity",
+   "networking",
+   "fdroid",
+   "devops",
+   "foss",
+   "homescreen-widget"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/weslley75/AudioOutputSwitcher": {
+  "descricao_repo": null,
+  "git_atualizado": "2026-06-26",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 114,
+  "tags": [
+   "hacktoberfest"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/wingio/Logra": {
+  "descricao_repo": "Material You logcat viewer for Android",
+  "git_atualizado": "2023-10-21",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-2.0",
+  "stars": 132,
+  "tags": [
+   "hacktoberfest"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/woheller69/timelapsecamera": {
+  "descricao_repo": null,
+  "git_atualizado": "2026-05-08",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 318,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/wolpi/prim-ftpd": {
+  "descricao_repo": "FTP server app for android",
+  "git_atualizado": "2026-08-13",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "NOASSERTION",
+  "stars": 908,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/wxxsfxyzm/InstallerX-Revived": {
+  "descricao_repo": "More Expressive InstallerX !",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://wxxsfxyzm.github.io/InstallerX-Revived-Website",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 7152,
+  "tags": [
+   "android",
+   "dhizuku",
+   "installer",
+   "root",
+   "shizuku",
+   "apk",
+   "apks",
+   "miuix",
+   "md3"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/x0b/rcx": {
+  "descricao_repo": "Rclone for Android",
+  "git_atualizado": "2023-11-26",
+  "homepage": "https://x0b.github.io",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 2064,
+  "tags": [
+   "rclone",
+   "rclone-client",
+   "android-app",
+   "android-application",
+   "storage-access-framework",
+   "file-manager"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/x13a/Clipeus": {
+  "descricao_repo": "Clipboard cleaner",
+  "git_atualizado": "2025-12-01",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 76,
+  "tags": [
+   "android",
+   "kotlin",
+   "privacy"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/xigua222/photoo": {
+  "descricao_repo": "photoo 是一款 Android 原生的极简照片整理工具。滑动卡片就能快速整理相册——左滑删除，右滑收藏，上滑保留。还有一系列\"该有的全都有\"的功能：相册分析生成专属摄影画像、沉浸式回顾喜爱照片、智能识别相似照片和低质量图片、视频和图片压缩......  但 photoo 不只是一个\"清理\"软件，它更是\"回忆\"。",
+  "git_atualizado": "2026-08-13",
+  "homepage": "https://photooapp.com/",
+  "idioma": "Kotlin",
+  "licenca": "NOASSERTION",
+  "stars": 833,
+  "tags": [
+   "android-app",
+   "gallery",
+   "kotlin",
+   "organizer"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/yakovlevegor/DroidRec": {
+  "erro": 404
+ },
+ "repo@https://github.com/yaxarat/lingvaandroid": {
+  "descricao_repo": "Lentil Translate: An Android client for the Lingva Translate",
+  "git_atualizado": "2023-09-17",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "AGPL-3.0",
+  "stars": 108,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/yogeshpaliyal/Deepr": {
+  "descricao_repo": "Deepr is a native Android application designed to streamline the management and testing of links. It provides a simple and efficient way to store, organize, and launch links.",
+  "git_atualizado": "2026-07-19",
+  "homepage": "http://github.yogeshpaliyal.com/Deepr/",
+  "idioma": "Kotlin",
+  "licenca": "GPL-2.0",
+  "stars": 302,
+  "tags": [
+   "android",
+   "deeplink",
+   "jetpack-compose",
+   "utility-application",
+   "bookmarks-manager",
+   "links-management",
+   "hacktoberfest"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/you-apps/WallYou": {
+  "descricao_repo": "Privacy focused wallpaper app built with MD3",
+  "git_atualizado": "2026-10-07",
+  "homepage": "https://you-apps.net",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 1427,
+  "tags": [
+   "android",
+   "kotlin",
+   "wallpaper"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/yume-chan/VolumeManager": {
+  "descricao_repo": "Control each app's volume independently.",
+  "git_atualizado": "2026-10-18",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-2.0",
+  "stars": 594,
+  "tags": [
+   "adb",
+   "android",
+   "shizuku",
+   "volume-control"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/zacharee/InstallWithOptions": {
+  "descricao_repo": "Simple-ish app using Shizuku to install APKs on-device with advanced options",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 3370,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/zacharee/LockscreenWidgets": {
+  "descricao_repo": null,
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 585,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/zhanghai/MaterialFiles": {
+  "descricao_repo": "Material Design file manager for Android",
+  "git_atualizado": "2026-10-15",
+  "homepage": "https://play.google.com/store/apps/details?id=me.zhanghai.android.files",
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 9309,
+  "tags": [
+   "android",
+   "android-application",
+   "material-design",
+   "file-manager",
+   "kotlin",
+   "kotlin-android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/zwc456baby/ScrcpyForAndroid": {
+  "descricao_repo": "scrcpy for android",
+  "git_atualizado": "2026-10-04",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 908,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/zyrouge/symphony": {
+  "descricao_repo": "🎵 Lightweight, elegant music player for Android 9+.",
+  "git_atualizado": "2026-10-02",
+  "homepage": "https://zyrouge.github.io/symphony/",
+  "idioma": "Kotlin",
+  "licenca": "AGPL-3.0",
+  "stars": 1718,
+  "tags": [
+   "android",
+   "material-ui",
+   "material-you",
+   "music",
+   "foss",
+   "compose",
+   "kotlin",
+   "music-player",
+   "android-music-player"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://gitlab.com/Atharok/BarcodeScanner": {
+  "descricao_repo": "An open-source app that allows you to read and generate barcodes for Android.",
+  "git_atualizado": "2026-08-09",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 200,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://gitlab.com/Atharok/BtRemote": {
+  "descricao_repo": "An Android app that turns your smartphone into a Bluetooth remote for Android TV.",
+  "git_atualizado": "2026-10-04",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 147,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://gitlab.com/Atharok/ScreenTime": {
+  "descricao_repo": null,
+  "git_atualizado": "2026-09-28",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 35,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://gitlab.com/Nulide/findmydevice": {
+  "descricao_repo": "Find your device and control it remotely. Works over SMS, instant messengers, or FMD Server's web interface.\r\nA secure open source alternative to Google's Find Hub.",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 529,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://gitlab.com/colorata/wallman": {
+  "descricao_repo": null,
+  "git_atualizado": "2026-10-13",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 51,
+  "tags": [
+   "Jetpack Compose",
+   "Material3",
+   "Wallpapers collection",
+   "android",
+   "live wallpaper",
+   "wallpaper"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://gitlab.com/ironfox-oss/IronFox": {
+  "descricao_repo": "Private, secure, user first web browser for Android. https://ironfoxoss.org/",
+  "git_atualizado": "2026-10-23",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 396,
+  "tags": [
+   "browser",
+   "firefox",
+   "hardening",
+   "ironfox",
+   "privacy",
+   "security"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://gitlab.com/juanitobananas/ping-off": {
+  "descricao_repo": null,
+  "git_atualizado": "2026-10-13",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 2,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://gitlab.com/juanitobananas/wave-up": {
+  "descricao_repo": "Android app that turns the display on when you wave over the proximity sensor.",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 56,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://gitlab.com/mudlej_android/mj_pdf_reader": {
+  "descricao_repo": "MJ PDF is a fast, minimalist, powerful and totally free PDF viewer made by Mudlej.",
+  "git_atualizado": "2026-10-17",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 215,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://gitlab.com/narektor/batt": {
+  "descricao_repo": "A simple app that shows battery status information on Android devices. Requires Android 14.",
+  "git_atualizado": "2025-07-11",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 82,
+  "tags": [
+   "Android Studio",
+   "android"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://gitlab.com/sunilpaulmathew/ashell": {
+  "descricao_repo": "A local ADB shell for Shizuku powered android devices! (Mirror: https://github.com/sunilpaulmathew/aShell)",
+  "git_atualizado": "2026-09-24",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 111,
+  "tags": [
+   "Android Application",
+   "adb",
+   "java",
+   "shizuku"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://gitlab.com/yaky/android-usb-cam-viewer": {
+  "descricao_repo": null,
+  "git_atualizado": "2026-06-03",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 10,
+  "tags": [],
+  "ts": "2026-10-25"
+ }
+}

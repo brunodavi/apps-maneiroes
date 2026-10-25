@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apps Maneirões — Vega Data</title>
+<meta name="description" content="Busca de apps citados nos vídeos de aplicativos do canal Vega Data">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1><a href="?">Apps Maneirões</a></h1>
+  <div class="sub" id="sub">Carregando…</div>
+  <div class="busca">
+    <input id="q" type="search" placeholder="Buscar app, descrição, tag, vídeo… (ex: open source, rss, shizuku, setembro)" autocomplete="off">
+    <div class="ord">
+      <select id="ord-campo" aria-label="Ordenar por">
+        <option value="relev">Relevância</option>
+        <option value="nome">Nome</option>
+        <option value="stars">Estrelas</option>
+        <option value="video">Data do vídeo</option>
+        <option value="repo">Atualização do repo</option>
+      </select>
+      <button id="ord-dir" class="orddir" aria-label="crescente/descrecente">↓</button>
+    </div>
+  </div>
+  <div class="chips" id="chips"></div>
+</header>
+<main>
+  <div class="contagem" id="contagem"></div>
+  <div class="grid" id="grid"></div>
+  <div class="vazio" id="vazio" hidden>Nenhum app encontrado.</div>
+  <div class="vazio erro" id="erro" hidden>Falha ao carregar data/apps.json — sirva a pasta <code>site/</code> por HTTP (ex.: <code>python3 -m http.server</code>).</div>
+</main>
+<footer id="rodape"></footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
