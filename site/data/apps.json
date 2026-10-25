@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-25T04:45:11Z",
+ "atualizado": "2026-10-25T04:53:21Z",
  "canal": {
   "nome": "VegaData",
   "id": "UCd2FHKnQ3ymrNhdsV9J0VmA",
@@ -4668,7 +4668,7 @@
     "photos"
    ],
    "stars": 43,
-   "git_atualizado": null,
+   "git_atualizado": "2026-10-05",
    "idioma": null,
    "licenca": null,
    "homepage": null,
@@ -6590,7 +6590,7 @@
     "security"
    ],
    "stars": 28,
-   "git_atualizado": null,
+   "git_atualizado": "2026-09-23",
    "idioma": null,
    "licenca": null,
    "homepage": null,
@@ -7014,7 +7014,7 @@
    "descricao_repo": "Extension to the built-in Android Battery Saver",
    "tags": [],
    "stars": 58,
-   "git_atualizado": null,
+   "git_atualizado": "2025-06-25",
    "idioma": null,
    "licenca": null,
    "homepage": null,
@@ -8354,7 +8354,7 @@
    "descricao_repo": "Android widget that displays output of a shell command using Termux",
    "tags": [],
    "stars": 14,
-   "git_atualizado": null,
+   "git_atualizado": "2025-10-30",
    "idioma": null,
    "licenca": null,
    "homepage": null,
@@ -11103,7 +11103,7 @@
     "chart"
    ],
    "stars": 29,
-   "git_atualizado": null,
+   "git_atualizado": "2024-12-03",
    "idioma": null,
    "licenca": null,
    "homepage": null,

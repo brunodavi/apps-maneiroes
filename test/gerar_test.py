@@ -27,7 +27,7 @@ from gerar import (FORA_SERIE_MOTIVO, PLAYLISTS, app_key, apps_por_capitulos,
                    base_name, busca_servivel,
                    classify_url, cutoff_date,
                    decidir_skip_excludes, escolher_repo, iso8601_seconds,
-                   lookup_busca_repo, lookup_loja_page, match_tempo, merge_excludes,
+                   lookup_busca_repo, lookup_loja_page, lookup_repo, match_tempo, merge_excludes,
                    normalize_repo_url, parse_app_link, parse_desc, procurar_app,
                    purgar_video_cache, sem_info, anexar_link, gravar_link_manual,
                    tarefas_enriquecimento)
@@ -786,6 +786,38 @@ class TestAppLink(unittest.TestCase):
         gravar_link_manual(cache, e["nome"], "https://f-droid.org/packages/com.x/")
         self.assertEqual(cache["manual@snapseed"]["urls"],
                          ["https://github.com/a/b", "https://f-droid.org/packages/com.x/"])
+
+
+class TestCodebergData(unittest.TestCase):
+    """Forgejo/Gitea variam o campo de 'último push' — precisa cobrir os dois."""
+
+    FIXTURE_NOVA = json.dumps({
+        "description": "app de uso", "topics": ["android"], "stars_count": 29,
+        "updated_at": "2024-12-03T05:10:21+01:00", "website": ""})
+    FIXTURE_VELHA = json.dumps({
+        "description": "app de uso", "topics": [], "stars_count": 7,
+        "updated": "2023-01-02T03:04:05Z"})
+
+    def setUp(self):
+        self._http = gerar.http_get
+
+    def tearDown(self):
+        gerar.http_get = self._http
+
+    def _fake(self, corpo):
+        gerar.http_get = lambda *a, **k: (corpo, {"x-ratelimit-remaining": "30"})
+
+    def test_forgejo_updated_at(self):
+        self._fake(self.FIXTURE_NOVA)
+        info = lookup_repo("https://codeberg.org/fynngodau/usageDirect", {}, {"stop": False})
+        self.assertEqual(info["git_atualizado"], "2024-12-03")
+
+    def test_gitea_velho_updated(self):
+        self._fake(self.FIXTURE_VELHA)
+        info = lookup_repo("https://codeberg.org/s1m/savertuner", {}, {"stop": False})
+        self.assertEqual(info["git_atualizado"], "2023-01-02")
+        # ambos os casos: a chave EXISTE com valor — não vira cache 'servível' vazio
+        self.assertIn("git_atualizado", info)
 
 
 if __name__ == "__main__":

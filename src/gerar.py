@@ -755,7 +755,8 @@ def lookup_repo(url, cache, rate):
                 "descricao_repo": (d.get("description") or "")[:400] or None,
                 "tags": (d.get("topics") or [])[:12],
                 "stars": d.get("stars_count"),
-                "git_atualizado": (d.get("updated") or "")[:10] or None,
+                # Forgejo novo usa 'updated_at'; Gitea velho 'updated'
+                "git_atualizado": ((d.get("updated") or d.get("updated_at") or "")[:10] or None),
                 "idioma": None,
                 "licenca": None,
                 "homepage": d.get("website") or None,
