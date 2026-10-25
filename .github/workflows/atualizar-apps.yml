@@ -36,7 +36,7 @@ jobs:
 
       # regressão mínima: se o parse quebrar o build precisa falhar aqui
       - name: Testes
-        run: python test/gerar_test.py -q
+        run: python test/test_gerar.py -q
 
       - name: Commit (só se mudou)
         run: |
