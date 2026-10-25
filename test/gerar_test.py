@@ -651,6 +651,43 @@ class TestLojaPage(unittest.TestCase):
         self.assertIsNone(lookup_loja_page("https://play.google.com/store/apps/details?id=com.x", cache))
         self.assertEqual(cache, {})
 
+    # --- regressão: meta da Play Store com o TÍTULO da página como descrição ---
+
+    HTML_LIXO_PT = """<html><head>
+<meta name="description" property="og:description" content="Snapseed - Apps no Google Play">
+</head></html>"""
+
+    HTML_LIXO_EN = """<html><head>
+<meta property="og:description" content="Kiwi Browser - Apps on Google Play">
+</head></html>"""
+
+    def test_jogo_do_titulo_da_play_vira_negativo(self):
+        gerar.http_get = lambda *a, **k: (self.HTML_LIXO_PT, {"x-ratelimit-remaining": "30"})
+        cache = {}
+        info = lookup_loja_page("https://play.google.com/store/apps/details?id=com.snapseed", cache)
+        self.assertIsNone(info["descricao_repo"])     # lixo NÃO vira descrição
+        ce = list(cache.values())[0]
+        self.assertTrue(busca_servivel(ce))           # negativo cacheado (30 dias)
+
+    def test_lixo_nao_para_a_procura_de_meta_bom(self):
+        # og:description = lixo + itemprop = descrição real → a REAL deve vencer
+        html = (self.HTML_LIXO_PT.replace("</head>",
+            '<meta itemprop="description" content="Editor de fotos completo do Google."></head>'))
+        gerar.http_get = lambda *a, **k: (html, {"x-ratelimit-remaining": "30"})
+        info = lookup_loja_page("https://play.google.com/store/apps/details?id=com.snapseed", {})
+        self.assertEqual(info["descricao_repo"], "Editor de fotos completo do Google.")
+
+    def test_lixo_em_ingles_também_rejeitado(self):
+        gerar.http_get = lambda *a, **k: (self.HTML_LIXO_EN, {"x-ratelimit-remaining": "30"})
+        info = lookup_loja_page("https://play.google.com/store/apps/details?id=k", {})
+        self.assertIsNone(info["descricao_repo"])
+
+    def test_entidades_html_da_descricao_decodificadas(self):
+        html = '<meta property="og:description" content="Editor &amp; galeria — &#39;rápido&#39;">'
+        gerar.http_get = lambda *a, **k: (html, {"x-ratelimit-remaining": "30"})
+        info = lookup_loja_page("https://play.google.com/store/apps/details?id=k", {})
+        self.assertEqual(info["descricao_repo"], "Editor & galeria — 'rápido'")
+
 
 class TestTarefasEnriquecimento(unittest.TestCase):
     """Fila de enriquecimento: repo → fdroid → página de loja (apenas sem descrição)."""
