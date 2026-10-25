@@ -63,7 +63,7 @@ mark{background:var(--mark);color:var(--txt);border-radius:3px}
 .vid-btn:hover{border-color:var(--acc)}
 .vid-btn img{width:72px;height:40px;object-fit:cover;border-radius:6px;flex:none}
 .vid-btn .vt{font-size:.78rem;line-height:1.2}
-.vid-btn .vt small{display:block;color:var(--muted)}
+.vid-btn .vt small{display:block;margin-top:4px;color:var(--muted)}
 .player{margin-top:8px;aspect-ratio:16/9;border-radius:10px;overflow:hidden}
 .player iframe{width:100%;height:100%;border:0}
 .vazio{color:var(--muted);text-align:center;padding:40px 0}
