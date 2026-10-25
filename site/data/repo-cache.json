@@ -2913,6 +2913,9 @@
   "tags": [],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/RushikeshKhaidem/PrivacyDashboard": {
+  "erro": 404
+ },
  "repo@https://github.com/Rve27/RvKernel-Manager": {
   "descricao_repo": "Android Kernel Manager with Material 3 Expressive Design",
   "git_atualizado": "2026-05-11",
@@ -6460,6 +6463,9 @@
   "stars": 600,
   "tags": [],
   "ts": "2026-10-25"
+ },
+ "repo@https://github.com/test/test-repo": {
+  "erro": 404
  },
  "repo@https://github.com/tharunbirla/LibreCuts": {
   "descricao_repo": "LibreCuts is a free, open-source video editor for Android that prioritizes simplicity and efficiency.",
