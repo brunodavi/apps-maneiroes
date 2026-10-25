@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-25T04:32:58Z",
+ "atualizado": "2026-10-25T04:45:11Z",
  "canal": {
   "nome": "VegaData",
   "id": "UCd2FHKnQ3ymrNhdsV9J0VmA",
@@ -13721,14 +13721,14 @@
   {
    "nome": "Kiwi Browser",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Source-code used in Kiwi Browser for Android",
    "tags": [],
-   "stars": null,
-   "git_atualizado": null,
+   "stars": 2969,
+   "git_atualizado": "2023-11-18",
    "idioma": null,
-   "licenca": null,
+   "licenca": "NOASSERTION",
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/kiwibrowser/src",
    "lojas": [
     {
      "tipo": "loja:play",
@@ -13751,9 +13751,9 @@
      "tempo": 1403
     }
    ],
+   "origem_repo": "manual",
    "data_ultima": "2022-01-05",
-   "thumbnail": "https://i.ytimg.com/vi/n4tWRXTsMwM/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/n4tWRXTsMwM/hqdefault.jpg"
   },
   {
    "nome": "Iceraven",

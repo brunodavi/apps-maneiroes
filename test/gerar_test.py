@@ -28,7 +28,8 @@ from gerar import (FORA_SERIE_MOTIVO, PLAYLISTS, app_key, apps_por_capitulos,
                    classify_url, cutoff_date,
                    decidir_skip_excludes, escolher_repo, iso8601_seconds,
                    lookup_busca_repo, lookup_loja_page, match_tempo, merge_excludes,
-                   normalize_repo_url, parse_desc, purgar_video_cache, sem_info,
+                   normalize_repo_url, parse_app_link, parse_desc, procurar_app,
+                   purgar_video_cache, sem_info, anexar_link, gravar_link_manual,
                    tarefas_enriquecimento)
 
 DESC_COM_TEMPOS = """Eai pessoal, no vídeo de hoje vamos continuar a nossa série de aplicativos mensais, onde eu basicamente faço um compilado de diversos apps que eu acho interessantes, apps comuns, projetos de código aberto etc... e apresento eles pra vocês.
@@ -671,6 +672,83 @@ class TestTarefasEnriquecimento(unittest.TestCase):
         a = fake_app("X", lojas=[{"tipo": "loja:fdroid", "url": "https://f-droid.org/packages/com.x/"},
                                  {"tipo": "loja:play", "url": "https://play.google.com/x"}])
         self.assertEqual(tarefas_enriquecimento({"k": a}), [("fdroid", a, "com.x")])
+
+
+class TestAppLink(unittest.TestCase):
+    """--app-link: "App[@videoId]=URL" corrige/atualiza um app do catálogo."""
+
+    def test_parse_formas(self):
+        self.assertEqual(parse_app_link("Snapseed=https://github.com/a/b"),
+                         {"app": "Snapseed", "video": None, "url": "https://github.com/a/b"})
+        self.assertEqual(parse_app_link("Absolut@fPZKGseLI58 = https://gitlab.com/x/y"),
+                         {"app": "Absolut", "video": "fPZKGseLI58", "url": "https://gitlab.com/x/y"})
+        self.assertEqual(parse_app_link("WARP=https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone"),
+                         {"app": "WARP", "video": None, "url": "https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone"})
+
+    def test_parse_invalido(self):
+        self.assertIsNone(parse_app_link("semurl"))
+        self.assertIsNone(parse_app_link("=https://x.com/y"))
+        self.assertIsNone(parse_app_link("App=  "))
+
+    def _apps(self):
+        a1 = fake_app("Tacho")
+        a1["aparicoes"] = [{"videoId": "AAAAaaaaaaaa"[:11]}, {"videoId": "BBBBbbbbbbb"[:11]}]
+        a2 = fake_app("Tacho")          # nome repetido (outro vídeo da série)
+        a2["aparicoes"] = [{"videoId": "CCCCccccccc"[:11]}]
+        return [a1, a2]
+
+    def test_busca_por_nome_utiliza_video(self):
+        apps = self._apps()
+        e, amb = procurar_app(apps, "tacho")
+        self.assertIsNone(e)
+        self.assertEqual(len(amb), 2)                      # ambíguo sem vídeo
+        e, amb = procurar_app(apps, "TACHO", video="CCCCccccccc"[:11])
+        self.assertEqual(e["aparicoes"][0]["videoId"], "CCCCccccccc"[:11])
+        self.assertEqual(amb, [])
+
+    def test_busca_por_id_play_ou_repo(self):
+        apps = [fake_app("DSK Mode", lojas=[{"tipo": "loja:play",
+                                             "url": "https://play.google.com/store/apps/details?id=app.ijp.dskmode"}])]
+        e, _ = procurar_app(apps, "app.ijp.dskmode")
+        self.assertEqual(e["nome"], "DSK Mode")
+        e, _ = procurar_app(apps, "play:app.ijp.dskmode")
+        self.assertEqual(e["nome"], "DSK Mode")
+        r = fake_app("X", repo="https://github.com/owner/repo")
+        e, _ = procurar_app([r], "repo:owner/repo")
+        self.assertEqual(e["nome"], "X")
+
+    def test_busca_nada_encontrado(self):
+        self.assertEqual(procurar_app(self._apps(), "Inexistente"), (None, []))
+
+    def test_anexa_repo_normalizado_e_marca_manual(self):
+        e = fake_app("Snapseed")
+        self.assertTrue(anexar_link(e, "https://github.com/Quinny/X.git"))
+        self.assertEqual(e["repo"], "https://github.com/Quinny/X")
+        self.assertEqual(e["origem_repo"], "manual")
+
+    def test_anexa_lojas_sem_duplicar(self):
+        e = fake_app("X", lojas=[{"tipo": "loja:play", "url": "https://play.google.com/store/apps/details?id=com.x"}])
+        self.assertTrue(anexar_link(e, "https://f-droid.org/packages/com.x/"))
+        tipos = [(l["tipo"], l["url"]) for l in e["lojas"]]
+        self.assertIn(("loja:fdroid", "https://f-droid.org/packages/com.x/"), tipos)
+        self.assertTrue(anexar_link(e, "https://play.google.com/store/apps/details?id=com.x&hl=pt_BR") is False
+                        or len(e["lojas"]) == 2)  # mesma loja idêntica não duplica
+
+    def test_anexa_rejeita_url_invalida(self):
+        e = fake_app("X")
+        self.assertFalse(anexar_link(e, "https://www.youtube.com/watch?v=abc"))
+        self.assertFalse(anexar_link(e, "banana://sem classe"))
+        self.assertIsNone(e["repo"])
+
+    def test_grava_persistencia_manual(self):
+        e = fake_app("Snapseed")
+        cache = {}
+        gravar_link_manual(cache, e["nome"], "https://github.com/a/b")
+        self.assertEqual(cache["manual@snapseed"]["urls"], ["https://github.com/a/b"])
+        self.assertTrue(busca_servivel(cache["manual@snapseed"]))
+        gravar_link_manual(cache, e["nome"], "https://f-droid.org/packages/com.x/")
+        self.assertEqual(cache["manual@snapseed"]["urls"],
+                         ["https://github.com/a/b", "https://f-droid.org/packages/com.x/"])
 
 
 if __name__ == "__main__":

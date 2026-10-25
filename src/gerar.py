@@ -441,9 +441,12 @@ def get_video_info(vid):
 
 def classify_url(url):
     try:
-        host = urllib.parse.urlparse(url).netloc.lower().lstrip("www.")
+        p = urllib.parse.urlparse(url)
     except ValueError:
         return None
+    if (p.scheme or "").lower() not in ("http", "https"):
+        return None
+    host = p.netloc.lower().lstrip("www.")
     if not host:
         return None
     if "youtube.com" in host or "youtu.be" in host:
@@ -956,6 +959,136 @@ def lookup_busca_repo(nome, cache, rate):
         return None
 
 
+# ---------------------------------------------------------------- link manual (--app-link)
+
+APP_LINK_RE = re.compile(
+    r"^\s*(?P<app>[^@=\n]+?)(?:@(?P<vid>[A-Za-z0-9_-]{6,}))?\s*=\s*(?P<url>\S+)\s*$")
+
+
+def parse_app_link(spec):
+    """--app-link "App[@videoId]=URL" → {app, video, url}; None se malformado."""
+    m = APP_LINK_RE.match(spec or "")
+    if not m:
+        return None
+    return {"app": m.group("app").strip(), "video": m.group("vid"), "url": m.group("url")}
+
+
+def _chaves_app(e):
+    chaves = {"nome:" + norm(e.get("nome") or "")}
+    for l in e.get("lojas", []):
+        m = re.search(r"[?&]id=([\w.]+)", l["url"]) if l["tipo"] == "loja:play" \
+            else re.search(r"/packages/([\w.]+)", l["url"]) if l["tipo"] == "loja:fdroid" \
+            else None
+        if m:
+            chaves.add(("play:" if l["tipo"] == "loja:play" else "fdroid:") + m.group(1).lower())
+    if e.get("repo"):
+        k = app_key(e["nome"], [e["repo"]])
+        if k.startswith("repo:"):
+            chaves.add(k)
+            chaves.add("repo:" + k.split("/", 1)[1])  # forma sem host (repo:owner/repo)
+    return chaves
+
+
+def procurar_app(apps_list, alvo, video=None):
+    """Casa o app p/ --app-link: nome (sem acento/caixa) ou ID (repo:<o>/<r>,
+    play:<pacote>, fdroid:<pacote>, ou o pacote da Play sozinho).
+    `video` (videoId de uma aparição) desambigua nomes repetidos.
+    Devolve (app | None, candidatos | []): lista ≠ vazia = ambíguo."""
+    alvo = (alvo or "").strip()
+    if not alvo:
+        return None, []
+    com_prefixo = re.match(r"^(repo|url|nome|play|fdroid):(.+)$", alvo.lower())
+    hits = []
+    for e in apps_list:
+        chaves = _chaves_app(e)
+        if com_prefixo:
+            matched = alvo.lower() in chaves
+        else:
+            matched = norm(alvo) == norm(e.get("nome") or "") or alvo.lower() in {
+                c.split(":", 1)[1] for c in chaves if c.startswith(("play:", "fdroid:"))}
+        if matched:
+            hits.append(e)
+    if video:
+        hits = [h for h in hits
+                if any(ap.get("videoId") == video for ap in h.get("aparicoes", []))]
+    if len(hits) == 1:
+        return hits[0], []
+    if len(hits) > 1:
+        return None, hits
+    return None, []
+
+
+def _id_loja(url):
+    """Chave estável de loja: pacote da Play, pkgid do F-Droid, slug, ou a URL —
+    dedupe de lojas ignora '?hl=' e afins."""
+    if "play.google.com" in url:
+        m = re.search(r"[?&]id=([\w.]+)", url)
+        return m.group(1).lower() if m else url
+    m = re.search(r"/packages/([\w.]+)", url)
+    if m:
+        return m.group(1).lower()
+    return url.split("?")[0].rstrip("/")
+
+
+def anexar_link(entry, url):
+    """Anexa a URL ao app SEM rede: repo (normalizado, marca 'manual') ou loja.
+    False se a URL não classificou ou já estava lá."""
+    tipo = classify_url(url)
+    if tipo == "repo":
+        norm_url, _ = normalize_repo_url(url)
+        if norm_url:
+            entry["repo"], entry["origem_repo"] = norm_url, "manual"
+            return True
+        return False
+    if tipo and tipo.startswith("loja"):
+        k = (tipo, _id_loja(url))
+        if k not in {(x["tipo"], _id_loja(x["url"])) for x in entry["lojas"]}:
+            entry["lojas"].append({"tipo": tipo, "url": url})
+            return True
+    return False
+
+
+def gravar_link_manual(cache, nome, url):
+    """Persiste a correção no repo-cache (`manual@<nome>`) — rodadas futuras
+    (e o CI) reaplicam-na depois do parse dos vídeos."""
+    key = "manual@" + norm(nome)
+    urls = (cache.get(key) or {}).get("urls") or []
+    if url not in urls:
+        urls.append(url)
+    cache[key] = {"urls": urls, "ts": datetime.now(timezone.utc).strftime("%Y-%m-%d")}
+
+
+def aplicar_manuais_cache(apps, cache):
+    """Roda completa: reaplica manual@<nome> no catálogo recém-parseado.
+    Substitui repo/video-anexos onde o usuário corrigiu manualmente.
+    Devolve [(nome, url)] aplicadas."""
+    aplicadas = []
+    for key, val in cache.items():
+        if not key.startswith("manual@"):
+            continue
+        nome_n = key[len("manual@"):]
+        e = next((x for x in apps.values() if norm(x["nome"]) == nome_n), None)
+        if e is None:
+            continue
+        for url in (val or {}).get("urls", []):
+            if anexar_link(e, url):
+                aplicadas.append((e["nome"], url))
+    return aplicadas
+
+
+def aplicar_info(e, info, idioma=True):
+    """Merge de enriquecimento (repo REST/GraphQL/f-droid/loja) na entrada."""
+    if "descricao_repo" in info:
+        e["descricao_repo"] = info.get("descricao_repo") or e["descricao_repo"]
+    e["tags"] = info.get("tags") or e["tags"]
+    e["stars"] = info.get("stars") or e["stars"]
+    e["git_atualizado"] = info.get("git_atualizado") or e["git_atualizado"]
+    e["licenca"] = info.get("licenca") or e["licenca"]
+    e["homepage"] = info.get("homepage") or e["homepage"]
+    if idioma:
+        e["idioma"] = info.get("idioma") or e["idioma"]
+
+
 # ---------------------------------------------------------------- busca no canal (camada de descoberta)
 
 def innertube_search_channel(q):
@@ -1022,7 +1155,78 @@ def main():
               f"repo/f-droid, nem descrição): {len(lista)}")
         for a in lista:
             fonte = next((l["url"] for l in a.get("lojas", []) if l), None)
-            print(f"   {a['nome']:32s} | {fonte or '(sem link)'}")
+            vids = ",".join(ap["videoId"] for ap in a.get("aparicoes", [])[:2])
+            print(f"   {a['nome']:32s} | {fonte or '(sem link)':70s} | vídeos: {vids}")
+        sys.exit(0)
+
+    # --app-link "App[@videoId]=URL": corrige/atualiza UM app do catálogo e sai.
+    # A URL (github/codeberg/playstore/fdroid/apkmirror/site) anexa repo/loja
+    # e já puxa meta-dados (desc/tags/stars). Persiste em repo-cache.json
+    # (`manual@nome`) para as rodadas futuras — e o CI — reaplicarem.
+    links_spec = [args[i + 1].strip() for i, a in enumerate(args)
+                  if a == "--app-link" and i + 1 < len(args) and args[i + 1].strip()]
+    if links_spec:
+        apps_path = os.path.join(DATA_DIR, "apps.json")
+        d = load_json(apps_path)
+        if not d.get("apps"):
+            print("ERRO: apps.json vazio/inexistente — rode o gerador completo primeiro")
+            sys.exit(1)
+        cache = load_cache()
+        rate = {"stop": False}
+        ok = erros = 0
+        for spec in links_spec:
+            p = parse_app_link(spec)
+            if not p:
+                print(f"   ERRO: formato de '{spec}' (use \"App[@videoId]=URL\")")
+                erros += 1
+                continue
+            e, amb = procurar_app(d["apps"], p["app"], p["video"])
+            if e is None:
+                if amb:
+                    print(f"   ERRO: '{p['app']}' casa {len(amb)} apps — desambigue com @videoId:")
+                    for h in amb[:5]:
+                        vids = ",".join(ap["videoId"] for ap in h.get("aparicoes", [])[:4])
+                        print(f"      · {h['nome']}  (vídeos: {vids}…)")
+                else:
+                    msg = f"   ERRO: '{p['app']}' não encontrado no catálogo"
+                    if p["video"]:
+                        msg += f" com @videoId '{p['video']}' (nenhuma aparição casa)"
+                    print(msg)
+                erros += 1
+                continue
+            if not anexar_link(e, p["url"]):
+                print(f"   ({e['nome']}: URL já presente ou não utilizável: {p['url']})")
+                erros += 1
+                continue
+            gravar_link_manual(cache, e["nome"], p["url"])
+            tipo = classify_url(p["url"])
+            # meta-dados na hora (rede só do app corrigido)
+            if tipo == "repo":
+                info = normalize_repo_url(p["url"]) and lookup_repo(
+                    normalize_repo_url(p["url"])[0], cache, rate)
+                if info and isinstance(info, dict) and "erro" not in info:
+                    aplicar_info(e, info)
+            elif tipo == "loja:fdroid" and fdroid_pkgid(p["url"]):
+                info = lookup_fdroid(fdroid_pkgid(p["url"]), cache)
+                if info and isinstance(info, dict) and "erro" not in info:
+                    aplicar_info(e, info, idioma=False)
+            elif tipo and tipo.startswith("loja") \
+                    and not (e["descricao_curta"] or e["descricao_repo"]):
+                info = lookup_loja_page(p["url"], cache) or {}
+                if info.get("descricao_repo"):
+                    aplicar_info(e, info, idioma=False)
+            sem = sem_info(e)
+            e.pop("sem_info", None)
+            if sem:
+                e["sem_info"] = True
+            ok += 1
+            extra = f" ({e['repo']})" if e["repo"] else ""
+            print(f"   OK: {e['nome']} ← {p['url']}{extra}")
+        # grava apps.json no MESMO formato do gerador (indent=1, sem sort direto)
+        with open(apps_path, "w", encoding="utf-8") as f:
+            json.dump(d, f, ensure_ascii=False, indent=1)
+        save_cache(cache)
+        print(f"\n--app-link: {ok} app(s) atualizado(s), {erros} problema(s)")
         sys.exit(0)
 
     # 1) playlists + canal -----------------------------------------------
@@ -1272,6 +1476,17 @@ def main():
                   f"Use --force para forçar.")
             sys.exit(1)
 
+    # 2.95) correções manuais do repo-cache (`manual@nome`, via --app-link)
+    # reaplicam-se a CADA rodada — o CI não desfaz sua curadoria
+    mcache = load_cache()
+    manuais = aplicar_manuais_cache(apps, mcache)
+    if manuais:
+        print(f"== correções manuais reaplicadas: {len(manuais)}")
+        for nome, url in manuais[:8]:
+            print(f"   {nome} ← {url}")
+        if len(manuais) > 8:
+            print(f"   … +{len(manuais) - 8}")
+
     # 3) enriquecimento repos --------------------------------------------
     if not sem_repo:
         print("== Enriquecendo com APIs de repositórios (paralelo)...")
@@ -1336,14 +1551,7 @@ def main():
                 for kind, e, info in ex.map(do, tasks):
                     if not info or "erro" in info:
                         continue
-                    e["descricao_repo"] = info.get("descricao_repo") or e["descricao_repo"]
-                    e["tags"] = info.get("tags") or e["tags"]
-                    e["stars"] = info.get("stars") or e["stars"]
-                    e["git_atualizado"] = info.get("git_atualizado") or e["git_atualizado"]
-                    e["licenca"] = info.get("licenca") or e["licenca"]
-                    e["homepage"] = info.get("homepage") or e["homepage"]
-                    if kind == "repo":
-                        e["idioma"] = info.get("idioma") or e["idioma"]
+                    aplicar_info(e, info, idioma=(kind == "repo"))
                     ok += 1
         finally:
             save_cache(cache)

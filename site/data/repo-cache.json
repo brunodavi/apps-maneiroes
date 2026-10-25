@@ -853,6 +853,12 @@
   "descricao_repo": "Download MT Manager APKs for Android - APKMirror Free and safe Android APK downloads",
   "ts": "2026-10-25"
  },
+ "manual@kiwibrowser": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://github.com/kiwibrowser/src"
+  ]
+ },
  "repo@https://codeberg.org/Loowiz/PhotoSwooper": {
   "descricao_repo": "A dating app for ur photos & videos! <3",
   "git_atualizado": null,
@@ -4884,6 +4890,16 @@
    "virtual-gamepad",
    "fdroid"
   ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/kiwibrowser/src": {
+  "descricao_repo": "Source-code used in Kiwi Browser for Android",
+  "git_atualizado": "2023-11-18",
+  "homepage": null,
+  "idioma": null,
+  "licenca": "NOASSERTION",
+  "stars": 2969,
+  "tags": [],
   "ts": "2026-10-25"
  },
  "repo@https://github.com/kiwibrowser/src.next": {

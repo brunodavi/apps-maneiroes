@@ -47,6 +47,7 @@ python3 src/gerar.py --limit 8    # debug: só os N primeiros vídeos
 python3 src/gerar.py --sem-repo   # pula o enriquecimento de repos
 python3 src/gerar.py --video-id ssP04Cl1bmo        # adiciona um vídeo manualmente
 python3 src/gerar.py --sem-info   # lista apps sem fonte nem descrição (sem rede, só lê)
+python3 src/gerar.py --app-link "Kiwi Browser=https://github.com/kiwibrowser/src"
 python3 test/gerar_test.py         # testes (fixtures reais do YouTube)
 ```
 
@@ -103,14 +104,38 @@ nota "sem fonte nem descrição". Para visualizar a lista completa a qualquer
 hora, no catálogo atual, sem tocar em rede:
 
 ```
-   aviso: 40 app(s) sem fonte nem descrição …
+   aviso: 28 app(s) sem fonte nem descrição …
 
 $ python3 src/gerar.py --sem-info
-== 478 apps no catálogo; SEM informação (nem repo/f-droid, nem descrição): 40
-   Snapseed                         | https://play.google.com/store/apps/details?id=com.niksoftware.snapseed
-   Tilla                            | (sem link)
+== 476 apps no catálogo; SEM informação (nem repo/f-droid, nem descrição): 28
+   Tilla                 | (sem link)  | vídeos: ssP04Cl1bmo
+   Kiwi Browser          | https://play.google.com/…  | vídeos: BfOeDIUwH8I
    …
 ```
+
+### Corrigir à mão um app: `--app-link`
+
+Quando você sabe onde está o dado do app (repo, GitLab, Codeberg, F-Droid,
+Play Store, apkmirror ou site do app), passa o link e o gerador atualiza tudo
+no ato (repo/loja anexada + descrição/tags/stars puxadas de imediato) e
+**persiste a correção** em `repo-cache.json` (`manual@nome`) — as rodadas
+seguintes e o CI reaplicam-na após o parse dos vídeos, automaticamente:
+
+```
+$ python3 src/gerar.py --app-link "Kiwi Browser=https://github.com/kiwibrowser/src"
+   OK: Kiwi Browser ← https://github.com/kiwibrowser/src
+
+$ python3 src/gerar.py --app-link "MDM@fPZKGseLI58=https://codeberg.org/dev/mdm"
+   OK: MDM ← https://codeberg.org/dev/mdm
+```
+
+- `"App"` casa pelo nome (ignorando acento/caixa) **ou pelo id da Play
+  (`com.empresa.app`) / `repo:owner/repo` / `fdroid:pkg`**
+- nomes repetidos entre vídeos desambiguam com `@videoId` (pegue o id no
+  `--sem-info` — coluna "vídeos")
+- múltiplos `--app-link` no mesmo comando atualizam vários apps
+- para desfazer uma correção, apague a entrada `manual@<nome>` do
+  `repo-cache.json` (ou ajuste a URL lá) e rode de novo
 
 ## Publicar no GitHub Pages
 
