@@ -5,7 +5,7 @@ on:
     - cron: "0 16 5 * *"   # dia 5 de cada mês, ~13h BRT
   workflow_dispatch:        # permite rodar manualmente pela aba Actions
   push:
-    branches: [main]        # publicação de ajustes no site/data
+    branches: [master]        # publicação de ajustes no site/data
 
 permissions:
   contents: write           # o bot precisa commitar os caches
