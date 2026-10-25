@@ -147,9 +147,20 @@ function render(q) {
     res.length + " de " + apps.length + " apps" + (q ? " · busca: “" + q + "”" : "");
   document.getElementById("vazio").hidden = res.length > 0;
   grid.innerHTML = res.slice(0, 200).map(a => cardHtml(a, termos)).join("");
+  // marca o chip/tag que está aplicado (clicar de novo limpa)
+  var nq = norm(q);
+  document.querySelectorAll("#chips .chip").forEach(function (c) {
+    c.classList.toggle("on", norm(c.textContent) === nq);
+  });
 }
 
 // ---------- chips: tags comuns de uma vez ----------
+function aplicarCliqueTag(valor) {
+  var inp = document.getElementById("q");
+  // toggle: clicar na tag que já está aplicada limpa a busca
+  inp.value = norm(inp.value.trim()) === norm(valor) ? "" : valor;
+  inp.dispatchEvent(new Event("input"));
+}
 function renderChips() {
   var freq = {}, top;
   apps.forEach(a => (a.tags || []).forEach(t => freq[norm(t)] = (freq[norm(t)] || 0) + 1));
@@ -161,8 +172,7 @@ function renderChips() {
   el.innerHTML = ["open source"].concat(top).map(t => '<span class="chip">' + esc(t) + '</span>').join("");
   el.addEventListener("click", function (ev) {
     if (ev.target.classList.contains("chip")) {
-      var inp = document.getElementById("q");
-      inp.value = ev.target.textContent; inp.dispatchEvent(new Event("input"));
+      aplicarCliqueTag(ev.target.textContent);
     }
   });
 }
@@ -209,8 +219,7 @@ fetch("data/apps.json", { cache: "no-store" })
 grid.addEventListener("click", function (ev) {
   var chip = ev.target.closest(".tag");
   if (chip) {
-    var inp = document.getElementById("q");
-    inp.value = chip.getAttribute("data-tag"); inp.dispatchEvent(new Event("input"));
+    aplicarCliqueTag(chip.getAttribute("data-tag"));
     return;
   }
   var btn = ev.target.closest(".vid-btn");
