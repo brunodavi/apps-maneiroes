@@ -26,6 +26,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Testes JavaScript
+        run: node --test site/js/utils.test.js
+
+      - name: Testes Python
+        run: python test/test_gerar.py -q
+
       # GITHUB_TOKEN (auto-injetado) sobe o limite da API de 60/h p/ 1000/h
       # e habilita o GraphQL em lote. --janela 3: só procura vídeos de série
       # publicados nos últimos 3 meses (o restante já está no cache commitado).
@@ -33,10 +43,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python src/gerar.py --janela 3
-
-      # regressão mínima: se o parse quebrar o build precisa falhar aqui
-      - name: Testes
-        run: python test/test_gerar.py -q
 
       - name: Commit (só se mudou)
         run: |
