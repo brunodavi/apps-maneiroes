@@ -46,6 +46,7 @@ python3 src/gerar.py --fresh      # descarta caches e coleta tudo de novo
 python3 src/gerar.py --limit 8    # debug: só os N primeiros vídeos
 python3 src/gerar.py --sem-repo   # pula o enriquecimento de repos
 python3 src/gerar.py --video-id ssP04Cl1bmo        # adiciona um vídeo manualmente
+python3 src/gerar.py --sem-info   # lista apps sem fonte nem descrição (sem rede, só lê)
 python3 test/gerar_test.py         # testes (fixtures reais do YouTube)
 ```
 
@@ -69,8 +70,7 @@ seguintes e permitem retomar de onde parou após um erro):
 |---|---|
 | `site/data/excludes.json`     | vídeos comprovadamente fora da série (id + motivo + data) — rodadas seguintes nem consultam |
 | `site/data/video-cache.json` | título/descrição/duração/data dos vídeos **da série** (regenera o parse sem rede) |
-| `site/data/repo-cache.json`  | descrição/tags/stars de cada repo/f-droid (+ resultado da busca de repos por nome, válido 30 dias) |
-| `site/data/apps-fixes.json`  | curadoria manual: preenche repo/descrição/tags de apps que ninguém achou sozinho |
+| `site/data/repo-cache.json`  | descrição/tags/stars de cada repo/f-droid (+ busca de repos por nome e páginas de loja, válidos 30 dias) |
 
 A memória negativa (`excludes.json`) é preenchida automaticamente: vídeos fora
 do padrão de título (skip definitivo) e vídeos com título de série mas sem apps
@@ -84,35 +84,33 @@ Open Source (antiga), Recomendações de apps (antiga) e Aplicativos para quem
 tem acesso root. Fora delas, o gerador varre os uploads do canal inteiro
 (750+ vídeos, pré-filtro por título) + buscas textuais.
 
-## Apps sem fonte (aviso + resgate + forma manual)
+## Apps sem fonte (aviso + resgate automático + listar)
 
 Todo fim de rodada o gerador lista apps que ficaram **só com o nome** (sem repo
-GitHub/GitLab/Codeberg, sem F-Droid e sem descrição — capítulos antigos sem
-links e apps fechados citados na Play Store, ex.: Snapseed):
+GitHub/GitLab/Codeberg, sem F-Droid e sem descrição). Antes do aviso ele tenta
+se corrigir sozinho, em duas fontes:
+
+1. **páginas de loja/site** — a Play Store não tem API de descrição, mas o HTML
+   da página carrega `og:description` (com `hl=pt_BR` vem em português);
+   idem apkmirror e sites do próprio app. Cacheado 30 dias.
+2. **busca do GitHub pelo nome do app** (nome + `android`, por relevância, com
+   filtro de similaridade — match fraco **não** é apontado, para não indicar
+   repo errado). Positivo/negativo cacheados 30 dias (`busca@nome`).
+
+O que sobrar (apps fechados tipo Snapseed/MiXplorer, ou projetos sem doc) fica
+avisado e marcado no catálogo com `"sem_info": true` — o card no site mostra a
+nota "sem fonte nem descrição". Para visualizar a lista completa a qualquer
+hora, no catálogo atual, sem tocar em rede:
 
 ```
-   aviso: 38 app(s) sem fonte nem descrição — complete manualmente em site/data/apps-fixes.json: Snapseed, LocalDream, …
+   aviso: 40 app(s) sem fonte nem descrição …
+
+$ python3 src/gerar.py --sem-info
+== 478 apps no catálogo; SEM informação (nem repo/f-droid, nem descrição): 40
+   Snapseed                         | https://play.google.com/store/apps/details?id=com.niksoftware.snapseed
+   Tilla                            | (sem link)
+   …
 ```
-
-Antes do aviso ele tenta se corrigir sozinho: **resgate pela busca do GitHub**
-(nome do app + `android`, com filtro de similaridade — match fraco não é
-apontado para não indicar repo errado). O resultado, positivo ou negativo,
-fica 30 dias no `repo-cache.json` (`busca@nome`) para não reconsultar.
-
-Quando o resgate não acha (app fechado, repo não listado), complete à mão no
-**`site/data/apps-fixes.json`** (commitado):
-
-```json
-{
-  "Snapseed": {"descricao_curta": "Editor de fotos do Google (código fechado)"},
-  "LocalDream": {"repo": "https://github.com/dev/LocalDream", "tags": ["IA"]}
-}
-```
-
-Regras: casa pelo nome (ignorando acento/maiúsculas), **só preenche campo
-vazio** (nunca sobrescreve dado automático) e `"repo": ""` remove um repo
-resgatado da busca que saiu errado. A UI marca cards sem informação com a
-nota "sem fonte nem descrição".
 
 ## Publicar no GitHub Pages
 

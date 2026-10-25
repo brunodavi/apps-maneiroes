@@ -1,5 +1,95 @@
 {
+ "busca@abbey": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@acca": {
+  "repo_url": "https://github.com/VR-25/acc",
+  "ts": "2026-10-25"
+ },
+ "busca@accessdots": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@activitylauncher": {
+  "repo_url": "https://github.com/ActivityLauncher/ActivityLauncher",
+  "ts": "2026-10-25"
+ },
+ "busca@afwall": {
+  "repo_url": "https://github.com/ukanth/afwall",
+  "ts": "2026-10-25"
+ },
+ "busca@amappmanager": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@amazonappstore": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@ampere": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@anytracker": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@appdash": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@appops": {
+  "repo_url": "https://github.com/theblixguy/AppOps",
+  "ts": "2026-10-25"
+ },
  "busca@betamaniac": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@bradybound": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@camera2apiprobe": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@cameraxinfo": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@conclusao": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@consoledocloudshell": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@darkmodelivewallpaper": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@debloater": {
+  "repo_url": "https://github.com/sunilpaulmathew/De-Bloater",
+  "ts": "2026-10-25"
+ },
+ "busca@devcheck": {
   "erro": "sem match",
   "repo_url": null,
   "ts": "2026-10-25"
@@ -12,12 +102,41 @@
   "repo_url": "https://github.com/1993hzw/Doodle",
   "ts": "2026-10-25"
  },
+ "busca@drivedroid": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@drminfo": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
  "busca@dskmode": {
   "erro": "sem match",
   "repo_url": null,
   "ts": "2026-10-25"
  },
+ "busca@dynamicspot": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
  "busca@echoeq": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@extinguish": {
+  "repo_url": "https://github.com/Moderpach/Extinguish",
+  "ts": "2026-10-25"
+ },
+ "busca@feedly": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@ferramentasdalinhadecomando": {
   "erro": "sem match",
   "repo_url": null,
   "ts": "2026-10-25"
@@ -52,13 +171,53 @@
   "repo_url": null,
   "ts": "2026-10-25"
  },
+ "busca@fvfileexplorer": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@geometricweather": {
+  "repo_url": "https://github.com/WangDaYeeeeee/GeometricWeather",
+  "ts": "2026-10-25"
+ },
+ "busca@googlecloudshell": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@icebox": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@island": {
+  "repo_url": "https://github.com/oasisfeng/island",
+  "ts": "2026-10-25"
+ },
  "busca@kiwibrowser": {
   "erro": "sem match",
   "repo_url": null,
   "ts": "2026-10-25"
  },
+ "busca@ladb": {
+  "repo_url": "https://github.com/tytydraco/LADB",
+  "ts": "2026-10-25"
+ },
  "busca@lawnchair": {
   "repo_url": "https://github.com/LawnchairLauncher/lawnchair",
+  "ts": "2026-10-25"
+ },
+ "busca@limbopc": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@linkeye": {
+  "repo_url": "https://github.com/rupak0577/link_eye",
+  "ts": "2026-10-25"
+ },
+ "busca@lsposed": {
+  "repo_url": "https://github.com/LSPosed/LSPosed",
   "ts": "2026-10-25"
  },
  "busca@mdm": {
@@ -66,9 +225,52 @@
   "repo_url": null,
   "ts": "2026-10-25"
  },
+ "busca@mediabar": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@microgesture": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@mixplorer": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@morelocale2": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
  "busca@mtmanager": {
   "erro": "sem match",
   "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@muviz": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@muzei": {
+  "repo_url": "https://github.com/muzei/muzei",
+  "ts": "2026-10-25"
+ },
+ "busca@naptime": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@nightlight": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@notally": {
+  "repo_url": "https://github.com/OmGodse/Notally",
   "ts": "2026-10-25"
  },
  "busca@notinotes": {
@@ -79,7 +281,47 @@
   "repo_url": "https://github.com/allgood/OpenNoteScanner",
   "ts": "2026-10-25"
  },
+ "busca@osmand": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@otomusic": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@packagemanager": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
  "busca@pixelsearch": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@playintegrityapichecker": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@powerampequalizer": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@privacydashboard": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@purr": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@quickpicmod": {
   "erro": "sem match",
   "repo_url": null,
   "ts": "2026-10-25"
@@ -89,17 +331,56 @@
   "repo_url": null,
   "ts": "2026-10-25"
  },
+ "busca@sa2ration": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@screenstream": {
+  "repo_url": "https://github.com/dkrivoruchko/ScreenStream",
+  "ts": "2026-10-25"
+ },
+ "busca@scrollingiconslivewallpaper": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@sdmaid": {
+  "repo_url": "https://github.com/d4rken-org/sdmaid-se",
+  "ts": "2026-10-25"
+ },
+ "busca@shizuku": {
+  "repo_url": "https://github.com/RikkaApps/Shizuku-API",
+  "ts": "2026-10-25"
+ },
  "busca@simplednd": {
   "erro": "sem match",
   "repo_url": null,
   "ts": "2026-10-25"
  },
  "busca@skit": {
-  "repo_url": "https://github.com/mkotyk/Skitter",
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@smartflasher": {
+  "erro": "sem match",
+  "repo_url": null,
   "ts": "2026-10-25"
  },
  "busca@smartlauncher": {
-  "repo_url": "https://github.com/nayash/smarter-launcher",
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@smartpackkernelmanager": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@snapseed": {
+  "erro": "sem match",
+  "repo_url": null,
   "ts": "2026-10-25"
  },
  "busca@spatialtouch": {
@@ -108,10 +389,44 @@
   "ts": "2026-10-25"
  },
  "busca@sponge": {
-  "repo_url": "https://github.com/XiaogegeChen/Sponge",
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@substratum": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@swiftbackup": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@systemuituner": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@takostats": {
+  "repo_url": "https://github.com/andikachan/TakoStats",
+  "ts": "2026-10-25"
+ },
+ "busca@tango": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@taptap": {
+  "repo_url": "https://github.com/KieronQuinn/TapTap",
   "ts": "2026-10-25"
  },
  "busca@tidypanel": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@tilla": {
   "erro": "sem match",
   "repo_url": null,
   "ts": "2026-10-25"
@@ -130,12 +445,41 @@
   "repo_url": null,
   "ts": "2026-10-25"
  },
+ "busca@viper4androidfx": {
+  "repo_url": "https://github.com/vipersaudio/viper4android_fx",
+  "ts": "2026-10-25"
+ },
  "busca@volumee": {
   "erro": "sem match",
   "repo_url": null,
   "ts": "2026-10-25"
  },
+ "busca@vphoneos": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@vpnhotspot": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@wallplz": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
  "busca@warp": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@xdalabs": {
+  "erro": "sem match",
+  "repo_url": null,
+  "ts": "2026-10-25"
+ },
+ "busca@yasnac": {
   "erro": "sem match",
   "repo_url": null,
   "ts": "2026-10-25"
@@ -292,6 +636,222 @@
   "stars": null,
   "tags": [],
   "ts": "2026-10-24"
+ },
+ "loja@https://app.tangoapp.dev": {
+  "descricao_repo": "A brand new way for managing Android devices. Use file browser, app manager, screen mirror and more right in your browser.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://cloud.google.com/shell": {
+  "descricao_repo": "Command-line access to Google Cloud projects and resources.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://developer.android.com/studio?hl=pt-br": {
+  "descricao_repo": "O Android Studio oferece aos builders de apps um ambiente de desenvolvimento integrado (IDE, na sigla em inglês) otimizado para apps Android. Faça o download do Android Studio.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=app.ijp.dskmode": {
+  "descricao_repo": "Desktop taskbar on Android - Truly open apps, instant switching, pinned favs",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=app.maslanka.volumee": {
+  "descricao_repo": "Skip tracks with volume buttons without taking your phone out of your pocket!",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.airbeat.device.inspector&hl=pt_BR": {
+  "descricao_repo": "Recursos da API Probe Android Camera2 em seus telefones.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.akira.mdm": {
+  "descricao_repo": "Fast Android Download Manager featuring the beauty of Material You",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.androidfung.drminfo&hl=pt_BR": {
+  "descricao_repo": "Mostra informações de DRM (Widevine, PlayReady, etc) do Android DRM Framework",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.bluckapps.donotdisturb": {
+  "descricao_repo": "The missing do not disturb quick settings tile.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.catchingnow.icebox&hl=pt_BR&gl=US": {
+  "descricao_repo": "Congele e oculte apps pouco usados. Leia as instruções antes de instalar!",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone": {
+  "descricao_repo": "A More Private Internet",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.dharmapoudel.tidypanel": {
+  "descricao_repo": "Simple and minimal notifications cleaner app.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.draco.ladb&hl=pt_BR&gl=US": {
+  "descricao_repo": "Um cliente de shell ADB local não raiz. LEIA ABAIXO!",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.draco.purr&hl=pt_BR&gl=US": {
+  "descricao_repo": "Sacie sua ânsia por quadros por segundo crus.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.folderv.file": {
+  "descricao_repo": "Clean, modern interface built with Material Design.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.franco.focus.lite": {
+  "descricao_repo": "Fast, private photo gallery with built-in editor. No cloud, no ads, no tracking.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.google.android.apps.cloudconsole&hl=pt_BR&gl=US": {
+  "descricao_repo": "Gerencie a solução do Google Cloud.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.hapibits.soundlift": {
+  "descricao_repo": "Upto 31 Bands Equalizer fx + Bass & Volume Booster with Auto EQ for Android",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.jamworks.dynamicspot": {
+  "descricao_repo": "Experience the Dynamic Notification Island power on your phone!",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.makeevapps.findmylostdevice": {
+  "descricao_repo": "Have you ever lost your earbuds, smartwatch, or another Bluetooth device?",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.marc.files": {
+  "descricao_repo": "This app is a shortcut to the file manager of the settings app.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.niksoftware.snapseed": {
+  "descricao_repo": "The complete, professional photo editor built by Google.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.notch.touch": {
+  "descricao_repo": "Turn your phone notch into a shortcut button! One tap to take a screenshot!",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.oasisfeng.island": {
+  "descricao_repo": "Discover the secret Island inside Android, release its mysterious power!",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.omagrahari.abbeymusicplayernew&hl=pt_BR&gl=US": {
+  "descricao_repo": "Mínimo. Som de chuva . Ringtone Maker. Letra da música . Listas de tempo",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.omgodse.notally&hl=pt_BR": {
+  "descricao_repo": "Um aplicativo simples e elegante de notas de código aberto",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.pavelrekun.skit": {
+  "descricao_repo": "Simplest and most intuitive app manager!",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.perfectapps.muviz": {
+  "descricao_repo": "Play Live Music Visualizers on your phone's Navbar or Status Bar 🎶",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.piyush.music&hl=pt_BR&gl=US": {
+  "descricao_repo": "Um bonito e material projetado leitor de música offline para android.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.prismtree.sponge": {
+  "descricao_repo": "Swipe your way to a clean and organized photo gallery with Sponge",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.silentlexx.ffmpeggui": {
+  "descricao_repo": "Convert audio and video directly to your device using FFmpeg",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.smartpack.packagemanager&hl=pt_BR": {
+  "descricao_repo": "Instale e gerencie aplicativos sem esforço: experimente o futuro do gerenciamento de aplicativos",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.usblockit.app": {
+  "descricao_repo": "Password Lock USB Drive",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.yoyo.snake.rush&hl=pt": {
+  "descricao_repo": "Jogos de PC + emulador de Android, tudo em um só app",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=com.zacharee1.systemuituner&hl=pt_BR&gl=US": {
+  "descricao_repo": "POR FAVOR, LEIA TODA A DESCRIÇÃO ANTES DE INSTALAR",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=dev.zwander.cameraxinfo&hl=pt_BR": {
+  "descricao_repo": "Visualize e carregue as informações da sua câmera",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=flar2.devcheck&hl=pt_BR": {
+  "descricao_repo": "Benchmarks, ferramentas e informações completas sobre seu hardware e sistema operacional.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=ginlemon.flowerfree": {
+  "descricao_repo": "A faster Android home screen with auto app sorting, widgets and smart search",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck&hl=pt_BR": {
+  "descricao_repo": "Obtenha informações sobre a integridade do seu dispositivo por meio da API Play Intergrity",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=io.vtouch.spatial_touch": {
+  "descricao_repo": "Control your phone without touching the screen!",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=it.mirko.beta": {
+  "descricao_repo": "Get notified when a beta program is available!",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=it.ruppu": {
+  "descricao_repo": "Pin files, notes, links & media in notifications for easy access",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=jp.co.c_lis.ccl.morelocale&hl=pt_BR&gl=US": {
+  "descricao_repo": "Este é apenas MoreLocale2",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=me.i38.gesture&hl=pt-BR": {
+  "descricao_repo": "Navegação inovadora por gestos de movimento Android",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api&hl=pt_BR&gl=US": {
+  "descricao_repo": "Shizuku é um aplicativo de código aberto que serve vários aplicativos que exigem root / adb.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=net.osmand&hl=pt_BR": {
+  "descricao_repo": "A navegação nas caminhadas não é um problema. Descarregue o mapa e coloque notas",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=org.mozilla.firefox": {
+  "descricao_repo": "Private by default. Less tracking. Peace of mind built in.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=own.moderpach.extinguish": {
+  "descricao_repo": "Helps you run any android apps as if the screen is on while it is off.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=pub.hanks.appfolderwidget": {
+  "descricao_repo": "Put large super-sized folders or big icons in homescreen to improve productivity",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=rikka.appops": {
+  "descricao_repo": "Manage app permission with App Ops (require root or adb)",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=rikka.fpsmonitor": {
+  "descricao_repo": "TakoStats shows FPS and performance information on the screen, no root required.",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=rikka.safetynetchecker&hl=pt_BR": {
+  "descricao_repo": "Mais um verificador de atestado SafetyNet",
+  "ts": "2026-10-25"
+ },
+ "loja@https://play.google.com/store/apps/details?id=rk.android.app.pixelsearch": {
+  "descricao_repo": "Find anything on your phone easily with Pixel Search - the all-in-one search app",
+  "ts": "2026-10-25"
+ },
+ "loja@https://www.apkmirror.com/apk/lin-jin-bin/mt-manager/": {
+  "descricao_repo": "Download MT Manager APKs for Android - APKMirror Free and safe Android APK downloads",
+  "ts": "2026-10-25"
  },
  "repo@https://codeberg.org/Loowiz/PhotoSwooper": {
   "descricao_repo": "A dating app for ur photos & videos! <3",
@@ -474,6 +1034,19 @@
    "kotlin",
    "partition",
    "storage"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/ActivityLauncher/ActivityLauncher": {
+  "descricao_repo": "Activity launcher creates shortcuts for any installed app and hidden activities to launch them with ease",
+  "git_atualizado": "2026-10-22",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "ISC",
+  "stars": 2026,
+  "tags": [
+   "android",
+   "java"
   ],
   "ts": "2026-10-25"
  },
@@ -1442,6 +2015,16 @@
   "tags": [],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/KieronQuinn/TapTap": {
+  "descricao_repo": "Port of the double tap on back of device feature from Android 12 to any Android 7.0+ device",
+  "git_atualizado": "2024-10-26",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 4058,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/Kin69/EasyNotes": {
   "descricao_repo": "EasyNotes: Jetpack Compose MVVM for seamless note-taking. Effortless creation, editing, and organization.",
   "git_atualizado": "2026-01-25",
@@ -1470,6 +2053,19 @@
   "licenca": "MPL-2.0",
   "stars": 124,
   "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/LSPosed/LSPosed": {
+  "descricao_repo": "LSPosed Framework",
+  "git_atualizado": "2026-10-14",
+  "homepage": "https://lsposed.org",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 25175,
+  "tags": [
+   "android",
+   "xposed"
+  ],
   "ts": "2026-10-25"
  },
  "repo@https://github.com/LSafer/edgeseek": {
@@ -1637,6 +2233,16 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/Moderpach/Extinguish": {
+  "descricao_repo": "An app that helps you run any android apps as if the screen is on while it is off.",
+  "git_atualizado": "2025-10-04",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 496,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/MuntashirAkon/AppManager": {
   "descricao_repo": "A full-featured package manager and viewer for Android",
   "git_atualizado": "2026-10-19",
@@ -1705,6 +2311,32 @@
    "fdroid",
    "flutter",
    "flutter-apps"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Nitish-7/appDashBoard": {
+  "descricao_repo": "MVVM | Data Binding | Retrofit | Android Linear Chart",
+  "git_atualizado": "2023-07-15",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": null,
+  "stars": 1,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/OmGodse/Notally": {
+  "descricao_repo": "A beautiful notes app",
+  "git_atualizado": "2026-05-21",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 2193,
+  "tags": [
+   "android",
+   "kotlin",
+   "material-design",
+   "minimalism",
+   "notes"
   ],
   "ts": "2026-10-25"
  },
@@ -1891,6 +2523,16 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/Ra-Na/NightLightApp": {
+  "descricao_repo": "Simple Night Light Android App",
+  "git_atualizado": "2022-05-08",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "GPL-3.0",
+  "stars": 12,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/Raival-e/File-Explorer": {
   "descricao_repo": "An Android file explorer",
   "homepage": null,
@@ -1962,6 +2604,19 @@
   "licenca": "Apache-2.0",
   "stars": 32105,
   "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/RikkaApps/Shizuku-API": {
+  "descricao_repo": "The API and the developer guide for Shizuku and Sui.",
+  "git_atualizado": "2025-05-29",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "MIT",
+  "stars": 2695,
+  "tags": [
+   "android",
+   "shizuku"
+  ],
   "ts": "2026-10-25"
  },
  "repo@https://github.com/RoBoT095/printnotes": {
@@ -2057,6 +2712,42 @@
    "material3-expressive",
    "rust",
    "system-monitor"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Samuel85/Abbey": {
+  "descricao_repo": "Modern implementation of the classic spanish game: \"La abadía del crimen\" or \"The Abbey of Crime\", for Linux, RG350, PS Vita, and Android.",
+  "git_atualizado": "2022-12-26",
+  "homepage": null,
+  "idioma": "C++",
+  "licenca": null,
+  "stars": 30,
+  "tags": [
+   "abbey",
+   "android",
+   "retrogaming",
+   "video-game"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/Sanjay0302/Mixplorer-Skins": {
+  "descricao_repo": null,
+  "git_atualizado": "2024-07-18",
+  "homepage": "https://sanjay0302.github.io/Mixplorer-Skins/",
+  "idioma": null,
+  "licenca": "EPL-2.0",
+  "stars": 14,
+  "tags": [
+   "android",
+   "androidfilemanager",
+   "filebrowser",
+   "fileexplorer",
+   "mixplorer",
+   "mixplorer-apk",
+   "mixplorer-skin",
+   "skins",
+   "theme",
+   "xml"
   ],
   "ts": "2026-10-25"
  },
@@ -2371,6 +3062,39 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/VPhoneOS/VPhoneOS": {
+  "descricao_repo": "VPhoneOS: The Ultimate Virtual Machine for Android Devices",
+  "git_atualizado": "2025-07-28",
+  "homepage": null,
+  "idioma": null,
+  "licenca": null,
+  "stars": 44,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/VR-25/acc": {
+  "descricao_repo": "Advanced Charging Controller",
+  "git_atualizado": "2025-06-06",
+  "homepage": "https://github.com/Magisk-Modules-Repo/acc",
+  "idioma": "Shell",
+  "licenca": "GPL-3.0",
+  "stars": 2432,
+  "tags": [
+   "acca",
+   "accapp",
+   "accu",
+   "accu-battery",
+   "android",
+   "battery-lifespan",
+   "battery-longevity",
+   "battery-service-life",
+   "charging-current",
+   "charging-voltage",
+   "control-charging",
+   "disable-charging"
+  ],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer": {
   "descricao_repo": "Android application to analyze Wi-Fi signals.",
   "git_atualizado": "2026-10-03",
@@ -2558,6 +3282,16 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/WangDaYeeeeee/GeometricWeather": {
+  "descricao_repo": "A Material Design Weather Application",
+  "git_atualizado": "2026-08-31",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "LGPL-3.0",
+  "stars": 2525,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/XayahSuSuSu/Android-DataBackup": {
   "descricao_repo": "DataBackup for Android 7.0+",
   "git_atualizado": "2026-10-24",
@@ -2697,6 +3431,16 @@
   "idioma": "Kotlin",
   "licenca": "Apache-2.0",
   "stars": 90,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/abnjo/play.integrity-checker": {
+  "descricao_repo": "Google's Play Integrity API checker, now in your browser! with additional checks, as per the new android guidelines by google ",
+  "git_atualizado": "2026-01-06",
+  "homepage": "https://abnjo.github.io/play.integrity-checker/",
+  "idioma": "HTML",
+  "licenca": "MIT",
+  "stars": 2,
   "tags": [],
   "ts": "2026-10-25"
  },
@@ -2870,6 +3614,16 @@
    "firefox",
    "kotlin"
   ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/andikachan/TakoStats": {
+  "descricao_repo": "TakoStats - Modern Android Performance Overlay and Monitor (Full Kotlin/Java)",
+  "git_atualizado": "2026-10-17",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "NOASSERTION",
+  "stars": 1,
+  "tags": [],
   "ts": "2026-10-25"
  },
  "repo@https://github.com/anilbeesetti/nextplayer": {
@@ -3383,6 +4137,16 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/dkrivoruchko/ScreenStream": {
+  "descricao_repo": "ScreenStream Android App",
+  "git_atualizado": "2026-10-24",
+  "homepage": "https://screenstream.io",
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 2565,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/dn0ne/lotus": {
   "descricao_repo": "Music player for Android",
   "git_atualizado": "2025-01-25",
@@ -3441,6 +4205,21 @@
   "licenca": "NOASSERTION",
   "stars": 579,
   "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/ekumenlabs/tangobot": {
+  "descricao_repo": "Android app to navigate using Tango services as input.",
+  "git_atualizado": "2017-09-07",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "Apache-2.0",
+  "stars": 17,
+  "tags": [
+   "android",
+   "java",
+   "ros",
+   "tango"
+  ],
   "ts": "2026-10-25"
  },
  "repo@https://github.com/emanuele-f/PCAPdroid": {
@@ -3578,6 +4357,26 @@
   "licenca": "Apache-2.0",
   "stars": 25102,
   "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/google/purr": {
+  "descricao_repo": "purr is a zsh CLI tool for viewing and searching through Android logcat output. It leverages fzf to provide a simple yet powerful user interface, fuzzy-finding capabilities, and much more.",
+  "git_atualizado": "2026-02-07",
+  "homepage": null,
+  "idioma": "Shell",
+  "licenca": "Apache-2.0",
+  "stars": 162,
+  "tags": [
+   "adb",
+   "android",
+   "cli",
+   "fzf",
+   "linux",
+   "logcat",
+   "macos",
+   "tui",
+   "zsh"
+  ],
   "ts": "2026-10-25"
  },
  "repo@https://github.com/gromif/AstraCrypt": {
@@ -4232,6 +5031,23 @@
   "tags": [],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/luisbocanegra/substratum-tweaks": {
+  "descricao_repo": "A substratum \"theme\" to tweak Android's resource values on recent android versions.",
+  "git_atualizado": "2025-02-25",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 52,
+  "tags": [
+   "android",
+   "customization",
+   "overlays",
+   "root",
+   "substratum-theme",
+   "theme"
+  ],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/machiav3lli/oandbackupx": {
   "descricao_repo": "backup manager for android",
   "git_atualizado": "2026-10-17",
@@ -4470,6 +5286,20 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/mozilla-mobile/FirefoxLite": {
+  "descricao_repo": "Emerging Market Experiment",
+  "git_atualizado": "2021-07-05",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "MPL-2.0",
+  "stars": 291,
+  "tags": [
+   "android",
+   "browser",
+   "firefox"
+  ],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/mrwm/QRshare": {
   "descricao_repo": "Share QR code with android's share sheet",
   "git_atualizado": "2026-06-07",
@@ -4539,6 +5369,16 @@
    "kotlin",
    "hacktoberfest"
   ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/muzei/muzei": {
+  "descricao_repo": "Muzei Live Wallpaper for Android",
+  "git_atualizado": "2026-10-24",
+  "homepage": "http://muzei.co",
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 4955,
+  "tags": [],
   "ts": "2026-10-25"
  },
  "repo@https://github.com/nayash/smarter-launcher": {
@@ -4637,6 +5477,18 @@
   "tags": [],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/oasisfeng/island": {
+  "descricao_repo": "Island for Android",
+  "git_atualizado": "2025-04-24",
+  "homepage": "https://play.google.com/store/apps/details?id=com.oasisfeng.island",
+  "idioma": "Java",
+  "licenca": "Apache-2.0",
+  "stars": 3981,
+  "tags": [
+   "android"
+  ],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/octoshrimpy/quik": {
   "descricao_repo": "The most beautiful SMS messenger for Android - Revived",
   "git_atualizado": "2026-09-27",
@@ -4716,6 +5568,16 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/osx86/MDM": {
+  "descricao_repo": "Open Source MDM(Mobile Device Management) Total Solution, Android and iOS ",
+  "git_atualizado": "2013-09-15",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "NOASSERTION",
+  "stars": 29,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/oxplot/bradybound": {
   "erro": 404
  },
@@ -4742,6 +5604,16 @@
  },
  "repo@https://github.com/printn/human-benchmark": {
   "erro": 404
+ },
+ "repo@https://github.com/proDOOMman/SnapseedDNG": {
+  "descricao_repo": "Wrapper that can open *.dng files from android file managers in Snapseed",
+  "git_atualizado": "2016-05-14",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "MIT",
+  "stars": 2,
+  "tags": [],
+  "ts": "2026-10-25"
  },
  "repo@https://github.com/pshycodr/phosphor-cam": {
   "descricao_repo": "Real-time ASCII art camera that transforms your webcam feed into glowing terminal aesthetics. Built with React + Canvas API.",
@@ -4808,6 +5680,24 @@
    "privacy",
    "segmentation",
    "tflite"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/pyshivam/smart-flasher": {
+  "descricao_repo": "Smart Flasher",
+  "git_atualizado": "2018-10-23",
+  "homepage": null,
+  "idioma": "Python",
+  "licenca": null,
+  "stars": 0,
+  "tags": [
+   "adb",
+   "android",
+   "android-sdk",
+   "fastboot",
+   "flasher",
+   "python3",
+   "toolkit"
   ],
   "ts": "2026-10-25"
  },
@@ -4921,6 +5811,16 @@
    "google",
    "play"
   ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/rupak0577/link_eye": {
+  "descricao_repo": "choose app before opening links in android",
+  "git_atualizado": "2023-07-25",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "MIT",
+  "stars": 0,
+  "tags": [],
   "ts": "2026-10-25"
  },
  "repo@https://github.com/saad-khan-rind/NOSAtmosphereEffect": {
@@ -5180,6 +6080,29 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/socket-link/ampere": {
+  "descricao_repo": "Observable AI cognition in Kotlin Multiplatform. Every agent decision emits a structured event.",
+  "git_atualizado": "2026-10-24",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "Apache-2.0",
+  "stars": 40,
+  "tags": [
+   "aaif",
+   "agent-orchestration",
+   "ai-agents",
+   "ai-observability",
+   "android",
+   "anthropic",
+   "cognitive-architecture",
+   "glass-brain",
+   "ios",
+   "jvm",
+   "kotlin",
+   "kotlin-multiplatform"
+  ],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/sosauce/Chocola": {
   "descricao_repo": "🍫 Chocola is a cute and powerful offline music player for Android!",
   "git_atualizado": "2026-10-23",
@@ -5191,6 +6114,21 @@
    "android-app",
    "jetpack-compose",
    "kotlin"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/sunilpaulmathew/De-Bloater": {
+  "descricao_repo": "An application using the power of Magisk to debloat unwanted system apps!",
+  "git_atualizado": "2026-05-25",
+  "homepage": "https://sunilpaulmathew.github.io/De-Bloater/",
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 801,
+  "tags": [
+   "android",
+   "debloating",
+   "magisk",
+   "root"
   ],
   "ts": "2026-10-25"
  },
@@ -5253,6 +6191,16 @@
   "idioma": "Kotlin",
   "licenca": "MIT",
   "stars": 1045,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/theblixguy/AppOps": {
+  "descricao_repo": "Independent AppOps app for Android",
+  "git_atualizado": "2013-12-21",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": null,
+  "stars": 33,
   "tags": [],
   "ts": "2026-10-25"
  },
@@ -5394,6 +6342,16 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/tytydraco/LADB": {
+  "descricao_repo": "A local ADB shell for Android!",
+  "git_atualizado": "2026-07-26",
+  "homepage": "https://play.google.com/store/apps/details?id=com.draco.ladb",
+  "idioma": "Kotlin",
+  "licenca": "NOASSERTION",
+  "stars": 2445,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/uazo/cromite": {
   "descricao_repo": "Cromite a Bromite fork with ad blocking and privacy enhancements; take back your browser!",
   "git_atualizado": "2026-10-24",
@@ -5420,6 +6378,24 @@
    "local-network",
    "jetpack-compose",
    "kotlin"
+  ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/ukanth/afwall": {
+  "descricao_repo": "AFWall+ (Android Firewall +) - iptables based firewall for Android ",
+  "git_atualizado": "2026-10-17",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "GPL-3.0",
+  "stars": 3512,
+  "tags": [
+   "afwall",
+   "android",
+   "android-firewall",
+   "block",
+   "crowdin",
+   "firewall",
+   "iptables"
   ],
   "ts": "2026-10-25"
  },
@@ -5528,6 +6504,16 @@
   ],
   "ts": "2026-10-25"
  },
+ "repo@https://github.com/vipersaudio/viper4android_fx": {
+  "descricao_repo": "ViPER4Android FX Control Panel",
+  "git_atualizado": "2017-02-04",
+  "homepage": null,
+  "idioma": "C",
+  "licenca": null,
+  "stars": 266,
+  "tags": [],
+  "ts": "2026-10-25"
+ },
  "repo@https://github.com/vvb2060/PackageInstaller": {
   "descricao_repo": "A lightweight yet powerful package installer for Android.",
   "git_atualizado": "2025-08-12",
@@ -5559,6 +6545,16 @@
    "foss",
    "homescreen-widget"
   ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/warshia-rubab/PrivacyDashboard": {
+  "descricao_repo": "Android Privacy Dashboard App",
+  "git_atualizado": "2026-08-07",
+  "homepage": null,
+  "idioma": "Kotlin",
+  "licenca": "MIT",
+  "stars": 0,
+  "tags": [],
   "ts": "2026-10-25"
  },
  "repo@https://github.com/weslley75/AudioOutputSwitcher": {
@@ -5766,6 +6762,16 @@
    "kotlin",
    "kotlin-android"
   ],
+  "ts": "2026-10-25"
+ },
+ "repo@https://github.com/zsnct/VPN-Hotspot": {
+  "descricao_repo": "手机热点共享VPN Android app to share your phone's VPN connection",
+  "git_atualizado": "2026-03-24",
+  "homepage": null,
+  "idioma": "Java",
+  "licenca": "Apache-2.0",
+  "stars": 5,
+  "tags": [],
   "ts": "2026-10-25"
  },
  "repo@https://github.com/zwc456baby/ScrcpyForAndroid": {

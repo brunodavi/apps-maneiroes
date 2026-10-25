@@ -74,7 +74,8 @@ FORA_SERIE_MOTIVO = "fora da série de apps (título)"
 TS_RE = re.compile(r"^\s*(\d{1,2}):(\d{2})(?::(\d{2}))?\s*[-–—]\s*(.+?)\s*$")
 URL_RE = re.compile(r"^\s*(https?://\S+)\s*$")
 
-NON_APP_TS = {"introducao", "intro", "encerramento", "fim", "final", "outro"}
+NON_APP_TS = {"introducao", "intro", "encerramento", "fim", "final", "outro",
+              "conclusao", "outrasrecomendacoeseconclusao"}
 NON_APP_BLOCK = {"tempos do video", "links", "downloads", "videos da serie"}
 
 NAME_SUFFIX_RE = re.compile(
@@ -813,11 +814,59 @@ def fdroid_pkgid(url):
     return m.group(1) if m else None
 
 
-# ---------------------------------------------------------------- apps sem fonte (validação + resgate)
+# ---------------------------------------------------------------- página da loja (última fonte)
 
-FIXES_PATH = os.path.join(DATA_DIR, "apps-fixes.json")
-"""Curadoria manual (commitada): {"Nome do app": {"repo": ..., "descricao_curta": ..., "tags": ...}}.
-Regras: só preenche campo vazio; "repo": "" remove um resgate errado da busca."""
+def lookup_loja_page(url, cache):
+    """Última fonte: a própria página da loja (Play Store, apkmirror, site).
+    A Play Store não tem API de descrição, mas o HTML da página carrega
+    og:description/meta description (com `hl=pt_BR` vem em português).
+    Cacheia 30 dias (positivo/negativo); erro transitório não cacheia."""
+    key = "loja@" + url
+    ce = cache.get(key)
+    if busca_servivel(ce):
+        return ce
+    try:
+        body, _ = http_get(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"})
+        desc = None
+        for pat in (
+                r'<meta[^>]+(?:property="og:description"|name="description")[^>]+content="([^"]+)"',
+                r'<meta[^>]+itemprop="description"[^>]+content="([^"]+)"'):
+            m = re.search(pat, body)
+            if m:
+                cand = html_unescape(m.group(1)).strip()
+                cand = re.sub(r"\s+", " ", cand)[:400]
+                # lixo de loja: "Snapseed - Apps no Google Play" (title tupido no meta)
+                if cand and " - Apps no Google Play" not in cand and " on Google Play" not in cand:
+                    desc = cand
+                    break
+        info = {"descricao_repo": desc, "ts": datetime.now(timezone.utc).strftime("%Y-%m-%d")}
+        if desc is None:
+            info["erro"] = "sem descrição na página"
+        cache[key] = info
+        return info
+    except Exception:
+        return None
+
+
+def tarefas_enriquecimento(apps):
+    """Fila de enriquecimento, na ordem da melhor fonte p/ pior:
+    repo citado no vídeo → F-Droid → página da loja (só quando o app ficou
+    sem descrição alguma — evita requests de graça)."""
+    tasks = []
+    for e in apps.values():
+        if e["repo"]:
+            tasks.append(("repo", e))
+            continue
+        fd = next((fdroid_pkgid(l["url"]) for l in e["lojas"] if l["tipo"] == "loja:fdroid"), None)
+        if fd:
+            tasks.append(("fdroid", e, fd))
+            continue
+        if e["lojas"] and not (e["descricao_curta"] or e["descricao_repo"]):
+            tasks.append(("loja", e, e["lojas"][0]["url"]))
+    return tasks
+
+
+# ---------------------------------------------------------------- apps sem fonte (validação + resgate)
 
 
 def tem_fonte(e):
@@ -852,7 +901,9 @@ def escolher_repo(nome, resultados):
             cands.append(r)
     if not cands:
         return None
-    return max(cands, key=lambda r: (r.get("stars") or 0))
+    # exato vence (ex.: 'sdmaid' @1650★ deve ganhar de 'sdmaid-se' @7853★)
+    return max(cands, key=lambda r: (norm(str(r.get("nome") or "").rsplit("/", 1)[-1]) == n,
+                                     r.get("stars") or 0))
 
 
 def _repo_casa(n, cand):
@@ -884,7 +935,7 @@ def lookup_busca_repo(nome, cache, rate):
     ce = cache.get(key)
     if busca_servivel(ce):
         return ce.get("repo_url")
-    url = ("https://api.github.com/search/repositories?per_page=5&sort=stars&q="
+    url = ("https://api.github.com/search/repositories?per_page=5&q="
            + urllib.parse.quote(f'"{nome}" android'))
     hoje = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     try:
@@ -903,47 +954,6 @@ def lookup_busca_repo(nome, cache, rate):
     except Exception:
         # transitório (rede/rate limit): NÃO cacheia — próxima rodada tenta de novo
         return None
-
-
-def aplicar_fixes(apps, fixes):
-    """Aplica a curadoria manual apps-fixes.json sobre o catálogo construído.
-    Regras:
-      - casa pelo nome (norm) — 'OpenBoard' casa 'OpenBoard no GitHub';
-      - só preenche campo VAZIO (nunca sobrescreve dado automático/vídeo);
-      - "repo": "" remove um resgate de busca que saiu errado (só origem 'busca').
-    Devolve a lista de nomes do fixes sem match no catálogo (para avisar)."""
-    if not fixes:
-        return []
-    usados, faltando = set(), []
-    for nome_fix, fix in fixes.items():
-        if not isinstance(fix, dict) or nome_fix.startswith("_"):
-            continue  # chave de documentação / valor inválido: ignora em silêncio
-        nf = norm(nome_fix)
-        e = next((x for x in apps.values() if norm(x["nome"]) == nf), None)
-        if e is None:
-            faltando.append(nome_fix)
-            continue
-        usados.add(nf)
-        fr = fix.get("repo")
-        if fr == "" and e.get("origem_repo") == "busca":
-            e["repo"], e["origem_repo"] = None, None
-        elif fr and not e["repo"]:
-            e["repo"] = fr
-        if fix.get("descricao_curta") and not e["descricao_curta"]:
-            e["descricao_curta"] = fix["descricao_curta"]
-        if fix.get("descricao_repo") and not e["descricao_repo"]:
-            e["descricao_repo"] = fix["descricao_repo"]
-        if fix.get("homepage") and not e["homepage"]:
-            e["homepage"] = fix["homepage"]
-        if fix.get("tags") and not e["tags"]:
-            e["tags"] = list(fix["tags"])
-        existentes = {(l["tipo"], l["url"]) for l in e["lojas"]}
-        for u in fix.get("lojas") or []:
-            tipo = classify_url(u) or "loja"
-            if tipo.startswith("loja") and (tipo, u) not in existentes:
-                e["lojas"].append({"tipo": tipo, "url": u})
-                existentes.add((tipo, u))
-    return faltando
 
 
 # ---------------------------------------------------------------- busca no canal (camada de descoberta)
@@ -1002,6 +1012,18 @@ def main():
     if manual_ids:
         print(f"== Modo manual: {len(manual_ids)} vídeo(s) via --video-id")
         limit = None  # não truncar candidatos com o alvo manual incluído
+
+    # --sem-info: só LISTA os apps sem informação do catálogo atual e sai
+    # (antes de qualquer rede — para checar o que falta / planejar correção)
+    if "--sem-info" in args:
+        d = load_json(os.path.join(DATA_DIR, "apps.json"))
+        lista = [a for a in d.get("apps", []) if sem_info(a)]
+        print(f"== {len(d.get('apps', []))} apps no catálogo; SEM informação (nem "
+              f"repo/f-droid, nem descrição): {len(lista)}")
+        for a in lista:
+            fonte = next((l["url"] for l in a.get("lojas", []) if l), None)
+            print(f"   {a['nome']:32s} | {fonte or '(sem link)'}")
+        sys.exit(0)
 
     # 1) playlists + canal -----------------------------------------------
     print("== Coletando playlists...")
@@ -1250,16 +1272,6 @@ def main():
                   f"Use --force para forçar.")
             sys.exit(1)
 
-    # 2.9) curadoria manual: site/data/apps-fixes.json --------------------
-    fixes = load_json(FIXES_PATH)
-    if fixes:
-        faltando_fix = aplicar_fixes(apps, fixes)
-        n_usados = sum(1 for k, v in fixes.items()
-                       if isinstance(v, dict) and not k.startswith("_")) - len(faltando_fix)
-        print(f"== apps-fixes.json: {n_usados} app(s) atualizado(s) pela curadoria manual")
-        for nome in faltando_fix:
-            print(f"   AVISO: fix no apps-fixes.json sem match no catálogo: {nome}")
-
     # 3) enriquecimento repos --------------------------------------------
     if not sem_repo:
         print("== Enriquecendo com APIs de repositórios (paralelo)...")
@@ -1297,14 +1309,7 @@ def main():
                       f"{'…' if len(resgat) > 8 else ''}")
             save_cache(cache)
 
-        tasks = []
-        for key, e in apps.items():
-            if e["repo"]:
-                tasks.append(("repo", e))
-            else:
-                fd = next((fdroid_pkgid(l["url"]) for l in e["lojas"] if l["tipo"] == "loja:fdroid"), None)
-                if fd:
-                    tasks.append(("fdroid", e, fd))
+        tasks = tarefas_enriquecimento(apps)
         cache_lock = threading.Lock()
         n_done = [0]
 
@@ -1314,6 +1319,8 @@ def main():
                 return kind, e, None
             if kind == "repo":
                 r = lookup_repo(e["repo"], cache, rate_stop)
+            elif kind == "loja":
+                r = lookup_loja_page(t[2], cache)
             else:
                 r = lookup_fdroid(t[2], cache)
             with cache_lock:
@@ -1378,8 +1385,8 @@ def main():
         print(f"   ({pulado_por_exclude} vídeo(s) pulados via excludes.json)")
     sem_fonte_list = [e["nome"] for e in apps_list if sem_info(e)]
     if sem_fonte_list:
-        print(f"   aviso: {len(sem_fonte_list)} app(s) sem fonte nem descrição —"
-              f" complete manualmente em site/data/apps-fixes.json: "
+        print(f"   aviso: {len(sem_fonte_list)} app(s) sem fonte nem descrição "
+              f"(dica: python3 src/gerar.py --sem-info lista todos): "
               f"{', '.join(sem_fonte_list[:8])}{'…' if len(sem_fonte_list) > 8 else ''}")
     if sem_repo:
         print("(enriquecimento de repos pulado: --sem-repo)")

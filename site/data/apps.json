@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-25T04:05:16Z",
+ "atualizado": "2026-10-25T04:32:58Z",
  "canal": {
   "nome": "VegaData",
   "id": "UCd2FHKnQ3ymrNhdsV9J0VmA",
@@ -776,7 +776,7 @@
     "PLfz2Tqtsq7B8xplHNlbagA_600lo69EgE"
    ],
    "origem": "playlist",
-   "n_apps": 6
+   "n_apps": 5
   },
   {
    "videoId": "jwNtL6mveT0",
@@ -786,7 +786,7 @@
    "duracao": 926,
    "playlists": [],
    "origem": "busca",
-   "n_apps": 5
+   "n_apps": 4
   },
   {
    "videoId": "BfOeDIUwH8I",
@@ -2047,7 +2047,7 @@
   {
    "nome": "Snapseed",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "The complete, professional photo editor built by Google.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -2071,8 +2071,7 @@
     }
    ],
    "data_ultima": "2026-06-05",
-   "thumbnail": "https://i.ytimg.com/vi/H5OupfuLOUw/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/H5OupfuLOUw/hqdefault.jpg"
   },
   {
    "nome": "Shizuku (thedjchi)",
@@ -2429,7 +2428,7 @@
   {
    "nome": "VPhoneOS",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Jogos de PC + emulador de Android, tudo em um só app",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -2453,8 +2452,7 @@
     }
    ],
    "data_ultima": "2026-04-27",
-   "thumbnail": "https://i.ytimg.com/vi/Ye4fJP_TXjc/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Ye4fJP_TXjc/hqdefault.jpg"
   },
   {
    "nome": "Smart Edge",
@@ -2731,7 +2729,7 @@
   {
    "nome": "WARP",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "A More Private Internet",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -2755,8 +2753,7 @@
     }
    ],
    "data_ultima": "2026-03-11",
-   "thumbnail": "https://i.ytimg.com/vi/bJ87cP_DlvE/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/bJ87cP_DlvE/hqdefault.jpg"
   },
   {
    "nome": "TapDucky",
@@ -2943,7 +2940,7 @@
   {
    "nome": "MT Manager",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Download MT Manager APKs for Android - APKMirror Free and safe Android APK downloads",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -2967,8 +2964,7 @@
     }
    ],
    "data_ultima": "2026-03-11",
-   "thumbnail": "https://i.ytimg.com/vi/bJ87cP_DlvE/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/bJ87cP_DlvE/hqdefault.jpg"
   },
   {
    "nome": "Live Bridge",
@@ -3436,7 +3432,7 @@
   {
    "nome": "DSK Mode",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Desktop taskbar on Android - Truly open apps, instant switching, pinned favs",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -3460,8 +3456,7 @@
     }
    ],
    "data_ultima": "2026-01-10",
-   "thumbnail": "https://i.ytimg.com/vi/s6Wv2vMWq5U/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/s6Wv2vMWq5U/hqdefault.jpg"
   },
   {
    "nome": "Cromite",
@@ -4541,20 +4536,14 @@
   {
    "nome": "Smart Launcher",
    "descricao_curta": null,
-   "descricao_repo": "An Android launcher which understands your usage patterns and updates the Home screen with a list of apps which are most likely to be used by you next.",
-   "tags": [
-    "android",
-    "knn-algorithm",
-    "kotlin-android",
-    "launcher-application",
-    "machine-learning"
-   ],
-   "stars": 6,
-   "git_atualizado": "2021-10-24",
-   "idioma": "Kotlin",
-   "licenca": "GPL-3.0",
+   "descricao_repo": "A faster Android home screen with auto app sorting, widgets and smart search",
+   "tags": [],
+   "stars": null,
+   "git_atualizado": null,
+   "idioma": null,
+   "licenca": null,
    "homepage": null,
-   "repo": "https://github.com/nayash/smarter-launcher",
+   "repo": null,
    "lojas": [
     {
      "tipo": "loja:play",
@@ -4570,7 +4559,6 @@
      "tempo": 109
     }
    ],
-   "origem_repo": "busca",
    "data_ultima": "2025-09-19",
    "thumbnail": "https://i.ytimg.com/vi/-b2I8EWKxho/hqdefault.jpg"
   },
@@ -5551,7 +5539,7 @@
   {
    "nome": "Touch The Notch",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Turn your phone notch into a shortcut button! One tap to take a screenshot!",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -5575,8 +5563,7 @@
     }
    ],
    "data_ultima": "2025-06-04",
-   "thumbnail": "https://i.ytimg.com/vi/95lxAar1NJA/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/95lxAar1NJA/hqdefault.jpg"
   },
   {
    "nome": "Switch AI",
@@ -5726,7 +5713,7 @@
   {
    "nome": "Find Device",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Have you ever lost your earbuds, smartwatch, or another Bluetooth device?",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -5750,8 +5737,7 @@
     }
    ],
    "data_ultima": "2025-06-04",
-   "thumbnail": "https://i.ytimg.com/vi/95lxAar1NJA/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/95lxAar1NJA/hqdefault.jpg"
   },
   {
    "nome": "AstraCrypt",
@@ -6152,7 +6138,7 @@
   {
    "nome": "Simple DND",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "The missing do not disturb quick settings tile.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -6176,8 +6162,7 @@
     }
    ],
    "data_ultima": "2025-04-03",
-   "thumbnail": "https://i.ytimg.com/vi/w9006RMLtIs/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/w9006RMLtIs/hqdefault.jpg"
   },
   {
    "nome": "QUIK",
@@ -6206,7 +6191,7 @@
   {
    "nome": "MDM",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Fast Android Download Manager featuring the beauty of Material You",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -6230,13 +6215,12 @@
     }
    ],
    "data_ultima": "2025-04-03",
-   "thumbnail": "https://i.ytimg.com/vi/w9006RMLtIs/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/w9006RMLtIs/hqdefault.jpg"
   },
   {
    "nome": "Echo EQ",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Upto 31 Bands Equalizer fx + Bass & Volume Booster with Auto EQ for Android",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -6260,8 +6244,7 @@
     }
    ],
    "data_ultima": "2025-04-03",
-   "thumbnail": "https://i.ytimg.com/vi/w9006RMLtIs/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/w9006RMLtIs/hqdefault.jpg"
   },
   {
    "nome": "Delta",
@@ -6572,7 +6555,7 @@
   {
    "nome": "USB Lockit",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Password Lock USB Drive",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -6596,8 +6579,7 @@
     }
    ],
    "data_ultima": "2025-02-04",
-   "thumbnail": "https://i.ytimg.com/vi/qwLW4QwlIoI/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/qwLW4QwlIoI/hqdefault.jpg"
   },
   {
    "nome": "Stay Put",
@@ -6929,7 +6911,7 @@
   {
    "nome": "Tango",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "A brand new way for managing Android devices. Use file browser, app manager, screen mirror and more right in your browser.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -6953,8 +6935,7 @@
     }
    ],
    "data_ultima": "2025-01-21",
-   "thumbnail": "https://i.ytimg.com/vi/C1aA2ic05Ro/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/C1aA2ic05Ro/hqdefault.jpg"
   },
   {
    "nome": "AYA",
@@ -7130,7 +7111,7 @@
   {
    "nome": "Files",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "This app is a shortcut to the file manager of the settings app.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -7154,8 +7135,7 @@
     }
    ],
    "data_ultima": "2025-01-07",
-   "thumbnail": "https://i.ytimg.com/vi/Zpk1vb2RpCM/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Zpk1vb2RpCM/hqdefault.jpg"
   },
   {
    "nome": "ChatterUI",
@@ -7390,14 +7370,14 @@
   {
    "nome": "Sponge",
    "descricao_curta": null,
-   "descricao_repo": "Android端的图文混排方案",
+   "descricao_repo": "Swipe your way to a clean and organized photo gallery with Sponge",
    "tags": [],
-   "stars": 5,
-   "git_atualizado": "2019-07-15",
-   "idioma": "Java",
-   "licenca": "Apache-2.0",
+   "stars": null,
+   "git_atualizado": null,
+   "idioma": null,
+   "licenca": null,
    "homepage": null,
-   "repo": "https://github.com/XiaogegeChen/Sponge",
+   "repo": null,
    "lojas": [
     {
      "tipo": "loja:play",
@@ -7413,7 +7393,6 @@
      "tempo": 521
     }
    ],
-   "origem_repo": "busca",
    "data_ultima": "2024-11-01",
    "thumbnail": "https://i.ytimg.com/vi/8j7ptfoAYWQ/hqdefault.jpg"
   },
@@ -8185,14 +8164,14 @@
   {
    "nome": "Skit",
    "descricao_curta": null,
-   "descricao_repo": "Skitter Android App",
+   "descricao_repo": "Simplest and most intuitive app manager!",
    "tags": [],
    "stars": null,
-   "git_atualizado": "2016-01-19",
-   "idioma": "Java",
+   "git_atualizado": null,
+   "idioma": null,
    "licenca": null,
    "homepage": null,
-   "repo": "https://github.com/mkotyk/Skitter",
+   "repo": null,
    "lojas": [
     {
      "tipo": "loja:play",
@@ -8208,7 +8187,6 @@
      "tempo": 32
     }
    ],
-   "origem_repo": "busca",
    "data_ultima": "2024-07-02",
    "thumbnail": "https://i.ytimg.com/vi/bVLYtD0KPHI/hqdefault.jpg"
   },
@@ -8344,7 +8322,7 @@
   {
    "nome": "TidyPanel",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Simple and minimal notifications cleaner app.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -8368,8 +8346,7 @@
     }
    ],
    "data_ultima": "2024-06-04",
-   "thumbnail": "https://i.ytimg.com/vi/KBWNxnlqs9I/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/KBWNxnlqs9I/hqdefault.jpg"
   },
   {
    "nome": "Termux Terminal Widget",
@@ -8433,7 +8410,7 @@
   {
    "nome": "Spatial Touch",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Control your phone without touching the screen!",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -8457,8 +8434,7 @@
     }
    ],
    "data_ultima": "2024-06-04",
-   "thumbnail": "https://i.ytimg.com/vi/KBWNxnlqs9I/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/KBWNxnlqs9I/hqdefault.jpg"
   },
   {
    "nome": "Octi",
@@ -8685,7 +8661,7 @@
   {
    "nome": "Focus Go",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Fast, private photo gallery with built-in editor. No cloud, no ads, no tracking.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -8709,8 +8685,7 @@
     }
    ],
    "data_ultima": "2024-05-07",
-   "thumbnail": "https://i.ytimg.com/vi/ONf0sqfplVI/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/ONf0sqfplVI/hqdefault.jpg"
   },
   {
    "nome": "EtchDroid",
@@ -8947,7 +8922,7 @@
   {
    "nome": "Beta Maniac",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Get notified when a beta program is available!",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -8971,8 +8946,7 @@
     }
    ],
    "data_ultima": "2024-04-02",
-   "thumbnail": "https://i.ytimg.com/vi/82CJrnPouEE/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/82CJrnPouEE/hqdefault.jpg"
   },
   {
    "nome": "Unexpected Keyboard",
@@ -9010,7 +8984,7 @@
   {
    "nome": "Pixel Search",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Find anything on your phone easily with Pixel Search - the all-in-one search app",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -9034,8 +9008,7 @@
     }
    ],
    "data_ultima": "2024-03-06",
-   "thumbnail": "https://i.ytimg.com/vi/cQuCldMRVRI/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/cQuCldMRVRI/hqdefault.jpg"
   },
   {
    "nome": "PI",
@@ -9267,7 +9240,7 @@
   {
    "nome": "Volumee",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Skip tracks with volume buttons without taking your phone out of your pocket!",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -9298,8 +9271,7 @@
     }
    ],
    "data_ultima": "2024-02-06",
-   "thumbnail": "https://i.ytimg.com/vi/5UPA9bsNkzs/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/5UPA9bsNkzs/hqdefault.jpg"
   },
   {
    "nome": "Twoyi",
@@ -9332,7 +9304,7 @@
   {
    "nome": "Ruppo",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Pin files, notes, links & media in notifications for easy access",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -9356,8 +9328,7 @@
     }
    ],
    "data_ultima": "2024-02-06",
-   "thumbnail": "https://i.ytimg.com/vi/5UPA9bsNkzs/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/5UPA9bsNkzs/hqdefault.jpg"
   },
   {
    "nome": "Noti Progress Bar",
@@ -9415,7 +9386,7 @@
   {
    "nome": "Folder Widget",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Put large super-sized folders or big icons in homescreen to improve productivity",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -9439,13 +9410,12 @@
     }
    ],
    "data_ultima": "2024-02-06",
-   "thumbnail": "https://i.ytimg.com/vi/5UPA9bsNkzs/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/5UPA9bsNkzs/hqdefault.jpg"
   },
   {
    "nome": "FFmpeg Media Encoder",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Convert audio and video directly to your device using FFmpeg",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -9469,20 +9439,19 @@
     }
    ],
    "data_ultima": "2024-02-06",
-   "thumbnail": "https://i.ytimg.com/vi/5UPA9bsNkzs/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/5UPA9bsNkzs/hqdefault.jpg"
   },
   {
    "nome": "TakoStats",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "TakoStats - Modern Android Performance Overlay and Monitor (Full Kotlin/Java)",
    "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
+   "stars": 1,
+   "git_atualizado": "2026-10-17",
+   "idioma": "Kotlin",
+   "licenca": "NOASSERTION",
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/andikachan/TakoStats",
    "lojas": [
     {
      "tipo": "loja:play",
@@ -9509,9 +9478,9 @@
      "tempo": 36
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2024-01-24",
-   "thumbnail": "https://i.ytimg.com/vi/Gy9SuYmXqdU/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Gy9SuYmXqdU/hqdefault.jpg"
   },
   {
    "nome": "Smartspacer",
@@ -9788,7 +9757,7 @@
   {
    "nome": "FV File Explorer",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Clean, modern interface built with Material Design.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -9812,20 +9781,19 @@
     }
    ],
    "data_ultima": "2024-01-24",
-   "thumbnail": "https://i.ytimg.com/vi/Gy9SuYmXqdU/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Gy9SuYmXqdU/hqdefault.jpg"
   },
   {
    "nome": "Extinguish",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "An app that helps you run any android apps as if the screen is on while it is off.",
    "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
+   "stars": 496,
+   "git_atualizado": "2025-10-04",
+   "idioma": "Kotlin",
+   "licenca": "GPL-3.0",
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/Moderpach/Extinguish",
    "lojas": [
     {
      "tipo": "loja:play",
@@ -9841,9 +9809,9 @@
      "tempo": 139
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2024-01-24",
-   "thumbnail": "https://i.ytimg.com/vi/Gy9SuYmXqdU/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Gy9SuYmXqdU/hqdefault.jpg"
   },
   {
    "nome": "Canta",
@@ -10018,14 +9986,14 @@
   {
    "nome": "App Ops",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Independent AppOps app for Android",
    "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
+   "stars": 33,
+   "git_atualizado": "2013-12-21",
+   "idioma": "Java",
    "licenca": null,
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/theblixguy/AppOps",
    "lojas": [
     {
      "tipo": "loja:play",
@@ -10059,9 +10027,9 @@
      "tempo": 786
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2024-01-24",
-   "thumbnail": "https://i.ytimg.com/vi/Gy9SuYmXqdU/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Gy9SuYmXqdU/hqdefault.jpg"
   },
   {
    "nome": "AmbientMusicMod",
@@ -10468,7 +10436,7 @@
   {
    "nome": "YASNAC",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Mais um verificador de atestado SafetyNet",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -10492,13 +10460,12 @@
     }
    ],
    "data_ultima": "2023-10-23",
-   "thumbnail": "https://i.ytimg.com/vi/qzIXJIotkM0/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/qzIXJIotkM0/hqdefault.jpg"
   },
   {
    "nome": "Play Integrity API Checker",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Obtenha informações sobre a integridade do seu dispositivo por meio da API Play Intergrity",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -10522,13 +10489,12 @@
     }
    ],
    "data_ultima": "2023-10-23",
-   "thumbnail": "https://i.ytimg.com/vi/qzIXJIotkM0/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/qzIXJIotkM0/hqdefault.jpg"
   },
   {
    "nome": "DevCheck",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Benchmarks, ferramentas e informações completas sobre seu hardware e sistema operacional.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -10552,13 +10518,12 @@
     }
    ],
    "data_ultima": "2023-10-23",
-   "thumbnail": "https://i.ytimg.com/vi/qzIXJIotkM0/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/qzIXJIotkM0/hqdefault.jpg"
   },
   {
    "nome": "DRM Info",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Mostra informações de DRM (Widevine, PlayReady, etc) do Android DRM Framework",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -10582,13 +10547,12 @@
     }
    ],
    "data_ultima": "2023-10-23",
-   "thumbnail": "https://i.ytimg.com/vi/qzIXJIotkM0/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/qzIXJIotkM0/hqdefault.jpg"
   },
   {
    "nome": "CameraX Info",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Visualize e carregue as informações da sua câmera",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -10612,13 +10576,12 @@
     }
    ],
    "data_ultima": "2023-10-23",
-   "thumbnail": "https://i.ytimg.com/vi/qzIXJIotkM0/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/qzIXJIotkM0/hqdefault.jpg"
   },
   {
    "nome": "Camera2API Probe",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Recursos da API Probe Android Camera2 em seus telefones.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -10642,8 +10605,7 @@
     }
    ],
    "data_ultima": "2023-10-23",
-   "thumbnail": "https://i.ytimg.com/vi/qzIXJIotkM0/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/qzIXJIotkM0/hqdefault.jpg"
   },
   {
    "nome": "QRAlarm",
@@ -11537,7 +11499,7 @@
   {
    "nome": "Package Manager",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Instale e gerencie aplicativos sem esforço: experimente o futuro do gerenciamento de aplicativos",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -11561,8 +11523,7 @@
     }
    ],
    "data_ultima": "2023-05-16",
-   "thumbnail": "https://i.ytimg.com/vi/ZflCu2sBeuk/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/ZflCu2sBeuk/hqdefault.jpg"
   },
   {
    "nome": "Wifi Widget",
@@ -12998,7 +12959,7 @@
   {
    "nome": "OsmAnd",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "A navegação nas caminhadas não é um problema. Descarregue o mapa e coloque notas",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -13022,8 +12983,7 @@
     }
    ],
    "data_ultima": "2022-11-09",
-   "thumbnail": "https://i.ytimg.com/vi/uF3K9cSpeXA/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/uF3K9cSpeXA/hqdefault.jpg"
   },
   {
    "nome": "Open Note Scanner",
@@ -13058,14 +13018,20 @@
   {
    "nome": "Notally",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
+   "descricao_repo": "A beautiful notes app",
+   "tags": [
+    "android",
+    "kotlin",
+    "material-design",
+    "minimalism",
+    "notes"
+   ],
+   "stars": 2193,
+   "git_atualizado": "2026-05-21",
+   "idioma": "Kotlin",
+   "licenca": "GPL-3.0",
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/OmGodse/Notally",
    "lojas": [
     {
      "tipo": "loja:play",
@@ -13081,21 +13047,21 @@
      "tempo": 418
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2022-11-09",
-   "thumbnail": "https://i.ytimg.com/vi/uF3K9cSpeXA/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/uF3K9cSpeXA/hqdefault.jpg"
   },
   {
    "nome": "Geometric Weather",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "A Material Design Weather Application",
    "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
+   "stars": 2525,
+   "git_atualizado": "2026-08-31",
+   "idioma": "Java",
+   "licenca": "LGPL-3.0",
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/WangDaYeeeeee/GeometricWeather",
    "lojas": [
     {
      "tipo": "loja:play",
@@ -13111,9 +13077,9 @@
      "tempo": 287
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2022-11-09",
-   "thumbnail": "https://i.ytimg.com/vi/uF3K9cSpeXA/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/uF3K9cSpeXA/hqdefault.jpg"
   },
   {
    "nome": "Doodle",
@@ -13157,7 +13123,7 @@
   {
    "nome": "dynamicSpot",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Experience the Dynamic Notification Island power on your phone!",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -13181,13 +13147,12 @@
     }
    ],
    "data_ultima": "2022-10-10",
-   "thumbnail": "https://i.ytimg.com/vi/g4TMAs2DO4s/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/g4TMAs2DO4s/hqdefault.jpg"
   },
   {
    "nome": "Muviz",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Play Live Music Visualizers on your phone's Navbar or Status Bar 🎶",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -13211,13 +13176,12 @@
     }
    ],
    "data_ultima": "2022-10-10",
-   "thumbnail": "https://i.ytimg.com/vi/g4TMAs2DO4s/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/g4TMAs2DO4s/hqdefault.jpg"
   },
   {
    "nome": "Micro gesture",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Navegação inovadora por gestos de movimento Android",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -13241,20 +13205,19 @@
     }
    ],
    "data_ultima": "2022-10-10",
-   "thumbnail": "https://i.ytimg.com/vi/g4TMAs2DO4s/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/g4TMAs2DO4s/hqdefault.jpg"
   },
   {
    "nome": "Link eye",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "choose app before opening links in android",
    "tags": [],
    "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
+   "git_atualizado": "2023-07-25",
+   "idioma": "Java",
+   "licenca": "MIT",
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/rupak0577/link_eye",
    "lojas": [
     {
      "tipo": "loja:play",
@@ -13270,21 +13233,23 @@
      "tempo": 458
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2022-10-10",
-   "thumbnail": "https://i.ytimg.com/vi/g4TMAs2DO4s/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/g4TMAs2DO4s/hqdefault.jpg"
   },
   {
    "nome": "Island",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
+   "descricao_repo": "Island for Android",
+   "tags": [
+    "android"
+   ],
+   "stars": 3981,
+   "git_atualizado": "2025-04-24",
+   "idioma": "Java",
+   "licenca": "Apache-2.0",
+   "homepage": "https://play.google.com/store/apps/details?id=com.oasisfeng.island",
+   "repo": "https://github.com/oasisfeng/island",
    "lojas": [
     {
      "tipo": "loja:play",
@@ -13300,9 +13265,9 @@
      "tempo": 160
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2022-10-10",
-   "thumbnail": "https://i.ytimg.com/vi/g4TMAs2DO4s/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/g4TMAs2DO4s/hqdefault.jpg"
   },
   {
    "nome": "Scoop no GitHub Releases",
@@ -13331,7 +13296,7 @@
   {
    "nome": "Purr",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Sacie sua ânsia por quadros por segundo crus.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -13355,13 +13320,12 @@
     }
    ],
    "data_ultima": "2022-03-30",
-   "thumbnail": "https://i.ytimg.com/vi/DWFKE31YDOs/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/DWFKE31YDOs/hqdefault.jpg"
   },
   {
    "nome": "MoreLocale 2",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Este é apenas MoreLocale2",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -13385,20 +13349,19 @@
     }
    ],
    "data_ultima": "2022-03-30",
-   "thumbnail": "https://i.ytimg.com/vi/DWFKE31YDOs/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/DWFKE31YDOs/hqdefault.jpg"
   },
   {
    "nome": "LADB",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "A local ADB shell for Android!",
    "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
+   "stars": 2445,
+   "git_atualizado": "2026-07-26",
+   "idioma": "Kotlin",
+   "licenca": "NOASSERTION",
+   "homepage": "https://play.google.com/store/apps/details?id=com.draco.ladb",
+   "repo": "https://github.com/tytydraco/LADB",
    "lojas": [
     {
      "tipo": "loja:play",
@@ -13414,9 +13377,9 @@
      "tempo": 35
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2022-03-30",
-   "thumbnail": "https://i.ytimg.com/vi/DWFKE31YDOs/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/DWFKE31YDOs/hqdefault.jpg"
   },
   {
    "nome": "DarQ no GitHub Releases",
@@ -13868,7 +13831,7 @@
   {
    "nome": "Firefox",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Private by default. Less tracking. Peace of mind built in.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -13892,8 +13855,7 @@
     }
    ],
    "data_ultima": "2022-01-05",
-   "thumbnail": "https://i.ytimg.com/vi/n4tWRXTsMwM/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/n4tWRXTsMwM/hqdefault.jpg"
   },
   {
    "nome": "Builds do CI do Kiwi Browser (instável)",
@@ -14821,14 +14783,17 @@
   {
    "nome": "Activity Launcher",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
+   "descricao_repo": "Activity launcher creates shortcuts for any installed app and hidden activities to launch them with ease",
+   "tags": [
+    "android",
+    "java"
+   ],
+   "stars": 2026,
+   "git_atualizado": "2026-10-22",
+   "idioma": "Kotlin",
+   "licenca": "ISC",
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/ActivityLauncher/ActivityLauncher",
    "lojas": [],
    "aparicoes": [
     {
@@ -14839,9 +14804,9 @@
      "tempo": 40
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2021-08-20",
-   "thumbnail": "https://i.ytimg.com/vi/6ktX3pHljuM/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/6ktX3pHljuM/hqdefault.jpg"
   },
   {
    "nome": "oandbackupx",
@@ -14908,14 +14873,17 @@
   {
    "nome": "LSPosed",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
+   "descricao_repo": "LSPosed Framework",
+   "tags": [
+    "android",
+    "xposed"
+   ],
+   "stars": 25175,
+   "git_atualizado": "2026-10-14",
+   "idioma": "Java",
+   "licenca": "GPL-3.0",
+   "homepage": "https://lsposed.org",
+   "repo": "https://github.com/LSPosed/LSPosed",
    "lojas": [],
    "aparicoes": [
     {
@@ -14926,9 +14894,9 @@
      "tempo": 903
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2021-07-07",
-   "thumbnail": "https://i.ytimg.com/vi/gVOpNIgFQuU/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/gVOpNIgFQuU/hqdefault.jpg"
   },
   {
    "nome": "DriveDroid",
@@ -14958,14 +14926,27 @@
   {
    "nome": "AccA",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
+   "descricao_repo": "Advanced Charging Controller",
+   "tags": [
+    "acca",
+    "accapp",
+    "accu",
+    "accu-battery",
+    "android",
+    "battery-lifespan",
+    "battery-longevity",
+    "battery-service-life",
+    "charging-current",
+    "charging-voltage",
+    "control-charging",
+    "disable-charging"
+   ],
+   "stars": 2432,
+   "git_atualizado": "2025-06-06",
+   "idioma": "Shell",
+   "licenca": "GPL-3.0",
+   "homepage": "https://github.com/Magisk-Modules-Repo/acc",
+   "repo": "https://github.com/VR-25/acc",
    "lojas": [],
    "aparicoes": [
     {
@@ -14976,14 +14957,14 @@
      "tempo": 27
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2021-07-07",
-   "thumbnail": "https://i.ytimg.com/vi/gVOpNIgFQuU/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/gVOpNIgFQuU/hqdefault.jpg"
   },
   {
    "nome": "SystemUI Tuner",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "POR FAVOR, LEIA TODA A DESCRIÇÃO ANTES DE INSTALAR",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15007,8 +14988,7 @@
     }
    ],
    "data_ultima": "2021-06-17",
-   "thumbnail": "https://i.ytimg.com/vi/ydmwfrZYmZw/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/ydmwfrZYmZw/hqdefault.jpg"
   },
   {
    "nome": "Shizuku no GitHub Releases",
@@ -15037,14 +15017,17 @@
   {
    "nome": "Shizuku",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
+   "descricao_repo": "The API and the developer guide for Shizuku and Sui.",
+   "tags": [
+    "android",
+    "shizuku"
+   ],
+   "stars": 2695,
+   "git_atualizado": "2025-05-29",
+   "idioma": "Java",
+   "licenca": "MIT",
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/RikkaApps/Shizuku-API",
    "lojas": [
     {
      "tipo": "loja:play",
@@ -15060,9 +15043,9 @@
      "tempo": 47
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2021-06-17",
-   "thumbnail": "https://i.ytimg.com/vi/ydmwfrZYmZw/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/ydmwfrZYmZw/hqdefault.jpg"
   },
   {
    "nome": "Naptime",
@@ -15097,7 +15080,7 @@
   {
    "nome": "IceBox",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Congele e oculte apps pouco usados. Leia as instruções antes de instalar!",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15121,13 +15104,12 @@
     }
    ],
    "data_ultima": "2021-06-17",
-   "thumbnail": "https://i.ytimg.com/vi/ydmwfrZYmZw/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/ydmwfrZYmZw/hqdefault.jpg"
   },
   {
    "nome": "Google Cloud Shell",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Command-line access to Google Cloud projects and resources.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15151,13 +15133,12 @@
     }
    ],
    "data_ultima": "2021-06-01",
-   "thumbnail": "https://i.ytimg.com/vi/PyHx8Tma2Dg/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/PyHx8Tma2Dg/hqdefault.jpg"
   },
   {
    "nome": "Ferramentas da linha de comando",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "O Android Studio oferece aos builders de apps um ambiente de desenvolvimento integrado (IDE, na sigla em inglês) otimizado para apps Android. Faça o download do Android Studio.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15181,13 +15162,12 @@
     }
    ],
    "data_ultima": "2021-06-01",
-   "thumbnail": "https://i.ytimg.com/vi/PyHx8Tma2Dg/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/PyHx8Tma2Dg/hqdefault.jpg"
   },
   {
    "nome": "Console do Cloud Shell",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Gerencie a solução do Google Cloud.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15211,8 +15191,7 @@
     }
    ],
    "data_ultima": "2021-06-01",
-   "thumbnail": "https://i.ytimg.com/vi/PyHx8Tma2Dg/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/PyHx8Tma2Dg/hqdefault.jpg"
   },
   {
    "nome": "ACC",
@@ -15306,14 +15285,19 @@
   {
    "nome": "De-bloater",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
+   "descricao_repo": "An application using the power of Magisk to debloat unwanted system apps!",
+   "tags": [
+    "android",
+    "debloating",
+    "magisk",
+    "root"
+   ],
+   "stars": 801,
+   "git_atualizado": "2026-05-25",
+   "idioma": "Java",
+   "licenca": "GPL-3.0",
+   "homepage": "https://sunilpaulmathew.github.io/De-Bloater/",
+   "repo": "https://github.com/sunilpaulmathew/De-Bloater",
    "lojas": [],
    "aparicoes": [
     {
@@ -15324,21 +15308,29 @@
      "tempo": 1088
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2021-05-28",
-   "thumbnail": "https://i.ytimg.com/vi/gOxsQ4ge4hA/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/gOxsQ4ge4hA/hqdefault.jpg"
   },
   {
    "nome": "AFWall",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
+   "descricao_repo": "AFWall+ (Android Firewall +) - iptables based firewall for Android ",
+   "tags": [
+    "afwall",
+    "android",
+    "android-firewall",
+    "block",
+    "crowdin",
+    "firewall",
+    "iptables"
+   ],
+   "stars": 3512,
+   "git_atualizado": "2026-10-17",
+   "idioma": "Java",
+   "licenca": "GPL-3.0",
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/ukanth/afwall",
    "lojas": [],
    "aparicoes": [
     {
@@ -15349,21 +15341,21 @@
      "tempo": 231
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2021-05-28",
-   "thumbnail": "https://i.ytimg.com/vi/gOxsQ4ge4hA/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/gOxsQ4ge4hA/hqdefault.jpg"
   },
   {
    "nome": "ScreenStream",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "ScreenStream Android App",
    "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
+   "stars": 2565,
+   "git_atualizado": "2026-10-24",
+   "idioma": "Kotlin",
+   "licenca": "MIT",
+   "homepage": "https://screenstream.io",
+   "repo": "https://github.com/dkrivoruchko/ScreenStream",
    "lojas": [],
    "aparicoes": [
     {
@@ -15374,9 +15366,9 @@
      "tempo": 190
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2021-05-06",
-   "thumbnail": "https://i.ytimg.com/vi/Ct-kMqfeGco/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Ct-kMqfeGco/hqdefault.jpg"
   },
   {
    "nome": "Poweramp Equalizer",
@@ -15579,14 +15571,14 @@
   {
    "nome": "ViPER4Android FX",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "ViPER4Android FX Control Panel",
    "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
+   "stars": 266,
+   "git_atualizado": "2017-02-04",
+   "idioma": "C",
    "licenca": null,
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/vipersaudio/viper4android_fx",
    "lojas": [],
    "aparicoes": [
     {
@@ -15597,9 +15589,9 @@
      "tempo": 542
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2021-03-31",
-   "thumbnail": "https://i.ytimg.com/vi/Dd5lQU9tcMA/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Dd5lQU9tcMA/hqdefault.jpg"
   },
   {
    "nome": "Swift Backup",
@@ -15704,14 +15696,14 @@
   {
    "nome": "Tap Tap",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Port of the double tap on back of device feature from Android 12 to any Android 7.0+ device",
    "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
+   "stars": 4058,
+   "git_atualizado": "2024-10-26",
+   "idioma": "Kotlin",
+   "licenca": "GPL-3.0",
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/KieronQuinn/TapTap",
    "lojas": [],
    "aparicoes": [
     {
@@ -15722,9 +15714,9 @@
      "tempo": 146
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2021-03-03",
-   "thumbnail": "https://i.ytimg.com/vi/Degsod0Noqo/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/Degsod0Noqo/hqdefault.jpg"
   },
   {
    "nome": "Retro",
@@ -15787,7 +15779,7 @@
   {
    "nome": "Oto Music",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Um bonito e material projetado leitor de música offline para android.",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15811,13 +15803,12 @@
     }
    ],
    "data_ultima": "2021-01-13",
-   "thumbnail": "https://i.ytimg.com/vi/6Km1gP2Qor4/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/6Km1gP2Qor4/hqdefault.jpg"
   },
   {
    "nome": "Abbey",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Mínimo. Som de chuva . Ringtone Maker. Letra da música . Listas de tempo",
    "tags": [],
    "stars": null,
    "git_atualizado": null,
@@ -15841,8 +15832,7 @@
     }
    ],
    "data_ultima": "2021-01-13",
-   "thumbnail": "https://i.ytimg.com/vi/6Km1gP2Qor4/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/6Km1gP2Qor4/hqdefault.jpg"
   },
   {
    "nome": "Limbo PC",
@@ -15895,31 +15885,6 @@
    "sem_info": true
   },
   {
-   "nome": "Conclusão",
-   "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
-   "lojas": [],
-   "aparicoes": [
-    {
-     "videoId": "6rTkieRnhH8",
-     "titulo": "#2 - Recomendações de Aplicativos para Android",
-     "data": "2020-11-20",
-     "thumbnail": "https://i.ytimg.com/vi/6rTkieRnhH8/hqdefault.jpg",
-     "tempo": 860
-    }
-   ],
-   "data_ultima": "2020-11-20",
-   "thumbnail": "https://i.ytimg.com/vi/6rTkieRnhH8/hqdefault.jpg",
-   "sem_info": true
-  },
-  {
    "nome": "XDA Labs",
    "descricao_curta": null,
    "descricao_repo": null,
@@ -15938,31 +15903,6 @@
      "data": "2020-11-11",
      "thumbnail": "https://i.ytimg.com/vi/jwNtL6mveT0/hqdefault.jpg",
      "tempo": 687
-    }
-   ],
-   "data_ultima": "2020-11-11",
-   "thumbnail": "https://i.ytimg.com/vi/jwNtL6mveT0/hqdefault.jpg",
-   "sem_info": true
-  },
-  {
-   "nome": "Outras Recomendações e Conclusão",
-   "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
-   "lojas": [],
-   "aparicoes": [
-    {
-     "videoId": "jwNtL6mveT0",
-     "titulo": "Recomendações de Lojas de Aplicativos (Alternativas a Play Store)",
-     "data": "2020-11-11",
-     "thumbnail": "https://i.ytimg.com/vi/jwNtL6mveT0/hqdefault.jpg",
-     "tempo": 844
     }
    ],
    "data_ultima": "2020-11-11",
@@ -15997,14 +15937,21 @@
   {
    "nome": "SD Maid",
    "descricao_curta": null,
-   "descricao_repo": null,
-   "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
+   "descricao_repo": "SD Maid 2/SE is Android's most thorough cleaning tool.",
+   "tags": [
+    "android",
+    "cleaner",
+    "cleaner-app",
+    "filemanager",
+    "sdmaid",
+    "system-cleaner"
+   ],
+   "stars": 7851,
+   "git_atualizado": "2026-10-22",
+   "idioma": "Kotlin",
+   "licenca": "GPL-3.0",
+   "homepage": "https://play.google.com/store/apps/details?id=eu.darken.sdmse",
+   "repo": "https://github.com/d4rken-org/sdmaid-se",
    "lojas": [],
    "aparicoes": [
     {
@@ -16015,9 +15962,9 @@
      "tempo": 270
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2020-10-29",
-   "thumbnail": "https://i.ytimg.com/vi/BfOeDIUwH8I/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/BfOeDIUwH8I/hqdefault.jpg"
   },
   {
    "nome": "QuickPicMod",
@@ -16047,14 +15994,14 @@
   {
    "nome": "Muzei",
    "descricao_curta": null,
-   "descricao_repo": null,
+   "descricao_repo": "Muzei Live Wallpaper for Android",
    "tags": [],
-   "stars": null,
-   "git_atualizado": null,
-   "idioma": null,
-   "licenca": null,
-   "homepage": null,
-   "repo": null,
+   "stars": 4955,
+   "git_atualizado": "2026-10-24",
+   "idioma": "Kotlin",
+   "licenca": "Apache-2.0",
+   "homepage": "http://muzei.co",
+   "repo": "https://github.com/muzei/muzei",
    "lojas": [],
    "aparicoes": [
     {
@@ -16065,9 +16012,9 @@
      "tempo": 530
     }
    ],
+   "origem_repo": "busca",
    "data_ultima": "2020-10-29",
-   "thumbnail": "https://i.ytimg.com/vi/BfOeDIUwH8I/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/BfOeDIUwH8I/hqdefault.jpg"
   },
   {
    "nome": "MiXplorer",

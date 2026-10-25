@@ -23,11 +23,13 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 import gerar
-from gerar import (FORA_SERIE_MOTIVO, PLAYLISTS, app_key, aplicar_fixes,
-                   base_name, busca_servivel, classify_url, cutoff_date,
+from gerar import (FORA_SERIE_MOTIVO, PLAYLISTS, app_key, apps_por_capitulos,
+                   base_name, busca_servivel,
+                   classify_url, cutoff_date,
                    decidir_skip_excludes, escolher_repo, iso8601_seconds,
-                   lookup_busca_repo, match_tempo, merge_excludes,
-                   normalize_repo_url, parse_desc, purgar_video_cache, sem_info)
+                   lookup_busca_repo, lookup_loja_page, match_tempo, merge_excludes,
+                   normalize_repo_url, parse_desc, purgar_video_cache, sem_info,
+                   tarefas_enriquecimento)
 
 DESC_COM_TEMPOS = """Eai pessoal, no vídeo de hoje vamos continuar a nossa série de aplicativos mensais, onde eu basicamente faço um compilado de diversos apps que eu acho interessantes, apps comuns, projetos de código aberto etc... e apresento eles pra vocês.
 
@@ -512,59 +514,24 @@ class TestEscolherRepo(unittest.TestCase):
         res = [{"nome": "a/Snapseed", "stars": 10}, {"nome": "b/Snapseed", "stars": 900}]
         self.assertEqual(escolher_repo("Snapseed", res)["nome"], "b/Snapseed")
 
+    def test_nome_exato_vence_mais_estrelas(self):
+        # 'Snapseed' (Google, fechado) não pode ganhar o repo '-se' das transmissões DNG
+        res = [{"nome": "proDOOMman/SnapseedDNG", "stars": 900},
+               {"nome": "outro/Snapseed", "stars": 10}]
+        self.assertEqual(escolher_repo("Snapseed", res)["nome"], "outro/Snapseed")
+
+
+class TestConclusoesNaoSaoApps(unittest.TestCase):
+    """Capítulos de encerramento das playlists antigas viram apps falsos."""
+
+    def test_conclusao_sai_dos_capitulos(self):
+        desc = "0:30 - SD Maid\n2:10 - Muzei\n14:00 - Outras Recomendações e Conclusão\n15:00 - Conclusão"
+        nomes = [a["nome"] for a in apps_por_capitulos(desc)]
+        self.assertEqual(nomes, ["SD Maid", "Muzei"])
+
     def test_nada_a_escolher(self):
         self.assertIsNone(escolher_repo("Snapseed", []))
         self.assertIsNone(escolher_repo("Snapseed", [{"nome": "", "stars": 9}]))
-
-
-class TestAplicarFixes(unittest.TestCase):
-    """Curadoria manual: site/data/apps-fixes.json → {nome: {repo, descricao_curta, …}}."""
-
-    def test_preenche_campos_vazios(self):
-        apps = {"nome:snapseed": fake_app("Snapseed", lojas=[])}
-        fixes = {"Snapseed": {"repo": "https://github.com/espehon/snapseed-readable",
-                              "descricao_curta": "editor de fotos do Google"}}
-        nao = aplicar_fixes(apps, fixes)
-        e = apps["nome:snapseed"]
-        self.assertEqual(nao, [])
-        self.assertEqual(e["repo"], "https://github.com/espehon/snapseed-readable")
-        self.assertEqual(e["descricao_curta"], "editor de fotos do Google")
-        self.assertFalse(sem_info(e))
-
-    def test_nao_sobrescreve_dado_automatico(self):
-        apps = {"nome:x": fake_app("X", repo="https://github.com/a/b", desc_curta="original")}
-        aplicar_fixes(apps, {"X": {"repo": "https://github.com/outro/repo",
-                                   "descricao_curta": "manual"}})
-        self.assertEqual(apps["nome:x"]["repo"], "https://github.com/a/b")
-        self.assertEqual(apps["nome:x"]["descricao_curta"], "original")
-
-    def test_repo_vazio_limpa_so_resgate_de_busca(self):
-        apps = {"nome:x": fake_app("X")}
-        apps["nome:x"]["repo"] = "https://github.com/falso/match"
-        apps["nome:x"]["origem_repo"] = "busca"
-        aplicar_fixes(apps, {"X": {"repo": ""}})
-        self.assertIsNone(apps["nome:x"]["repo"])
-        # citado no vídeo (origem não é busca) NÃO pode ser removido
-        apps2 = {"nome:y": fake_app("Y", repo="https://github.com/c/d")}
-        aplicar_fixes(apps2, {"Y": {"repo": ""}})
-        self.assertEqual(apps2["nome:y"]["repo"], "https://github.com/c/d")
-
-    def test_tags_e_lojas(self):
-        apps = {"nome:x": fake_app("X")}
-        fix = {"X": {"tags": ["segurança"], "lojas": ["https://f-droid.org/packages/com.x/"]}}
-        aplicar_fixes(apps, fix)
-        e = apps["nome:x"]
-        self.assertEqual(e["tags"], ["segurança"])
-        self.assertEqual(e["lojas"][0]["tipo"], "loja:fdroid")
-
-    def test_nome_sem_match_volta_para_aviso(self):
-        nao = aplicar_fixes({"nome:x": fake_app("X")}, {"App Fantasma": {"repo": "https://github.com/a/b"}})
-        self.assertEqual(nao, ["App Fantasma"])
-
-    def test_fixes_vazio_e_chave_interna_ignoradas(self):
-        self.assertEqual(aplicar_fixes({}, {}), [])
-        self.assertEqual(aplicar_fixes({}, {"_comentario": {"nota": "x"}}), [])
-        self.assertEqual(aplicar_fixes({}, {"Quebra": "não-dict"}), [])
 
 
 class TestBuscaServivel(unittest.TestCase):
@@ -629,6 +596,81 @@ class TestLookupBuscaRepo(unittest.TestCase):
         cache, rate = {}, {"stop": False}
         self.assertIsNone(lookup_busca_repo("WARP", cache, rate))
         self.assertTrue(rate["stop"])
+
+
+class TestLojaPage(unittest.TestCase):
+    """Fonte nova: página da loja (Play/apkmirror/site) como última chance de descrição."""
+
+    HTML_PLAY = """<!doctype html><html><head>
+<title>Snapseed - Apps no Google Play</title>
+<meta name="description" property="og:description" content="O editor de fotos completo e profissional desenvolvido pelo Google.">
+</head><body></body></html>"""
+
+    HTML_SITE = """<meta name="description" content="A brand new way for managing Android devices."/>
+
+<meta property="og:description" content="A brand new way for managing Android devices."/>"""
+
+    def setUp(self):
+        self._http = gerar.http_get
+
+    def tearDown(self):
+        gerar.http_get = self._http
+
+    def test_play_og_description(self):
+        gerar.http_get = lambda *a, **k: (self.HTML_PLAY, {"x-ratelimit-remaining": "30"})
+        cache = {}
+        info = lookup_loja_page("https://play.google.com/store/apps/details?id=com.niksoftware.snapseed", cache)
+        self.assertEqual(info["descricao_repo"], "O editor de fotos completo e profissional desenvolvido pelo Google.")
+        self.assertTrue(busca_servivel(cache.get([k for k in cache][0])))
+
+    def test_meta_description_fallback(self):
+        gerar.http_get = lambda *a, **k: (self.HTML_SITE, {"x-ratelimit-remaining": "30"})
+        info = lookup_loja_page("https://app.tangoapp.dev", {})
+        self.assertEqual(info["descricao_repo"], "A brand new way for managing Android devices.")
+
+    def test_segunda_chamada_usa_cache(self):
+        gerar.http_get = lambda *a, **k: (self.HTML_PLAY, {"x-ratelimit-remaining": "30"})
+        cache = {}
+        lookup_loja_page("https://play.google.com/store/apps/details?id=x", cache)
+        gerar.http_get = lambda *a, **k: (_ for _ in ()).throw(AssertionError("não devia refetch"))
+        info = lookup_loja_page("https://play.google.com/store/apps/details?id=x", cache)
+        self.assertIn("editor de fotos", info["descricao_repo"])
+
+    def test_pagina_sem_descricao_negativa_cacheada(self):
+        gerar.http_get = lambda *a, **k: ("<html><head><title>t</title></head></html>", {"x-ratelimit-remaining": "30"})
+        cache = {}
+        info = lookup_loja_page("https://play.google.com/store/apps/details?id=com.x", cache)
+        self.assertIsNone(info["descricao_repo"])
+        ce = list(cache.values())[0]
+        self.assertTrue(busca_servivel(ce))
+
+    def test_erro_transitorio_nao_cacheia(self):
+        gerar.http_get = lambda *a, **k: (_ for _ in ()).throw(urllib.error.URLError("rede"))
+        cache = {}
+        self.assertIsNone(lookup_loja_page("https://play.google.com/store/apps/details?id=com.x", cache))
+        self.assertEqual(cache, {})
+
+
+class TestTarefasEnriquecimento(unittest.TestCase):
+    """Fila de enriquecimento: repo → fdroid → página de loja (apenas sem descrição)."""
+
+    def test_play_sem_descricao_vira_tarefa_loja(self):
+        a = fake_app("Snapseed", lojas=[{"tipo": "loja:play",
+                                         "url": "https://play.google.com/store/apps/details?id=com.niksoftware.snapseed"}])
+        self.assertEqual(tarefas_enriquecimento({"k": a}), [("loja", a, a["lojas"][0]["url"])])
+
+    def test_play_com_descricao_nao_refetch(self):
+        a = fake_app("Snapseed", desc_repo="editor", lojas=[{"tipo": "loja:play", "url": "https://play.google.com/x"}])
+        self.assertEqual(tarefas_enriquecimento({"k": a}), [])
+
+    def test_repo_vence_loja(self):
+        a = fake_app("X", repo="https://github.com/a/b", lojas=[{"tipo": "loja:play", "url": "https://play.google.com/x"}])
+        self.assertEqual(tarefas_enriquecimento({"k": a}), [("repo", a)])
+
+    def test_fdroid_vence_loja(self):
+        a = fake_app("X", lojas=[{"tipo": "loja:fdroid", "url": "https://f-droid.org/packages/com.x/"},
+                                 {"tipo": "loja:play", "url": "https://play.google.com/x"}])
+        self.assertEqual(tarefas_enriquecimento({"k": a}), [("fdroid", a, "com.x")])
 
 
 if __name__ == "__main__":
