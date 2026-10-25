@@ -1,249 +1,200 @@
-(function () {
-"use strict";
-var apps = [], videos = {}, dados = null;
+import {
+  norm, esc, buscar, aplicarOrdem, cardHtml, obterTagsFrequentes,
+  chipsHtml, youtubeEmbed
+} from "./utils.js";
 
-// ---------- normalização (sem acento/caixa/pontuação) ----------
-function norm(s) {
-  return (s || "").toLowerCase()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9\s+#]/g, " ").replace(/\s+/g, " ").trim();
-}
-function esc(s) { return s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
-function hi(txt, termos) {
-  txt = txt || ""; var out = esc(txt);
-  if (!termos.length) return esc(txt);
-  try {
-    var rx = new RegExp("(" + termos.map(escRx).join("|") + ")", "gi");
-    out = esc(txt).replace(rx, "<mark>$1</mark>");
-  } catch (e) { out = esc(txt); }
-  return out;
-}
-function escRx(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
+export function createApp({
+  document: doc = document,
+  window: win = window,
+  fetchFn = (...args) => fetch(...args)
+} = {}) {
+  let apps = [];
+  let videos = {};
+  let ordCampo = "relev";
+  let ordDir = "desc";
 
-function tempoFmt(s) {
-  if (s == null) return "–:–";
-  var h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), ss = s % 60;
-  return (h ? h + ":" + String(m).padStart(2, "0") : m) + ":" + String(ss).padStart(2, "0");
-}
-function mesFmt(data) {
-  if (!data) return "";
-  var m = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
-  var y = data.slice(0, 4), mo = +data.slice(5, 7);
-  return m[mo - 1] + "/" + y;
-}
+  const el = id => doc.getElementById(id);
+  const grid = el("grid");
 
-// ---------- campos/weight da busca ----------
-var CAMPOS = [
-  { w: 10, get: a => a.nome },
-  { w: 5,  get: a => a.descricao_repo },
-  { w: 4,  get: a => a.descricao_curta },
-  { w: 3,  get: a => (a.tags || []).join(" ") + " " + (a.idioma || "") + " " + (a.licenca || "") },
-  { w: 2,  get: a => [a.repo, (a.lojas || []).map(l => l.url), a.homepage].join(" ") },
-  { w: 1,  get: a => (a.aparicoes || []).map(x => x.titulo).join(" ") }
-];
+  function estadoURL(q) {
+    const url = new URL(win.location.href);
+    if (q) url.searchParams.set("q", q);
+    else url.searchParams.delete("q");
 
-function buscar(q) {
-  var termos = norm(q).split(" ").filter(Boolean);
-  if (!termos.length) return apps;
-  var res = [];
-  for (var i = 0; i < apps.length; i++) {
-    var a = apps[i], score = 0, ok = true;
-    var normed = CAMPOS.map(c => norm(c.get(a)));
-    for (var t = 0; t < termos.length; t++) {
-      var te = termos[t], achou = 0, s = 0;
-      for (var c = 0; c < CAMPOS.length; c++) {
-        if (normed[c].indexOf(te) >= 0) {
-          achou++; s += CAMPOS[c].w;
-          if (c === 0 && normed[c].indexOf(te) === 0) s += 3; // início do nome
-        }
-      }
-      if (!achou) { ok = false; break; }
-      score += s;
+    if (ordCampo !== "relev" || ordDir !== "desc") {
+      url.searchParams.set("ord", ordCampo);
+      url.searchParams.set("dir", ordDir);
+    } else {
+      url.searchParams.delete("ord");
+      url.searchParams.delete("dir");
     }
-    if (ok) res.push([score, a]);
+    win.history.replaceState(null, "", url);
   }
-  return res.sort((x, y) => y[0] - x[0]).map(x => x[1]);
-}
 
-// ---------- render ----------
-var grid = document.getElementById("grid");
-function youtube_embed(videoId, tempo) {
-  return "https://www.youtube-nocookie.com/embed/" + videoId +
-    "?start=" + (tempo || 0) + "&autoplay=1&rel=0";
-}
+  function aplicarOrdemUI() {
+    el("ord-campo").value = ordCampo;
+    el("ord-dir").textContent = ordDir === "asc" ? "↑" : "↓";
+  }
 
-function cardHtml(a, termos) {
-  var descPri = a.descricao_curta ? esc(a.descricao_curta) : "";
-  var descSec = a.descricao_repo ? esc(a.descricao_repo) : "";
-  var urlRepo = a.repo ? a.repo.replace(/^https?:\/\/(www\.)?/, "") : "";
-  var tagsHtml = (a.tags || []).slice(0, 6).map(t =>
-    '<span class="tag" data-tag="' + esc(t) + '">' + esc(t) + '</span>').join("");
-  var meta = [];
-  if (a.stars) meta.push("★ " + a.stars.toLocaleString("pt-BR"));
-  if (a.idioma) meta.push(esc(a.idioma));
-  if (a.licenca && a.licenca !== "NOASSERTION") meta.push(esc(a.licenca));
-  if (a.open_source !== false && /open source/i.test((a.descricao_curta || ""))) meta.push("open source");
-  if (a.sem_info) meta.push('sem fonte nem descrição');
+  function aplicarCliqueTag(valor) {
+    const input = el("q");
+    input.value = norm(input.value.trim()) === norm(valor) ? "" : valor;
+    input.dispatchEvent(new win.Event("input"));
+  }
 
-  var aps = (a.aparicoes || []).map(function (ap) {
-    var v = videos[ap.videoId] || ap;
-    return '<button class="vid-btn" data-vid="' + ap.videoId + '" data-tempo="' +
-      (ap.tempo != null ? ap.tempo : 0) + '">' +
-      '<img loading="lazy" alt="" src="https://i.ytimg.com/vi/' + ap.videoId + '/mqdefault.jpg">' +
-      '<span class="vt">' + esc(v.titulo.slice(0, 60)) +
-      '<small>' + (mesFmt(ap.data) || "") + " · " + tempoFmt(ap.tempo) + '</small></span></button>';
-  }).join("");
+  function render(q) {
+    const resultados = aplicarOrdem(buscar(apps, q), ordCampo, ordDir);
+    const termos = norm(q).split(" ").filter(Boolean);
 
-  return '<article class="card">' +
-    '<div class="titulo-linha"><h3>' + hi(a.nome, termos) + '</h3>' +
-    (urlRepo ? '<a class="repo-link" target="_blank" rel="noopener" href="' + esc(a.repo) + '">' +
-      esc(urlRepo.slice(0, 28)) + ' ↗</a>' : '') + '</div>' +
-    (descPri ? '<p class="desc"><b>' + hi(descPri, termos) + '</b></p>' : '') +
-    (descSec ? '<p class="desc">' + hi(descSec, termos) + '</p>' : '') +
-    (tagsHtml ? '<div class="tags">' + tagsHtml + '</div>' : '') +
-    (meta.length ? '<div class="meta">' + meta.join(" · ") + '</div>' : '') +
-    '<div class="aparicoes">' + aps + '</div></article>';
-}
+    el("contagem").textContent =
+      resultados.length + " de " + apps.length + " apps" +
+      (q ? " · busca: “" + q + "”" : "");
+    el("vazio").hidden = resultados.length > 0;
+    grid.innerHTML = resultados.slice(0, 200)
+      .map(app => cardHtml(app, termos, videos)).join("");
 
-// ---------- ordenação ----------
-var ordCampo = "relev", ordDir = "desc";
-function valorOrd(a) {
-  if (ordCampo === "nome") return (a.nome || "").toLowerCase();
-  if (ordCampo === "stars") return a.stars == null ? null : a.stars;
-  if (ordCampo === "video") { var ap = (a.aparicoes || [])[0]; return (ap && ap.data) || null; }
-  if (ordCampo === "repo") return a.git_atualizado || null;
-  return null;
-}
-function aplicarOrdem(res) {
-  if (ordCampo === "relev") return ordDir === "desc" ? res : res.slice().reverse();
-  var pares = res.map(a => [valorOrd(a), a]).sort(function (A, B) {
-    var va = A[0], vb = B[0];
-    if (va == null && vb == null) return 0;
-    if (va == null) return 1;      // sem dado → sempre por último
-    if (vb == null) return -1;
-    var c;
-    if (typeof va === "string") c = va.localeCompare(vb, "pt-BR");
-    else c = va - vb;
-    return ordDir === "asc" ? c : -c;
-  });
-  return pares.map(p => p[1]);
-}
-function aplicarOrdemUI() {
-  document.getElementById("ord-campo").value = ordCampo;
-  document.getElementById("ord-dir").textContent = ordDir === "asc" ? "↑" : "↓";
-}
-function estadoURL(q) {
-  var u = new URL(location.href);
-  if (q) u.searchParams.set("q", q); else u.searchParams.delete("q");
-  if (ordCampo !== "relev" || ordDir !== "desc") {
-    u.searchParams.set("ord", ordCampo); u.searchParams.set("dir", ordDir);
-  } else { u.searchParams.delete("ord"); u.searchParams.delete("dir"); }
-  history.replaceState(null, "", u);
-}
+    const consulta = norm(q);
+    doc.querySelectorAll("#chips .chip").forEach(chip => {
+      chip.classList.toggle("on", norm(chip.textContent) === consulta);
+    });
+  }
 
-function render(q) {
-  var res = aplicarOrdem(buscar(q));
-  var termos = norm(q).split(" ").filter(Boolean);
-  document.getElementById("contagem").textContent =
-    res.length + " de " + apps.length + " apps" + (q ? " · busca: “" + q + "”" : "");
-  document.getElementById("vazio").hidden = res.length > 0;
-  grid.innerHTML = res.slice(0, 200).map(a => cardHtml(a, termos)).join("");
-  // marca o chip/tag que está aplicado (clicar de novo limpa)
-  var nq = norm(q);
-  document.querySelectorAll("#chips .chip").forEach(function (c) {
-    c.classList.toggle("on", norm(c.textContent) === nq);
-  });
-}
+  function renderChips() {
+    const tags = obterTagsFrequentes(apps);
+    const container = el("chips");
+    container.innerHTML = chipsHtml(tags);
+    container.addEventListener("click", event => {
+      const chip = event.target.closest(".chip");
+      if (chip) aplicarCliqueTag(chip.textContent);
+    });
+  }
 
-// ---------- chips: tags comuns de uma vez ----------
-function aplicarCliqueTag(valor) {
-  var inp = document.getElementById("q");
-  // toggle: clicar na tag que já está aplicada limpa a busca
-  inp.value = norm(inp.value.trim()) === norm(valor) ? "" : valor;
-  inp.dispatchEvent(new Event("input"));
-}
-function renderChips() {
-  var freq = {}, top;
-  apps.forEach(a => (a.tags || []).forEach(t => freq[norm(t)] = (freq[norm(t)] || 0) + 1));
-  var nomes = {};
-  apps.forEach(a => (a.tags || []).forEach(t => { nomes[norm(t)] = nomes[norm(t)] || t; }));
-  frequentes = Object.keys(freq).filter(k => k.length > 2).sort((x, y) => freq[x] - freq[y]).slice(0, 8);
-  top = frequentes.map(k => nomes[k]);
-  var el = document.getElementById("chips");
-  el.innerHTML = ["open source"].concat(top).map(t => '<span class="chip">' + esc(t) + '</span>').join("");
-  el.addEventListener("click", function (ev) {
-    if (ev.target.classList.contains("chip")) {
-      aplicarCliqueTag(ev.target.textContent);
-    }
-  });
-}
-var frequentes = [];
+  function syncLimpa() {
+    el("limpa").hidden = !el("q").value;
+  }
 
-// ---------- init ----------
-fetch("data/apps.json", { cache: "no-store" })
-  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(function (d) {
-    dados = d;
-    apps = d.apps || [];
-    (d.videos || []).forEach(v => videos[v.videoId] = v);
-    document.getElementById("sub").textContent =
-      (d.canal && d.canal.nome || "VegaData") + " · " + apps.length +
-      " apps citados em " + (d.videos ? d.videos.length : 0) + " vídeos";
-    document.getElementById("rodape").innerHTML =
-      "atualizado em " + (d.atualizado || "").slice(0, 10) + " · dados do canal " +
-      '<a target="_blank" rel="noopener" href="' + (d.canal.url || "#") + '">' + esc(d.canal.nome || "VegaData") + '</a>' +
-      " · só apps com link público no vídeo";
-    renderChips();
-    var input = document.getElementById("q");
-    var u0 = new URL(location.href);
-    var q0 = u0.searchParams.get("q") || "";
-    ordCampo = u0.searchParams.get("ord") || "relev";
-    ordDir = u0.searchParams.get("dir") === "asc" ? "asc" : "desc";
-    aplicarOrdemUI();
-    input.value = q0;
-    render(q0);
-    var limpa = document.getElementById("limpa");
-    function syncLimpa() { limpa.hidden = !input.value; }
-    syncLimpa();
-    limpa.addEventListener("click", function () {
+  function configurarEventos() {
+    const input = el("q");
+    const limpa = el("limpa");
+
+    limpa.addEventListener("click", () => {
       input.value = "";
-      input.dispatchEvent(new Event("input"));
+      input.dispatchEvent(new win.Event("input"));
       input.focus();
     });
-    input.addEventListener("input", function () {
+
+    input.addEventListener("input", () => {
       syncLimpa();
-      var q = input.value.trim(); render(q); estadoURL(q);
+      const q = input.value.trim();
+      render(q);
+      estadoURL(q);
     });
 
-    document.getElementById("ord-campo").addEventListener("change", function () {
-      ordCampo = this.value; aplicarOrdemUI(); render(input.value.trim()); estadoURL(input.value.trim());
+    el("ord-campo").addEventListener("change", event => {
+      ordCampo = event.currentTarget.value;
+      aplicarOrdemUI();
+      render(input.value.trim());
+      estadoURL(input.value.trim());
     });
-    document.getElementById("ord-dir").addEventListener("click", function () {
-      ordDir = ordDir === "asc" ? "desc" : "asc"; aplicarOrdemUI();
-      render(input.value.trim()); estadoURL(input.value.trim());
-    });
-  })
-  .catch(function () { document.getElementById("erro").hidden = false; });
 
-// clique: thumbnail do vídeo → player embutido no tempo certo
-grid.addEventListener("click", function (ev) {
-  var chip = ev.target.closest(".tag");
-  if (chip) {
-    aplicarCliqueTag(chip.getAttribute("data-tag"));
-    return;
+    el("ord-dir").addEventListener("click", () => {
+      ordDir = ordDir === "asc" ? "desc" : "asc";
+      aplicarOrdemUI();
+      render(input.value.trim());
+      estadoURL(input.value.trim());
+    });
+
+    grid.addEventListener("click", event => {
+      const tag = event.target.closest(".tag");
+      if (tag) {
+        aplicarCliqueTag(tag.getAttribute("data-tag"));
+        return;
+      }
+
+      const botao = event.target.closest(".vid-btn");
+      if (!botao) return;
+
+      const card = botao.closest(".card");
+      const player = card.querySelector(".player");
+      const videoId = botao.getAttribute("data-vid");
+      const tempo = Number(botao.getAttribute("data-tempo") || 0);
+
+      if (player && player.dataset.vid === videoId &&
+          Number(player.dataset.tempo) === tempo) {
+        player.remove();
+        return;
+      }
+      if (player) player.remove();
+
+      const container = doc.createElement("div");
+      container.className = "player";
+      container.dataset.vid = videoId;
+      container.dataset.tempo = String(tempo);
+      const iframe = doc.createElement("iframe");
+      iframe.loading = "lazy";
+      iframe.src = youtubeEmbed(videoId, tempo);
+      iframe.allow = "autoplay; encrypted-media; fullscreen; picture-in-picture";
+      iframe.allowFullscreen = true;
+      iframe.title = "Vídeo";
+      container.appendChild(iframe);
+      card.appendChild(container);
+    });
   }
-  var btn = ev.target.closest(".vid-btn");
-  if (!btn) return;
-  var card = btn.closest(".card");
-  var player = card.querySelector(".player");
-  var vid = btn.getAttribute("data-vid"), t = +btn.getAttribute("data-tempo");
-  if (player && player.dataset.vid === vid && player.dataset.tempo == t) { player.remove(); return; }
-  if (player) player.remove();
-  var d = document.createElement("div");
-  d.className = "player";
-  d.dataset.vid = vid; d.dataset.tempo = t;
-  d.innerHTML = '<iframe loading="lazy" src="' + youtube_embed(vid, t) +
-    '" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Vídeo"></iframe>';
-  card.appendChild(d);
-});
-})();
+
+  async function start() {
+    const response = await fetchFn("data/apps.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`Falha ao carregar apps.json: HTTP ${response.status}`);
+    const dados = await response.json();
+
+    apps = dados.apps || [];
+    videos = {};
+    (dados.videos || []).forEach(video => { videos[video.videoId] = video; });
+
+    el("sub").textContent =
+      (dados.canal && dados.canal.nome || "VegaData") + " · " + apps.length +
+      " apps citados em " + (dados.videos ? dados.videos.length : 0) + " vídeos";
+
+    const canalNome = esc(dados.canal?.nome || "VegaData");
+    const canalUrl = dados.canal?.url || "#";
+    el("rodape").innerHTML =
+      "atualizado em " + esc((dados.atualizado || "").slice(0, 10)) +
+      " · dados do canal " +
+      '<a target="_blank" rel="noopener noreferrer" href="' + esc(canalUrl) + '">' +
+      canalNome + '</a> · só apps com link público no vídeo';
+
+    renderChips();
+
+    const urlInicial = new URL(win.location.href);
+    const qInicial = urlInicial.searchParams.get("q") || "";
+    ordCampo = urlInicial.searchParams.get("ord") || "relev";
+    if (!["relev", "nome", "stars", "video", "repo"].includes(ordCampo)) ordCampo = "relev";
+    ordDir = urlInicial.searchParams.get("dir") === "asc" ? "asc" : "desc";
+
+    aplicarOrdemUI();
+    el("q").value = qInicial;
+    render(qInicial);
+    syncLimpa();
+    configurarEventos();
+
+    return { apps, videos };
+  }
+
+  async function startWithErrorHandling() {
+    try {
+      return await start();
+    } catch (error) {
+      console.error(error);
+      const erro = el("erro");
+      if (erro) erro.hidden = false;
+      return null;
+    }
+  }
+
+  return { start, startWithErrorHandling };
+}
+
+// Inicializa automaticamente no navegador, mas não quando importado pelo Node.js.
+if (typeof document !== "undefined" && typeof window !== "undefined") {
+  const app = createApp();
+  app.startWithErrorHandling();
+}
