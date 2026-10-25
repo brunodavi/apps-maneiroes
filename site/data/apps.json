@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-25T04:53:21Z",
+ "atualizado": "2026-10-25T06:01:02Z",
  "canal": {
   "nome": "VegaData",
   "id": "UCd2FHKnQ3ymrNhdsV9J0VmA",
@@ -15057,7 +15057,7 @@
    "idioma": null,
    "licenca": null,
    "homepage": null,
-   "repo": null,
+   "repo": "https://github.com/test/test-repo",
    "lojas": [
     {
      "tipo": "loja:play",
@@ -15073,9 +15073,9 @@
      "tempo": 534
     }
    ],
+   "origem_repo": "manual",
    "data_ultima": "2021-06-17",
-   "thumbnail": "https://i.ytimg.com/vi/ydmwfrZYmZw/hqdefault.jpg",
-   "sem_info": true
+   "thumbnail": "https://i.ytimg.com/vi/ydmwfrZYmZw/hqdefault.jpg"
   },
   {
    "nome": "IceBox",

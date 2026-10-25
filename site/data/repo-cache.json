@@ -859,6 +859,12 @@
    "https://github.com/kiwibrowser/src"
   ]
  },
+ "manual@naptime": {
+  "ts": "2026-10-25",
+  "urls": [
+   "https://github.com/test/test-repo"
+  ]
+ },
  "repo@https://codeberg.org/Loowiz/PhotoSwooper": {
   "descricao_repo": "A dating app for ur photos & videos! <3",
   "git_atualizado": "2026-10-05",
