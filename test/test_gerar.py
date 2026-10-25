@@ -10,7 +10,7 @@ Fixtures reais:
   - DESC_SEM_TEMPOS   = "Aplicativos Open Source!"
                         (vídeo 1kC_XAG1fz4 — série antiga, sem timestamps)
 
-Rodar: python3 test/gerar_test.py   (da raiz do repo)
+Rodar: python3 test/test_gerar.py   (da raiz do repo)
 """
 
 import json

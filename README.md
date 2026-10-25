@@ -26,7 +26,7 @@ site/              # página publicada no Pages
 ├── js/app.js
 └── data/          # apps.json + caches (video-cache, repo-cache, excludes)
 src/gerar.py       # gerador
-test/gerar_test.py # testes (fixtures reais do YouTube)
+test/test_gerar.py # testes (fixtures reais do YouTube)
 ```
 
 ## Developing localmente
@@ -48,7 +48,7 @@ python3 src/gerar.py --sem-repo   # pula o enriquecimento de repos
 python3 src/gerar.py --video-id ssP04Cl1bmo        # adiciona um vídeo manualmente
 python3 src/gerar.py --sem-info   # lista apps sem fonte nem descrição (sem rede, só lê)
 python3 src/gerar.py --app-link "Kiwi Browser=https://github.com/kiwibrowser/src"
-python3 test/gerar_test.py         # testes (fixtures reais do YouTube)
+python3 test/test_gerar.py         # testes (fixtures reais do YouTube)
 ```
 
 ### Adicionar vídeo manualmente (`--video-id`)
