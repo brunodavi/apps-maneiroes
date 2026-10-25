@@ -14,12 +14,16 @@ Uso:
     python3 gerar.py --limit 8    #debug: só os N primeiros vídeos
     python3 gerar.py --sem-repo   # pula enriquecimento de rede (usa só cache)
     python3 gerar.py --force      # não aborta se o número de vídeos diminuir
+    python3 gerar.py --video-id <ID> [outro-id ...]  # adiciona manualmente, refetchando SEM cache
+    python3 gerar.py --sem-info   # só LISTA os apps sem informação do catálogo atual e sai
+    python3 gerar.py --app-link "App[@videoId]=URL"  # corrige/atualiza UM app do catálogo e sai
 
 Caches (permitem retomar de onde parou após erro/abort):
     video-cache.json  → vídeoId: {titulo, descricao, duracao, data} (ou {"erro": true})
     repo-cache.json   → dado de cada repo/f-droid consultado
 """
 
+import argparse
 import difflib
 import html as _html
 import json
@@ -34,8 +38,10 @@ import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from typing import Optional, List
 
-DIR = os.path.dirname(os.path.abspath(__file__))
+DIR = Path(__file__).resolve().parent
 
 CHANNEL_ID = "UCd2FHKnQ3ymrNhdsV9J0VmA"
 CHANNEL_NAME = "VegaData"
@@ -67,7 +73,8 @@ LEGACY_CAPITULOS_RE = re.compile(
 # termos buscados NO CANAL (camada de descoberta além das playlists/uploads)
 BUSCA_QUERIES = ["apps maneirões", "apps brabos", "apps diferenciados",
                  "aplicativos open source", "recomendações de apps",
-                 "aplicativos que utilizam shizuku", "aplicativos que precisam do adb"]
+                 "aplicativos que utilizam shizuku", "aplicativos que precisam do adb",
+                 "aplicativos quem tem acesso root"]
 
 FORA_SERIE_MOTIVO = "fora da série de apps (título)"
 
@@ -107,27 +114,27 @@ CLIENTS = [
 # ---------------------------------------------------------------- cache
 
 def load_json(path):
-    if os.path.exists(path):
+    if Path(path).exists():
         try:
             with open(path, encoding="utf-8") as f:
                 return json.load(f)
         except Exception:
-            print(f"   AVISO: {os.path.basename(path)} corrompido, recomeçando vazio")
+            print(f"   AVISO: {Path(path).name} corrompido, recomeçando vazio")
     return {}
 
 
 def save_json(path, data):
-    tmp = path + ".tmp"
+    tmp = str(path) + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1, sort_keys=True)
-    os.replace(tmp, path)
+    Path(tmp).replace(path)
 
 
 # dados (aplicação + caches) ficam em site/data/ — servidos pelo Pages
-DATA_DIR = os.path.join(os.path.dirname(DIR), "site", "data")
-VIDEO_CACHE_PATH = os.path.join(DATA_DIR, "video-cache.json")
-REPO_CACHE_PATH = os.path.join(DATA_DIR, "repo-cache.json")
-EXCLUDES_PATH = os.path.join(DATA_DIR, "excludes.json")
+DATA_DIR = DIR.parent / "site" / "data"
+VIDEO_CACHE_PATH = DATA_DIR / "video-cache.json"
+REPO_CACHE_PATH = DATA_DIR / "repo-cache.json"
+EXCLUDES_PATH = DATA_DIR / "excludes.json"
 
 # ---------------------------------------------------------------- infra http
 
@@ -1130,27 +1137,82 @@ def id_elem_ok(it):
     return it.get("id") and it["id"].get("videoId") and (it.get("snippet") or {}).get("channelId") == CHANNEL_ID
 
 
-# ---------------------------------------------------------------- principal
+def parse_args(args: list[str] = None) -> argparse.Namespace:
+    """Parse command line arguments using argparse for better help and validation."""
+    parser = argparse.ArgumentParser(
+        description="Gera apps.json — catálogo de apps citados nos vídeos \"Aplicativos Maneirões\" do canal VegaData."
+    )
+    
+    parser.add_argument(
+        "--fresh",
+        action="store_true",
+        help="ignora caches e coleta tudo de novo"
+    )
+    
+    parser.add_argument(
+        "--limit",
+        type=int,
+        help="debug: só os N primeiros vídeos"
+    )
+    
+    parser.add_argument(
+        "--sem-repo",
+        action="store_true",
+        help="pula enriquecimento de rede (usa só cache)"
+    )
+    
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="não aborta se o número de vídeos diminuir"
+    )
+    
+    parser.add_argument(
+        "--janela",
+        type=int,
+        default=0,
+        help="janela de N meses para filtrar vídeos recentes (padrão: 0 = sem janela)"
+    )
+    
+    parser.add_argument(
+        "--video-id",
+        nargs="+",
+        help="adiciona manualmente, refetchando SEM cache (vários IDs possíveis)"
+    )
+    
+    parser.add_argument(
+        "--sem-info",
+        action="store_true",
+        help="só LISTA os apps sem informação do catálogo atual e sai (antes de qualquer rede)"
+    )
+    
+    parser.add_argument(
+        "--app-link",
+        help="corrige/atualiza UM app do catálogo e sai (formato: \"App[@videoId]=URL\")"
+    )
+    
+    return parser.parse_args(args)
+
 
 def main():
-    args = sys.argv[1:]
-    limit = int(args[args.index("--limit") + 1]) if "--limit" in args else None
-    sem_repo = "--sem-repo" in args
-    force = "--force" in args
-    janela = int(args[args.index("--janela") + 1]) if "--janela" in args else 0
+    args = parse_args()
+    
+    limit = args.limit
+    sem_repo = args.sem_repo
+    force = args.force
+    janela = args.janela
     data_limite = cutoff_date(janela)
     yt_key = os.environ.get("YOUTUBE_API_KEY")
-    # --video-id <ID> [mais IDs...]: adiciona manualmente, refetchando SEM cache
-    manual_ids = [args[i + 1].strip() for i, a in enumerate(args)
-                  if a == "--video-id" and i + 1 < len(args) and args[i + 1].strip()]
+    manual_ids = args.video_id or []
+    
     if manual_ids:
         print(f"== Modo manual: {len(manual_ids)} vídeo(s) via --video-id")
         limit = None  # não truncar candidatos com o alvo manual incluído
 
     # --sem-info: só LISTA os apps sem informação do catálogo atual e sai
     # (antes de qualquer rede — para checar o que falta / planejar correção)
-    if "--sem-info" in args:
-        d = load_json(os.path.join(DATA_DIR, "apps.json"))
+    if args.sem_info:
+        d = load_json(DATA_DIR / "apps.json")
         lista = [a for a in d.get("apps", []) if sem_info(a)]
         print(f"== {len(d.get('apps', []))} apps no catálogo; SEM informação (nem "
               f"repo/f-droid, nem descrição): {len(lista)}")
@@ -1164,10 +1226,8 @@ def main():
     # A URL (github/codeberg/playstore/fdroid/apkmirror/site) anexa repo/loja
     # e já puxa meta-dados (desc/tags/stars). Persiste em repo-cache.json
     # (`manual@nome`) para as rodadas futuras — e o CI — reaplicarem.
-    links_spec = [args[i + 1].strip() for i, a in enumerate(args)
-                  if a == "--app-link" and i + 1 < len(args) and args[i + 1].strip()]
-    if links_spec:
-        apps_path = os.path.join(DATA_DIR, "apps.json")
+    if args.app_link:
+        apps_path = DATA_DIR / "apps.json"
         d = load_json(apps_path)
         if not d.get("apps"):
             print("ERRO: apps.json vazio/inexistente — rode o gerador completo primeiro")
@@ -1175,7 +1235,7 @@ def main():
         cache = load_cache()
         rate = {"stop": False}
         ok = erros = 0
-        for spec in links_spec:
+        for spec in [args.app_link]:
             p = parse_app_link(spec)
             if not p:
                 print(f"   ERRO: formato de '{spec}' (use \"App[@videoId]=URL\")")
@@ -1279,8 +1339,8 @@ def main():
 
     # catálogo anterior entra sempre: regeneração é cumulativa
     prev_videos, prev_ids_origem = [], {}
-    if "--fresh" not in args:
-        prev = load_json(os.path.join(DATA_DIR, "apps.json"))
+    if not args.fresh:
+        prev = load_json(DATA_DIR / "apps.json")
         if isinstance(prev, dict):
             for w in (prev.get("videos") or []):
                 prev_videos.append({"videoId": w["videoId"], "titulo": w["titulo"]})
@@ -1301,7 +1361,7 @@ def main():
 
     # 2) player + parse + inclusão ---------------------------------------
     print("== Processando vídeos...")
-    fresh = "--fresh" in args
+    fresh = args.fresh
     vidcache = {} if fresh else load_video_cache()
     excludes = {} if fresh else load_excludes()
     excludes_pend, purga_cache = [], []
@@ -1467,8 +1527,8 @@ def main():
             print(f"   video-cache purgado: {len(removidas)} entradas")
 
     # guarda de segurança: nunca piorar o JSON antigo (inválida em --fresh)
-    out_path = os.path.join(DATA_DIR, "apps.json")
-    if os.path.exists(out_path) and not force and not fresh:
+    out_path = DATA_DIR / "apps.json"
+    if out_path.exists() and not force and not fresh:
         with open(out_path, encoding="utf-8") as f:
             old = json.load(f)
         n_old = len(old.get("videos") or [])
