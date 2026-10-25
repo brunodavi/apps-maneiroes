@@ -12,7 +12,10 @@
   <h1><a href="?">Apps Maneirões</a></h1>
   <div class="sub" id="sub">Carregando…</div>
   <div class="busca">
-    <input id="q" type="search" placeholder="Buscar app, descrição, tag, vídeo… (ex: open source, rss, shizuku, setembro)" autocomplete="off">
+    <div class="campo">
+      <input id="q" type="search" placeholder="Buscar app, descrição, tag, vídeo… (ex: open source, rss, shizuku, setembro)" autocomplete="off">
+      <button id="limpa" class="limpa" type="button" aria-label="Limpar busca" hidden>✕</button>
+    </div>
     <div class="ord">
       <select id="ord-campo" aria-label="Ordenar por">
         <option value="relev">Relevância</option>

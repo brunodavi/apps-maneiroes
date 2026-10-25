@@ -201,7 +201,16 @@ fetch("data/apps.json", { cache: "no-store" })
     aplicarOrdemUI();
     input.value = q0;
     render(q0);
+    var limpa = document.getElementById("limpa");
+    function syncLimpa() { limpa.hidden = !input.value; }
+    syncLimpa();
+    limpa.addEventListener("click", function () {
+      input.value = "";
+      input.dispatchEvent(new Event("input"));
+      input.focus();
+    });
     input.addEventListener("input", function () {
+      syncLimpa();
       var q = input.value.trim(); render(q); estadoURL(q);
     });
 
